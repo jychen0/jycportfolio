@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Chen Portfolio</title>
+  <link rel="icon" type="image/png" href="images/BANANA_MILK.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6e0977d2a0.js" crossorigin="anonymous"></script>
+</head>
+<body class="main-content">
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/BANANAS.png" class="logo">
+      <ul id="sideMenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="images/Jason Chen - Resume (1_26_2024).pdf" target="_blank" >Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <div class="header-row">
+      <div class="header-text">
+        <h1>Hi. I'm Jason Chen.</h1>
+        <p>I'm a student game developer, specializing in game programming<br><br>
+           Check out the projects I have worked on below and feel free to<br>
+           contact me if you would like to collaborate on a project !!
+        </p>
+      </div>
+      <div class="header-image">
+        <img src="images/user-2.jpg"> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------------about------------------ -->
+<div id="about">
+  <div class="container">
+    <div class="about-row">
+      <div class="about-col-1">
+        <h1 class="sub-title">About Me</h1>
+        <img src="images/user-1.jpg">
+      </div>
+      <div class="about-col-2">
+        <p>Hi! My name is Jason Chen, and I'm a 19 year old sophomore at Clark University. I am an aspiring game developer studying Interactive Media 
+           Design and Computer Science in university. I was born in China but have lived in the Boston area since I was one year old. I started gaming
+           at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. This led me down the path of game development because
+           I think games are a great way to connect people, and it has been a very important part of my life. I am currently working on an undisclosed project
+           that I am looking for help on, and if you would like to learn more, shoot me a message!
+
+          <br><br>
+          My favorite games include League of Legends, Teamfight Tactics, It Takes Two, Stardew Valley, Kirby's Return to Dreamland, and most Pokemon games
+          before Sword and Shield. I have been to two esports events in my life, one of them being the League of Legends Worlds 2023 Finals which just happened
+          to land on my birthday. 
+          <br><br>
+          Outside of gaming, I have an interest in transportation and know way too many random facts about airplanes (as you can see
+          with my favorite museum, the USS Intrepid, in the background of my photo). My goal is to make a game that is able to connect so many people and communities
+          the way some of my favorite games have done. I also love the idea of traveling and exploring the world in the future. 
+        </p>
+
+        <div class="tab-titles">
+          <b class="tab-links active-link" onclick="opentab('skills')">Skills</b>
+          <b class="tab-links" onclick="opentab('experience')">Experience</b>
+          <b class="tab-links" onclick="opentab('education')">Education</b>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span><b>Programming</b></span><br>Java<br>Python<br>C#<br>C++<br>JavaScript</li>
+            <li><span><b>Game Development</b></span><br>Unity<br>Unreal Engine</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span><b>Oct 2021 - Present</b></span><br>Private AP Computer Science A Tutor</li>
+            <li><span><b>Mar 2022 - Aug 2023; Seasonal</b></span><br>Cashier/Barista at Paris Baguette</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span><b>2023 - 2026 Clark University</b></span><br>B.A. in Interactive Media<br>B.A. in Computer Science</li>
+            <li><span><b>2021 - 2023 Bunker Hill Community College</b></span><br>Dual Enrollment Program</li>
+            <li><span><b>2019 - 2023 Malden High School</b></span><br>High School Diploma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ----------------------- projects ----------------------------- -->
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="projects-row">
+      <div class="work-list">
+        <div class="work">
+          <img src="images/Bellicose_Start.png">
+          <div class="layer active" id="bellicose">
+            <h3>Bellicose</h3>
+            <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('bellicose', 'bellicose-info')">  
+          </div>
+          <div class="overlay-layer false" id="bellicose-info">
+            <h3 class="heading">Bellicose<br></h3> 
+            <span class="subheading">
+              <b>Team: Blake Shea, Sean McDowell, Anthony Pansenko, Liam Quinn</b> 
+            </span>
+            <p class="body-text">
+              A 2D local multi-player fighting game utilizing pixel art graphics. I worked on the character select screen and
+              UI/UX for the main combat screen. This was one of my first projects where I was not the sole programmer, which taught me 
+              the challenges of merging code and ways to fix it. 
+              <br><br> 
+              This game was made for the Clark University IGDA's 48 Hour<br>Feburary 2024 Game Jam with a theme of 'Retro'.
+            </p>
+            <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('bellicose', 'bellicose-info')">  
+          </div>
+        </div>
+        <div class="description">
+          <h2>Role:</h2>
+          <p>
+            <span class="label programmer">Programmer</span>
+            <span class="label uiux">UI/UX</span>
+          </p>
+          <h2>Made With:</h2>
+          <p>
+            <span class="label unity">Unity</span>
+          </p>
+          <h1>Download From:</h1>
+          <p><a href="https://itch.io/jam/february-frenzy/rate/2537343" target="_blank">itch.io</a></p>
+        </div>
+        <div class="work">
+            <img src="images/Duck_Game_Start.png">
+            <div class="layer active" id="duck-game">
+              <h3>Don't Feed The Duck</h3>
+              <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('duck-game', 'duck-game-info')">  
+            </div>
+            <div class="overlay-layer false" id="duck-game-info">
+              <h3 class="heading">Don't Feed The Duck<br></h3> 
+              <span class="subheading">
+                <b>Team: Alexander Costley, Jacob Berman, Aiden Morrison, Gage Delgado</b> 
+              </span>
+              <p class="body-text">
+                A 2D platformer with two levels. The first level is mainly a casual level for exploration and learning the mechanics. 
+                The second level is a challenge run designed to be difficult and for speedrunners. This was my first every game project 
+                and taught me a lot about working with a team and with Unity. 
+                <br><br> 
+                This game was made for my final project in my 'Game Design Fundamentals' class in Fall 2023
+              </p>
+              <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('duck-game', 'duck-game-info')">  
+            </div>
+        </div>
+        <div class="description">
+          <h2>Role:</h2>
+          <p>
+            <span class="label programmer">Programmer</span>
+            <span class="label level-design">Level Design</span>
+          </p>
+          <h2>Made With:</h2>
+          <p>
+            <span class="label unity">Unity</span>
+          </p>
+          <h1>Download From:</h1>
+          <p><p><a href="https://legendarybanana.itch.io/dont-feed-the-duck" target="_blank">itch.io</a></p></p>
+        </div>
+        <div class="work">
+          <img src="images/Escape_Alex_Bank_Start.png">
+          <div class="layer active" id="alex-bank">
+            <h3>Escape Alex Bank</h3>
+            <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('alex-bank', 'alex-bank-info')">  
+          </div>
+          <div class="overlay-layer false" id="alex-bank-info">
+            <h3 class="heading">Escape Alex Bank<br></h3> 
+            <span class="subheading">
+              <b>Team: Pablo Acosta, Zander Day, Scott Vagnini, Charles Weiller, Jacob Berman</b> 
+            </span>
+            <p class="body-text">
+              A 2D platformer where you have to escape from the bank within the allocated 5 minute timer while dodging guards and 
+              lasers. The player will also have to collect keycards that spell out 'ESCAPE!' to unlock the doors of each room
+              <br><br>
+              This game was made for the Clark University IGDA's 48 Hour January 2024 Game Jam with a theme of 'Escape'.
+            </p>
+            <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('alex-bank', 'alex-bank-info')"> 
+          </div>
+        </div>
+        <div class="description">
+          <h2>Role:</h2>
+          <p>
+            <span class="label programmer">Programmer</span>
+          </p>
+          <h2>Made With:</h2>
+          <p>
+            <span class="label unity">Unity</span>
+          </p>
+          <h1>Download From:</h1>
+          <p><a href="https://itch.io/jam/jamboree/rate/2482749" target="_blank">itch.io</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- --------------------contact----------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="contact-row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-regular fa-envelope"></i> chenjason417@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +1 617-785-4712</p>
+        <p><i class="fa-brands fa-discord"></i> legendarybanana</p> 
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jason-chen-8850a0289/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/jychen0"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/Jason Chen - Resume (1_26_2024).pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Made with <i class="fa-solid fa-heart"></i> by Jason Chen </p>
+  </div>
+</div>
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var infolinks = document.getElementsByClassName("layer");
+  var overlaycontents = document.getElementsByClassName("overlay-layer");
+  function openmoreinfo(nameinfo, namecontent) {
+    event.currentTarget.classList.add("active");
+    document.getElementById(namecontent).classList.add("active");
+    document.getElementById(namecontent).classList.remove("false");
+    document.getElementById(nameinfo).classList.add("false");
+    document.getElementById(nameinfo).classList.remove("active");
+  }
+
+  function closemoreinfo(nameinfo, namecontent) {
+    event.currentTarget.classList.add("false");
+    document.getElementById(namecontent).classList.add("false");
+    document.getElementById(namecontent).classList.remove("active");
+    document.getElementById(nameinfo).classList.add("active");
+    document.getElementById(nameinfo).classList.remove("false");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sideMenu");
+  function openMenu() {
+    sidemenu.style.right = "0";
+  }
+  function closeMenu() {
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw4BOiJmdpzwSIbGhoMRsoEYSZZSt0p3f9Q1oLW6SGAWCz1S8XBzseHe30lK2vHKjn8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
+  if (result.state == "granted" || result.state == "prompt") {
+    alert("Write access granted!");
+  }
+});
+</script>
+
+<script>
+  let text = document.getElementById('myText').innerHTML;
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+</script>
+</body>
+</html>
