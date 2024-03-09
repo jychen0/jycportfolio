@@ -309,25 +309,30 @@ nav ul a:hover::after{
     display: inline-block;
     justify-content: left;
     flex-direction: row; 
-    padding: 0 20px;
     color: #000;
     overflow-y:auto;
     transition: height 0.2s;
 }
 
+.overlay-layer.active img{
+    position: sticky;
+    left: 350px;
+}
+
 .overlay-layer.active .heading{
     display: block;
-    padding: 12px 0 5px 0;
+    padding: 12px 10px 5px 10px;
     font-size: 27px;
 }
 
 .overlay-layer.active .subheading{
     display: block;
     font-size: 17px;
+    padding: 0 45px 0 10px;
 }
 
 .overlay-layer.active .body-text{
-    padding: 10px 0 0 0;
+    padding: 10px 45px 0 10px;
     font-size: 14px;
 }
 
@@ -550,7 +555,7 @@ nav .fa-solid{
     .header-text {
         flex-basis: 50%;
         color: var(--color-grey-0);
-        margin-top: 30%;
+        margin-top: 40%;
         padding-left: 2.5%;;
     }
     .header-text h1{
@@ -563,7 +568,7 @@ nav .fa-solid{
 
     .header-image{
         flex-basis: 45%;
-        padding-top: 70px;
+        padding-top: 35%;
         padding-left: 0px;
         padding-right: 10px;
     }
