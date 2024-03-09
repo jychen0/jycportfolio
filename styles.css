@@ -89,7 +89,7 @@ nav ul a:hover::after{
 }
 
 .header-text {
-    flex-basis: 50%;
+    flex-basis: 40%;
     color: var(--color-grey-0);
     margin-top: 14%;
     padding-left: 2.5%;;
@@ -311,6 +311,7 @@ nav ul a:hover::after{
     flex-direction: row; 
     padding: 0 20px;
     color: #000;
+    overflow-y:auto;
     transition: height 0.2s;
 }
 
@@ -539,12 +540,38 @@ nav .fa-solid{
     #header{
         background-image: url() /* add a phone background */
     }
-    .header-text{
+
+    .header-row{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }    
+
+    .header-text {
+        flex-basis: 50%;
+        color: var(--color-grey-0);
         margin-top: 30%;
-        font-size: 16px;
+        padding-left: 2.5%;;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 22px;
+    }
+
+    .header-text p{
+        font-size: 17px;
+    }
+
+    .header-image{
+        flex-basis: 45%;
+        padding-top: 70px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    
+    .header-image img{
+        width: 100%;
+        border-radius: 10px; 
+        box-shadow: 4px 10px 20px rgba(255, 252, 252, 0.50);
     }
     nav .fa-solid{
         display: block;
