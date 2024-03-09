@@ -316,7 +316,7 @@ nav ul a:hover::after{
 
 .overlay-layer.active img{
     position: sticky;
-    left: 350px;
+    left: 385px;
 }
 
 .overlay-layer.active .heading{
@@ -648,6 +648,10 @@ nav .fa-solid{
     
     .description h2{
         font-size: 25px;
+    }
+
+    .overlay-layer.active img{
+        left: 345px;
     }
 
     .contact-left, .contact-right{
