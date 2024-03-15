@@ -102,14 +102,15 @@
     <h1 class="sub-title">Projects</h1>
     <div class="projects-row">
       <div class="work-list">
-        <div class="work">
+        <!-- Bellicose -->
+        <div class="work" id="bellicoseGame">
           <img src="images/Bellicose_Start.png">
           <div class="layer active" id="bellicose">
             <h3>Bellicose</h3>
             <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('bellicose', 'bellicose-info')">  
           </div>
           <div class="overlay-layer false" id="bellicose-info">
-            <h3 class="heading">Bellicose<br></h3> 
+            <h3 class="heading">Bellicose</h3> 
             <span class="subheading">
               <b>Team: Blake Shea, Sean McDowell, Anthony Pansenko, Liam Quinn</b> 
             </span>
@@ -123,7 +124,7 @@
             <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('bellicose', 'bellicose-info')">  
           </div>
         </div>
-        <div class="description">
+        <div class="description" id="bellicoseGame">
           <h2>Role:</h2>
           <p>
             <span class="label programmer">Programmer</span>
@@ -136,14 +137,15 @@
           <h1>Download From:</h1>
           <p><a href="https://itch.io/jam/february-frenzy/rate/2537343" target="_blank">itch.io</a></p>
         </div>
-        <div class="work">
+        <!-- Don't Feed The Duck -->
+        <div class="work" id="duckGame">
             <img src="images/Duck_Game_Start.png">
             <div class="layer active" id="duck-game">
               <h3>Don't Feed The Duck</h3>
               <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('duck-game', 'duck-game-info')">  
             </div>
             <div class="overlay-layer false" id="duck-game-info">
-              <h3 class="heading">Don't Feed The Duck<br></h3> 
+              <h3 class="heading">Don't Feed The Duck</h3> 
               <span class="subheading">
                 <b>Team: Alexander Costley, Jacob Berman, Aiden Morrison, Gage Delgado</b> 
               </span>
@@ -157,7 +159,7 @@
               <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('duck-game', 'duck-game-info')">  
             </div>
         </div>
-        <div class="description">
+        <div class="description" id="duckGame">
           <h2>Role:</h2>
           <p>
             <span class="label programmer">Programmer</span>
@@ -170,14 +172,15 @@
           <h1>Download From:</h1>
           <p><p><a href="https://legendarybanana.itch.io/dont-feed-the-duck" target="_blank">itch.io</a></p></p>
         </div>
-        <div class="work">
+        <!-- Escape Alex Bank -->
+        <div class="work" id="alexBank">
           <img src="images/Escape_Alex_Bank_Start.png">
           <div class="layer active" id="alex-bank">
             <h3>Escape Alex Bank</h3>
             <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('alex-bank', 'alex-bank-info')">  
           </div>
           <div class="overlay-layer false" id="alex-bank-info">
-            <h3 class="heading">Escape Alex Bank<br></h3> 
+            <h3 class="heading">Escape Alex Bank</h3> 
             <span class="subheading">
               <b>Team: Pablo Acosta, Zander Day, Scott Vagnini, Charles Weiller, Jacob Berman</b> 
             </span>
@@ -190,7 +193,7 @@
             <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('alex-bank', 'alex-bank-info')"> 
           </div>
         </div>
-        <div class="description">
+        <div class="description" id="alexBank">
           <h2>Role:</h2>
           <p>
             <span class="label programmer">Programmer</span>
@@ -201,6 +204,143 @@
           </p>
           <h1>Download From:</h1>
           <p><a href="https://itch.io/jam/jamboree/rate/2482749" target="_blank">itch.io</a></p>
+        </div>
+        <!-- Riot Games API-->
+        <div class="work" id="riotGamesAPI">
+          <img src="images/riot_api_project_code.png">
+          <div class="layer active" id="riot-games-api">
+            <h3>Riot Games API Stats Tool</h3>
+            <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('riot-games-api', 'riot-games-api-info')">
+          </div>
+          <div class="overlay-layer false" id="riot-games-api-info">
+            <h3 class="heading">Riot Games API Stats Tool</h3>
+            <span class="subheading">
+              <b>Individual</b> 
+            </span>
+            <p class="body-text">
+              A project utilizing the Riot Games API for League of Legends, this tool will request for you to enter a player's ID and 
+              tagline, a region, the specific queue you want to search (on summoners rift), and the amount of games you want to search.
+              It then grabs all the data from those games and then puts them into a .csv file that you can upload onto google sheets. 
+              After this, it will prompt you to see if you want to see graphs of some of the data or not.
+              <br><br>
+              This project was made for my CSCI 120 class and then utilized for the Clark University Esports Team and also my own data tracking
+              <br><br>
+              A google sheets template for your own data tracking is a WIP and will be added to the github repository once it is done.
+            </p>
+            <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('riot-games-api', 'riot-games-api-info')"> 
+          </div>
+        </div>
+        <div class="description" id="riotGamesAPI">
+          <h2>Role:</h2>
+          <p>
+            <span class="label programmer">Programmer</span>
+          </p>
+          <h2>Made With:</h2>
+          <p>
+            <span class="label python">Python</span>
+            <span class="label pandas">pandas Library</span>
+          </p>
+          <h1>Download From:</h1>
+          <p>github link coming soon</p>
+          <!-- <p><a href="#" target="_blank">github</a></p> -->
+        </div>
+        <!-- Tic-tac-toe -->
+        <div class="work" id="ticTacToe">
+          <img src="images/tictactoeMenu.png">
+          <div class="layer active" id="tic-tac-toe">
+            <h3>TicTacToe Varients</h3>
+            <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('tic-tac-toe', 'tic-tac-toe-info')">
+          </div>
+          <div class="overlay-layer false" id="tic-tac-toe-info">
+            <h3 class="heading">TicTacToe Varients</h3>
+            <span class="subheading">
+              <b>Individual</b> 
+            </span>
+            <p class="body-text">
+              This projects compiles all the versions of tic-tac-toe that I have thought of, especially the one I think is the
+              most fun, three-at-a-time. This project allows you to choose which of these variants to play with a friend in-person. 
+
+            </p>
+            <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('tic-tac-toe', 'tic-tac-toe-info')"> 
+          </div>
+        </div>
+        <div class="description" id="ticTacToe">
+          <h2>Role:</h2>
+          <p>
+            <span class="label programmer">Programmer</span>
+            <span class="label uiux">UI/UX</span>
+          </p>
+          <h2>Made With:</h2>
+          <p>
+            <span class="label java">Java</span>
+            <span class="label java-swing">Java Swing Library</span>
+          </p>
+          <h1>Download From:</h1>
+          <p>github link coming soon</p>
+          <!-- <p><a href="https://itch.io/jam/jamboree/rate/2482749" target="_blank">github</a></p> -->
+        </div>
+        <!-- Starbound Wanderers-->
+        <!-- <div class="work" id="starboundWanderers">
+          <p><img src="images/starbound-wanderers-temp.png"></p>
+          <div class="layer active" id="starbound-wanderers">
+            <h3>Starbound Wanderers (WIP)</h3>
+            <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('starbound-wanderers', 'starbound-wanderers-info')">  
+          </div>
+          <div class="overlay-layer false" id="starbound-wanderers-info">
+            <h3 class="heading">Starbound Wanderers (WIP)</h3> 
+            <span class="subheading">
+              <b>Team: TBD</b> 
+            </span>
+            <p class="body-text">
+              A 2D platformer where you have to escape from the bank within the allocated 5 minute timer while dodging guards and 
+              lasers. The player will also have to collect keycards that spell out 'ESCAPE!' to unlock the doors of each room
+            </p>
+            <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('sunnyside-travels', 'sunnyside-travels-info')"> 
+          </div>
+        </div>
+        <div class="description" id="sunnysideTravelsInfo">
+          <h2>Role:</h2>
+          <p>
+            <span class="label programmer">Programmer</span>
+            <span class="label designer">Design</span> 
+          </p>
+          <h2>Made With:</h2>
+          <p>
+            <span class="label unity">Unity</span>
+          </p>
+          <h1>Download From:</h1>
+          <p>(WIP)</p> -->
+        <!-- Sunnyside Travels -->
+        <div class="work" id="sunnysideTravels">
+          <p><img src="images/sunnyside-travels-temp.png"></p>
+          <div class="layer active" id="sunnyside-travels">
+            <h3>Sunnyside Travels (WIP)</h3>
+            <img alt="more-info" src="images/info-circle.png" onclick="openmoreinfo('sunnyside-travels', 'sunnyside-travels-info')">  
+          </div>
+          <div class="overlay-layer false" id="sunnyside-travels-info">
+            <h3 class="heading">Sunnyside Travels (WIP)</h3> 
+            <span class="subheading">
+              <b>Team: TBD</b> 
+            </span>
+            <p class="body-text">
+              A 2D platformer where you have to escape from the bank within the allocated 5 minute timer while dodging guards and 
+              lasers. The player will also have to collect keycards that spell out 'ESCAPE!' to unlock the doors of each room
+            </p>
+            <img alt="more-info" src="images/circle-x.png" onclick="closemoreinfo('sunnyside-travels', 'sunnyside-travels-info')"> 
+          </div>
+        </div>
+        <div class="description" id="sunnysideTravelsInfo">
+          <h2>Role:</h2>
+          <p>
+            <span class="label programmer">Programmer</span>
+            <span class="label artist">Artist</span> 
+          </p>
+          <h2>Made With:</h2>
+          <p>
+            <span class="label unity">Unity</span>
+          </p>
+          <h1>Download From:</h1>
+          <p>(WIP)</p>
         </div>
       </div>
     </div>

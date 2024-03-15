@@ -306,17 +306,19 @@ nav ul a:hover::after{
     left: 2.5%;
     bottom: 15px;
     overflow: hidden;
-    display: inline-block;
+    display: block;
     justify-content: left;
     flex-direction: row; 
     color: #000;
     overflow-y:auto;
+    z-index: 2;
     transition: height 0.2s;
 }
 
 .overlay-layer.active img{
     position: sticky;
     left: 385px;
+    top: 200px;
 }
 
 .overlay-layer.active .heading{
@@ -342,6 +344,7 @@ nav ul a:hover::after{
 
 
 .work:hover .layer.active {
+    display: block;
     height: 20%;
     opacity: 0.87;
 }
@@ -384,6 +387,33 @@ nav ul a:hover::after{
 
 .description a:hover{
     color: #e2ba40;
+}
+
+#sunnysideTravels p img {
+    filter: blur(3px);
+}
+
+#riotGamesAPI .layer{
+    bottom: 22px;
+}
+
+#riotGamesAPI .overlay-layer.active {
+    height: 88%;
+    bottom: 25px;
+}
+
+#ticTacToe .layer{
+    bottom: 24px;
+}
+
+#ticTacToe .overlay-layer.active {
+    height: 88%;
+    bottom: 25px;
+}
+
+.artist {
+    background-color: #c0ca2d;
+    content: 'Artist';
 }
 
 .programmer {
@@ -583,7 +613,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #b0a731;
         position: fixed;
         top: 0;
         right: -200px;
