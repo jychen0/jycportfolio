@@ -441,9 +441,19 @@ nav ul a:hover::after{
     content: 'Python';
 }
 
+.pandas {
+    background-color: #3d765e;
+    content: 'pandas Library'
+}
+
 .java{
     background-color: #38407d;
     content: 'Java';
+}
+
+.java-swing{
+    background-color: #4e5699;
+    content:'Java Swing Library';
 }
 
 .label {
