@@ -260,7 +260,7 @@ nav ul a:hover::after{
 }
 
 .work{
-    display: inline-block;
+    display: block;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
