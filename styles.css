@@ -43,11 +43,27 @@ body{
     padding: 10px 2.5%;
 }
 
+.container-navbar{
+    padding: 60px 10px;
+}
+
+#sideMenu
+{
+    padding-right: 40px;
+}
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #030303; /* Background color for the navbar */
+    color: white; /* Text color for links */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+    padding: 10px 0; /* Padding for the navbar */
 }
 
 .logo{
@@ -89,7 +105,7 @@ nav ul a:hover::after{
 }
 
 .header-text {
-    flex-basis: 40%;
+    flex-basis: 50%;
     color: var(--color-grey-0);
     margin-top: 14%;
     padding-left: 2.5%;;
@@ -120,7 +136,6 @@ nav ul a:hover::after{
 
 /* ---------------about----------------*/
 #about{
-    padding-bottom: 80px;
     color: var(--color-white);
 }
 
@@ -158,9 +173,19 @@ nav ul a:hover::after{
     color: var(--color-white);
 }
 
-.tab-titles{
+.tab-containers{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Responsive grid with minimum width of 250px */
+    gap: 20px; /* Gap between grid items */
+}
+
+.tab-titles {
+    grid-column: 1 / -1; /* Span across all columns */
     display: flex;
-    margin: 20px 0 40px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 .tab-links{
@@ -188,6 +213,7 @@ nav ul a:hover::after{
 
 .tab-contents{
     display: none;
+    grid-column: 1 / -1;
 }
 
 .tab-contents ul li{
@@ -206,6 +232,19 @@ nav ul a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
+}
+
+.grid-content{
+    list-style: none;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.grid-content li {
+    background-color: #000000; /* Background color for grid items */
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 /* ---------- projects ------------ */
@@ -275,6 +314,12 @@ nav ul a:hover::after{
     border: none; 
 }
 
+.overlay-layer.active img{
+    position: sticky;
+    left: 385px;
+    top: 200px;
+}
+
 .overlay-layer img:hover {
     cursor: pointer;
     opacity: 1;
@@ -309,21 +354,16 @@ nav ul a:hover::after{
     display: block;
     justify-content: left;
     flex-direction: row; 
+    padding: 0 20px;
     color: #000;
-    overflow-y:auto;
+    overflow-y: auto;
     z-index: 2;
     transition: height 0.2s;
 }
 
-.overlay-layer.active img{
-    position: sticky;
-    left: 385px;
-    top: 200px;
-}
-
 .overlay-layer.active .heading{
     display: block;
-    padding: 12px 10px 5px 10px;
+    padding: 12px 10px 5px 10px;;
     font-size: 27px;
 }
 
@@ -389,6 +429,51 @@ nav ul a:hover::after{
     color: #e2ba40;
 }
 
+.programmer {
+    background-color: #b37809;
+    content: 'Programmer';
+}
+
+.uiux {
+    background-color: #a99f4f;
+    content: 'UI/UX';
+}
+
+.unity {
+    background-color: #785ea1;
+    content: 'Unity';
+}
+
+.level-design {
+    background-color: #a28238;
+    content: 'Level Design';
+}
+
+.python{
+    background-color: #245d45;
+    content: 'Python';
+}
+
+.java{
+    background-color: #38407d;
+    content: 'Java';
+}
+
+.label {
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align:center;
+    color:#fff;
+    padding: 5px;
+    line-height: normal;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 #sunnysideTravels p img {
     filter: blur(3px);
 }
@@ -416,59 +501,14 @@ nav ul a:hover::after{
     content: 'Artist';
 }
 
-.programmer {
-    background-color: #b37809;
-    content: 'Programmer';
-}
-
-.uiux {
-    background-color: #a99f4f;
-    content: 'UI/UX';
-}
-
-.unity {
-    background-color: #785ea1;
-    content: 'Unity';
-}
-
-.level-design {
-    background-color: #a28238;
-    content: 'Level Design';
-}
-
-.python{
-    background-color: #245d45;
-    content: 'Python';
-}
-
 .pandas {
     background-color: #3d765e;
     content: 'pandas Library'
 }
 
-.java{
-    background-color: #38407d;
-    content: 'Java';
-}
-
 .java-swing{
     background-color: #4e5699;
     content:'Java Swing Library';
-}
-
-.label {
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: bold;
-    text-align:center;
-    color:#fff;
-    padding: 5px;
-    line-height: normal;
-    padding-left: 6px;
-    padding-right: 6px;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 /* ----------- contact ------------------ */
@@ -585,45 +625,19 @@ nav .fa-solid{
     #header{
         background-image: url() /* add a phone background */
     }
-
-    .header-row{
-        display:flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }    
-
-    .header-text {
-        flex-basis: 50%;
-        color: var(--color-grey-0);
-        margin-top: 40%;
-        padding-left: 2.5%;;
+    .header-text{
+        margin-top: 30%;
+        font-size: 16px;
     }
     .header-text h1{
-        font-size: 22px;
-    }
-
-    .header-text p{
-        font-size: 17px;
-    }
-
-    .header-image{
-        flex-basis: 45%;
-        padding-top: 35%;
-        padding-left: 0px;
-        padding-right: 10px;
-    }
-    
-    .header-image img{
-        width: 100%;
-        border-radius: 10px; 
-        box-shadow: 4px 10px 20px rgba(255, 252, 252, 0.50);
+        font-size: 30px;
     }
     nav .fa-solid{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: #b0a731;
+        background: #ff004f;
         position: fixed;
         top: 0;
         right: -200px;
@@ -688,10 +702,6 @@ nav .fa-solid{
     
     .description h2{
         font-size: 25px;
-    }
-
-    .overlay-layer.active img{
-        left: 345px;
     }
 
     .contact-left, .contact-right{
