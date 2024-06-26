@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Jason Chen Portfolio</title>
+    <link rel="icon" type="image/png" href="images/BANANA_MILK.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e0977d2a0.js" crossorigin="anonymous"></script>
+</head>
+<body class="main-content">
+    <div class="container-navbar">
+        <nav id="navbar">
+        <img src="images/BANANAS.png" class="logo">
+        <ul id="sideMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="images/Jason Chen - Resume (1_26_2024).pdf" target="_blank" >Resume</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>  
+    </div>
+
+    <div class="project">
+        <div class="project-container">
+            <div class="project-col-1">
+                <h1 class="sub-title">Riot API Stat Tracking</h1>
+                <h3 class="sub-description">Track your or opponent stats on League of Legends</h3>
+                <div class="gallery-container">
+                    <div class="gallery-wrapper">
+                      <div class="image-container">
+                        <img src="images/riot_api_project_code.png" alt="Riot API Code img">
+                        <img src="images/riot_api_data_sheet.png" alt="Riot API data img">
+                        <!-- Add more images as needed -->
+                      </div>
+                    </div>
+                    <button class="prev" onclick="scrollImages(-1)">&#10094;</button>
+                    <button class="next" onclick="scrollImages(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="project-col-2">
+                <h1>Description</h1>
+                <h3 class="main-description">
+                    This project utilizes the Riot Games API with python to find the stats of a inputed Riot ID. It will average out common stats for a user defined amount of games. There are plans to create an app from this with a GUI and an easier way to save the data.<br>This game was created for my CSCI120 class as the final project. It was utlized by the Clark University League of Legends team and will continue to be developed.
+                </h3>
+
+                <h2 class="team-members"><b>Team:</b> N/A
+                </h2>
+                <h2 class="role">
+                    <b>Role:</b> Programmer
+                </h2>
+
+                <h1>Contributions</h1>
+                <h3 class="contributions">
+                    - Used Python to access the Riot Games API then pulled data from matches by calling to it<br>
+                    - Utilized the Pandas Library to create a database that I can easily import to Google Sheets<br>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Jason Chen </p>
+    </div>
+    <script>
+        function scrollImages(direction) {
+            const galleryWrapper = document.querySelector('.gallery-wrapper');
+            const scrollAmount = direction * galleryWrapper.offsetWidth; // Use offsetWidth for visible width
+            galleryWrapper.scrollBy({
+              left: scrollAmount,
+              behavior: 'smooth'
+            });
+        } 
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sideMenu");
+        function openMenu() {
+        sidemenu.style.right = "0";
+        }
+        function closeMenu() {
+        sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

@@ -21,7 +21,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="images/Jason Chen - Resume (1_26_2024).pdf" target="_blank" >Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
             <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -58,20 +58,20 @@
                     <b class="tab-links" onclick="opentab('education')">Education</b>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                    <ul class="grid-content">
+                    <ul class="grid-content-skills">
                         <li><span><b>Programming</b></span><br>Java<br>Python<br>C#<br>C++<br>JavaScript</li>
                         <li><span><b>Game Development</b></span><br>Unity<br>Unreal Engine</li>
 
                     </ul>
                     </div>
                     <div class="tab-contents" id="experience">
-                    <ul class="grid-content">
+                    <ul class="grid-content-experience">
                         <li><span><b>Oct 2021 - Present</b></span><br>Private AP Computer Science A Tutor</li>
                         <li><span><b>Mar 2022 - Aug 2023; Seasonal</b></span><br>Cashier/Barista at Paris Baguette</li>
                     </ul>
                     </div>
                     <div class="tab-contents" id="education">
-                    <ul class="grid-content">
+                    <ul class="grid-content-education">
                         <li><span><b>2023 - 2026 Clark University</b></span><br>B.S. in Interactive Media<br>B.S. in Computer Science</li>
                         <li><span><b>2021 - 2023 Bunker Hill Community College</b></span><br>Dual Enrollment Program</li>
                         <li><span><b>2019 - 2023 Malden High School</b></span><br>High School Diploma</li>
@@ -82,7 +82,10 @@
           </div>
         </div>
     </div>
-
+    
+    <div class="footer">
+      <p>Made with <i class="fa-solid fa-heart"></i> by Jason Chen </p>
+    </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");

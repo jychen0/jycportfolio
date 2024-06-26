@@ -25,26 +25,26 @@ html{
 }
 
 body{
-    background: var(--color-black);
-    color: var(--color-white);
+    background: #ebcd85;
+    color: #222;
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/black_background.png);
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
+    background-color: #ebcd85;
 }
-
 
 .container{
     padding: 10px 2.5%;
 }
 
 .container-navbar{
-    padding: 60px 10px;
+    padding: 60px 0px;
+    background-color: #ebcd85;
 }
 
 #sideMenu
@@ -57,13 +57,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #030303; /* Background color for the navbar */
-    color: white; /* Text color for links */
+    background-color: #222; /* Background color for the navbar */
+    color: #222; /* Text color for links */
     width: 100%; /* Full width */
     position: fixed; /* Fixed position */
     top: 0; /* Align to the top of the viewport */
     z-index: 1000; /* Ensure it stays above other content */
-    padding: 10px 0; /* Padding for the navbar */
+    padding: 10px; /* Padding for the navbar */
 }
 
 .logo{
@@ -102,17 +102,18 @@ nav ul a:hover::after{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #ebcd85;
 }
 
 .header-text {
     flex-basis: 50%;
-    color: var(--color-grey-0);
+    color: #222;
     margin-top: 14%;
     padding-left: 2.5%;;
 }
 
 .header-text h1{
-    color: #fff;
+    color: #222;
     font-size:60px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -136,7 +137,7 @@ nav ul a:hover::after{
 
 /* ---------------about----------------*/
 #about{
-    color: var(--color-white);
+    color: #ebcd85;
 }
 
 .about-row{
@@ -164,18 +165,18 @@ nav ul a:hover::after{
 
 .about-col-2 p{
     font-size: 18px;
-    color: #fff9ea;
+    color: #222;
 }
 
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: var(--color-white);
+    color: #222;
 }
 
 .tab-containers{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Responsive grid with minimum width of 250px */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive grid with minimum width of 250px */
     gap: 20px; /* Gap between grid items */
 }
 
@@ -186,6 +187,7 @@ nav ul a:hover::after{
     align-items: center;
     margin-bottom: 10px;
     padding-top: 30px;
+    color: #222;
 }
 
 .tab-links{
@@ -194,6 +196,7 @@ nav ul a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #444;
 }
 
 .tab-links::after{
@@ -214,6 +217,7 @@ nav ul a:hover::after{
 .tab-contents{
     display: none;
     grid-column: 1 / -1;
+    color: #222;
 }
 
 .tab-contents ul li{
@@ -228,17 +232,25 @@ nav ul a:hover::after{
 
 .tab-contents ul li span b{
     font-size: 17px;
+    color: #444;
 }
 
 .tab-contents.active-tab{
     display: block;
 }
 
-.grid-content{
+.grid-content-skills{
     list-style: none;
     padding: 0;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.grid-content-experience{
+    list-style: none;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
 }
 
 .grid-content li {
@@ -254,8 +266,8 @@ nav ul a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: minmax(0, 470px) 1fr minmax(0, 470px) 1fr;
-    grid-gap: 40px 0px;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-gap: 40px 20px;
     margin-top: 30px;
 }
 
@@ -271,6 +283,10 @@ nav ul a:hover::after{
     width: 100%;
     border-radius: 10px;
     border: 2px solid white; 
+}
+
+.work img:hover{
+    cursor: pointer;
 }
 
 .layer{
@@ -400,6 +416,96 @@ nav ul a:hover::after{
     margin-inline-end: 0px;
 }
 
+.project-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-col-1{
+    flex-basis: 50%;
+    padding-left: 60px;
+}
+
+.project-col-2{
+    flex-basis: 50%;
+    padding-top: 110px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.gallery-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+  
+.gallery-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox specific: hide scrollbar */
+    -ms-overflow-style: none; /* IE/Edge specific: hide scrollbar */
+}
+  
+.image-container {
+    display: flex;
+}
+  
+.image-container img {
+    max-width: 100%; /* Ensure images do not exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    scroll-snap-align: start;
+    border-radius: 10px;
+}
+
+.image-container-unreleased img{
+    max-width: 100%; /* Ensure images do not exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    scroll-snap-align: start;
+    border-radius: 10px;
+    filter: blur(3px);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+  
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
+}
+
+.main-description{
+    padding-top: 20px;
+}
+
+.team-members{
+    padding-top: 20px;
+}
+
+.role{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contributions{
+    padding-top: 10px;
+}
+
 .description{
     display: inline-block;
     width: 100%;
@@ -474,7 +580,11 @@ nav ul a:hover::after{
     margin-top: 10px;
 }
 
-#sunnysideTravels p img {
+#sunnysideTravels img {
+    filter: blur(3px);
+}
+
+#starboundWanderers img{
     filter: blur(3px);
 }
 
@@ -610,12 +720,16 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px
+    margin-top: 20px;
+    color: #fff;
 }
 
 .footer i{
     color: #f5ea4f;
 }
+
+/* ---------- colors -----------------------------*/
+
 
 /* ----------css for small screens -------------- */
 nav .fa-solid{
@@ -662,6 +776,7 @@ nav .fa-solid{
 
     .sub-title{
         font-size: 40px;
+        color: #222;
     }
 
     .about-col-1, .about-col-2{
