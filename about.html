@@ -14,18 +14,39 @@
 </head>
 <body class="main-content">
     <div class="container-navbar">
-        <nav id="navbar">
+      <nav>
         <img src="images/BANANAS.png" class="logo">
         <ul id="sideMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="images/Jason Chen - Resume (1_26_2024).pdf" target="_blank" >Resume</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <div class="dropdown-content">
+              <div class="nested-dropdown-1">
+                <a href="projects.html#GameProjects">Game Development Projects</a>
+                <div class="nested-dropdown-games">
+                  <a href="bellicose.html">Bellicose</a>
+                  <a href="dontfeedduck.html">Don't Feed The Duck</a>
+                  <a href="EscapeAlexBank.html">Escape Alex Bank</a>
+                  <a href="starboundwanderers.html">Starbound Wanderers</a>
+                  <a href="sunnysidetravels.html">Sunnyside Travels</a>
+                </div>
+              </div>
+              <div class="nested-dropdown-2">
+                <a href="projects.html#SoftwareProjects">Software Development Projects</a>
+                <div class="nested-dropdown-content nested-dropdown-software">
+                  <a href="RiotStatsProject.html">LoL Stats Tool</a>
+                  <a href="TicTacToeProject.html">TicTacToe Variats GUI</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="images/Jason Chen - Resume (5_26_2024).pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-        </nav>
+      </nav>
     </div>
 
     <div id="about">

@@ -64,6 +64,7 @@ nav{
     top: 0; /* Align to the top of the viewport */
     z-index: 1000; /* Ensure it stays above other content */
     padding: 10px; /* Padding for the navbar */
+    padding-right: 70px;
 }
 
 .logo{
@@ -97,6 +98,134 @@ nav ul a::after{
 nav ul a:hover::after{
     width: 100%;
 }
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown .dropdown-content{
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .nested-dropdown-content{
+    display:none;
+}
+
+.nested-dropdown-1:hover .nested-dropdown-games{
+    display: block;
+}
+
+.nested-dropdown-1 .nested-dropdown-games{
+    display:none;
+    top: 0;
+    left: 100%;  
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px; /* Adjust minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nested-dropdown-2 .nested-dropdown-software{
+    display:none;
+    top: 0;
+    left: 100%;  
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px; /* Adjust minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nested-dropdown-2:hover .nested-dropdown-software{
+    display: block;
+}
+
+/* Adjust nested dropdowns position */
+/* .nested-dropdown-1 .nested-dropdown-games {
+    top: 0;
+    left: 100%; /* Position it to the right of the parent dropdown 
+}
+  
+.nested-dropdown-2 .nested-dropdown-software {
+    top: 0;
+    left: 100%; /* Position it to the right of the parent dropdown 
+} 
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropdown-content .nested-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 100%; /* Position it to the right of the parent dropdown 
+    top: 0;
+}
+  
+.dropdown-content .nested-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content .nested-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content:hover .nested-dropdown {
+    display: block;
+} */
 
 .header-row{
     display:flex;
@@ -141,7 +270,6 @@ nav ul a:hover::after{
 }
 
 .about-row{
-
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -277,6 +405,10 @@ nav ul a:hover::after{
     position: relative;
     overflow: hidden;
     
+}
+
+.work h1{
+    color: black;
 }
 
 .work img{
@@ -535,34 +667,8 @@ button {
     color: #e2ba40;
 }
 
-.programmer {
-    background-color: #b37809;
-    content: 'Programmer';
-}
-
-.uiux {
-    background-color: #a99f4f;
-    content: 'UI/UX';
-}
-
-.unity {
-    background-color: #785ea1;
-    content: 'Unity';
-}
-
-.level-design {
-    background-color: #a28238;
-    content: 'Level Design';
-}
-
-.python{
-    background-color: #245d45;
-    content: 'Python';
-}
-
-.java{
-    background-color: #38407d;
-    content: 'Java';
+#SoftwareProjects{
+    padding-top: 40px;
 }
 
 .label {
@@ -667,7 +773,7 @@ button {
 
 
 .social-icons a:hover{
-    color: #e2ba40;
+    color: #333;
     transform: translateY(-5px);
 }
 
@@ -720,7 +826,17 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.footer-project{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 100px;
     color: #fff;
 }
 
@@ -728,30 +844,54 @@ form .btn2{
     color: #f5ea4f;
 }
 
-/* ---------- colors -----------------------------*/
+.footer-project i{
+    color: #f5ea4f;
+}
 
-
-/* ----------css for small screens -------------- */
 nav .fa-solid{
     display: none;
 }
+
 @media only screen and (max-width: 600px) {
     #header{
         background-image: url() /* add a phone background */
     }
-    .header-text{
-        margin-top: 30%;
+    .header-text p{
+        margin-top: 20%;
         font-size: 16px;
     }
     .header-text h1{
         font-size: 30px;
+        margin-top: 10%;
     }
+
+    .header-text {
+        flex-basis: 50%;
+        color: #222;
+        margin-top: 14%;
+        padding-left: 2.5%;;
+    }
+
+    .header-image img{
+        flex-basis: 45%;
+        margin-top: 110px;
+        margin-right: 20px;
+    }
+
+    .header-image img{
+        display: block;
+        width: 130%;
+        border-radius: 10px; 
+        box-shadow: 5px 10px 10px 0px rgba(255, 252, 252, 0.50);
+    }
+
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        color: #ebcd85;
     }
     nav ul{
-        background: #ff004f;
+        background: #222;
         position: fixed;
         top: 0;
         right: -200px;
@@ -779,12 +919,14 @@ nav .fa-solid{
         color: #222;
     }
 
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
     .about-col-1{
-        margin-bottom: 30px;
+        flex-basis: 35%;
     }
+    
+    .about-col-2{
+        flex-basis: 40%;
+    }
+
     .about-col-1 img{
         display: block;
         width: 100%;
@@ -794,7 +936,7 @@ nav .fa-solid{
     .about-col-2{
         font-size: 14px;
         padding-right: 0px;
-        padding-top: 40px;
+        padding-top: 0px;
     }
     .tab-links{
         font-size: 16px;

@@ -14,65 +14,96 @@
 </head>
 <body class="main-content">
     <div class="container-navbar">
-        <nav id="navbar">
+      <nav>
         <img src="images/BANANAS.png" class="logo">
         <ul id="sideMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="images/Jason Chen - Resume (1_26_2024).pdf" target="_blank" >Resume</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <div class="dropdown-content">
+              <div class="nested-dropdown-1">
+                <a href="projects.html#GameProjects">Game Development Projects</a>
+                <div class="nested-dropdown-games">
+                  <a href="bellicose.html">Bellicose</a>
+                  <a href="dontfeedduck.html">Don't Feed The Duck</a>
+                  <a href="EscapeAlexBank.html">Escape Alex Bank</a>
+                  <a href="starboundwanderers.html">Starbound Wanderers</a>
+                  <a href="sunnysidetravels.html">Sunnyside Travels</a>
+                </div>
+              </div>
+              <div class="nested-dropdown-2">
+                <a href="projects.html#SoftwareProjects">Software Development Projects</a>
+                <div class="nested-dropdown-content nested-dropdown-software">
+                  <a href="RiotStatsProject.html">LoL Stats Tool</a>
+                  <a href="TicTacToeProject.html">TicTacToe Variats GUI</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="images/Jason Chen - Resume (5_26_2024).pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-        </nav>
+      </nav>
     </div>
 
     <div id="projects">
         <div class="container">
-          <h1 class="sub-title">Projects</h1>
           <div class="projects-row">
+            <h1 class="sub-title" id="GameProjects">Game Projects</h1>
             <div class="work-list">
               <!-- Bellicose -->
               <div class="work" id="bellicoseGame">
                 <a href="bellicose.html">
+                  <h1><u>Bellicose</u></h1>
                   <img src="images/Bellicose_Start.png">
                 </a>
               </div>
               <!-- Don't Feed The Duck -->
               <div class="work" id="duckGame">
                   <a href="dontfeedduck.html">
+                    <h1><u>Don't Feed The Duck</u></h1>
                     <img src="images/Duck_Game_Start.png">
                   </a>
               </div>
               <!-- Escape Alex Bank -->
               <div class="work" id="alexBank">
                 <a href="EscapeAlexBank.html">
+                  <h1><u>Escape Alex Bank</u></h1>
                   <img src="images/Escape_Alex_Bank_Start.png">
                 </a>
               </div>
+              <!-- Starbound Wanderers-->
+              <div class="work" id="starboundWanderers">
+                <a href="starboundwanderers.html">
+                  <h1><u>Starbound Wanderers (WIP)</u></h1>
+                  <img src="images/starbound_wanderers.png">
+                </a>
+              </div>
+              <!-- Sunnyside Travels -->
+              <div class="work" id="sunnysideTravels">
+                <a href="sunnysidetravels.html">
+                  <h1><u>Sunnyside Travels (WIP)</u></h1>
+                  <img src="images/sunnyside-travels-temp.png">
+                </a>
+              </div>
+            </div>
+            <h1 class="sub-title" id="SoftwareProjects">Software Projects</h1>
+            <div class="work-list">
               <!-- Riot Games API-->
               <div class="work" id="riotGamesAPI">
                 <a href="RiotStatsProject.html">
+                  <h1><u>League of Legends Stats Tool</u></h1>
                   <img src="images/riot_api_project_code.png">  
                 </a>
               </div>
               <!-- Tic-tac-toe -->
               <div class="work" id="ticTacToe">
                 <a href="TicTacToeProject.html">
+                  <h1><u>TicTacToe Varients</u></h1>
                   <img src="images/tictactoeMenu.png">
-                </a>
-              </div>
-              <!-- Starbound Wanderers-->
-              <div class="work" id="starboundWanderers">
-                <a href="starboundwanderers.html">
-                  <img src="images/starbound_wanderers.png">
-                </a>
-              </div> 
-              <!-- Sunnyside Travels -->
-              <div class="work" id="sunnysideTravels">
-                <a href="sunnysidetravels.html">
-                  <img src="images/sunnyside-travels-temp.png">
                 </a>
               </div>
             </div>
