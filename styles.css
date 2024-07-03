@@ -162,71 +162,6 @@ nav ul a:hover::after{
     display: block;
 }
 
-/* Adjust nested dropdowns position */
-/* .nested-dropdown-1 .nested-dropdown-games {
-    top: 0;
-    left: 100%; /* Position it to the right of the parent dropdown 
-}
-  
-.nested-dropdown-2 .nested-dropdown-software {
-    top: 0;
-    left: 100%; /* Position it to the right of the parent dropdown 
-} 
-
-/* .dropdown {
-    position: relative;
-    display: inline-block;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    min-width: 200px;
-}
-  
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-  
-.dropdown:hover .dropdown-content .nested-dropdown {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    left: 100%; /* Position it to the right of the parent dropdown 
-    top: 0;
-}
-  
-.dropdown-content .nested-dropdown a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown-content .nested-dropdown a:hover {
-    background-color: #f1f1f1;
-}
-  
-.dropdown:hover .dropdown-content:hover .nested-dropdown {
-    display: block;
-} */
-
 .header-row{
     display:flex;
     justify-content: space-between;
@@ -390,6 +325,10 @@ nav ul a:hover::after{
 /* ---------- projects ------------ */
 #projects{
     padding-bottom: 80px;
+}
+
+.project{
+    flex: 1;
 }
 
 .work-list{
@@ -615,27 +554,35 @@ button {
   
 .prev {
     left: 10px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
 }
   
 .next {
     right: 10px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+}
+
+.project-links{
+    padding-bottom: 30px;
+}
+
+.project-links a{
+    color: black;
 }
 
 .main-description{
-    padding-top: 20px;
-}
-
-.team-members{
-    padding-top: 20px;
-}
-
-.role{
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+.contributions-title{
+    display: block;
+    padding-top: 10px
 }
 
 .contributions{
-    padding-top: 10px;
+    line-height: 1.5;
 }
 
 .description{
@@ -710,21 +657,6 @@ button {
 #ticTacToe .overlay-layer.active {
     height: 88%;
     bottom: 25px;
-}
-
-.artist {
-    background-color: #c0ca2d;
-    content: 'Artist';
-}
-
-.pandas {
-    background-color: #3d765e;
-    content: 'pandas Library'
-}
-
-.java-swing{
-    background-color: #4e5699;
-    content:'Java Swing Library';
 }
 
 /* ----------- contact ------------------ */
@@ -831,6 +763,8 @@ form .btn2{
 }
 
 .footer-project{
+    position: absolute;
+    bottom: 0;
     width: 100%;
     text-align: center;
     padding: 25px 0;
