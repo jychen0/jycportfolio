@@ -784,6 +784,7 @@ form .btn2{
 
 nav .fa-solid{
     display: none;
+    color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -791,8 +792,9 @@ nav .fa-solid{
         background-image: url() /* add a phone background */
     }
     .header-text p{
-        margin-top: 20%;
+        margin-top: 5%;
         font-size: 16px;
+        line-height: 1.5;
     }
     .header-text h1{
         font-size: 30px;
@@ -800,27 +802,39 @@ nav .fa-solid{
     }
 
     .header-text {
-        flex-basis: 50%;
+        flex-basis: 100%;
         color: #222;
         margin-top: 14%;
-        padding-left: 2.5%;;
+        text-align: center;
+        order: 1;
     }
 
     .header-image img{
-        flex-basis: 45%;
-        margin-top: 110px;
-        margin-right: 20px;
-    }
-
-    .header-image img{
+        margin-top: 75px;
         display: block;
-        width: 130%;
+        width: 100%;
         border-radius: 10px; 
         box-shadow: 5px 10px 10px 0px rgba(255, 252, 252, 0.50);
     }
 
+    .header-image{
+        order: 2;
+        flex-basis: 100%;
+        padding-right: 20%;
+    }
+
+    nav ul li.dropdown > .dropdown-content {
+        display: none !important;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin: 10px 20px; /* Adjust margin for dropdown */
+    }
+
     nav .fa-solid{
-        display: block;
+        display: inline-block;
         font-size: 25px;
         color: #ebcd85;
     }
@@ -838,14 +852,23 @@ nav .fa-solid{
 
     nav ul li{
         display: block;
-        margin: 25px;
+        margin: 40px 20px 30px 20px;
     }
 
     nav ul .fa-solid{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 35px;
+        left: 30px;
         cursor: pointer
+    }
+
+    .fa-bars {
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        right: 1rem; /* Adjust as needed */
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .sub-title{
@@ -854,16 +877,21 @@ nav .fa-solid{
     }
 
     .about-col-1{
-        flex-basis: 35%;
+        display: inline-block;
+        flex-basis: 100%;
     }
     
     .about-col-2{
-        flex-basis: 40%;
+        flex-basis: 100%;
     }
 
+    .about-col-1 h1{
+        display: block;
+        text-align: center;
+    }
     .about-col-1 img{
         display: block;
-        width: 100%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -871,10 +899,16 @@ nav .fa-solid{
         font-size: 14px;
         padding-right: 0px;
         padding-top: 0px;
+        text-align: center;
+        padding-top: 20px;
     }
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+    }
+
+    .tab-contents{
+        text-align: left;
     }
 
     .work-list{
@@ -891,6 +925,28 @@ nav .fa-solid{
         padding: 0px 0px 20px 5px;
     }
     
+    .project-container{
+        display:inline-block;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .project-col-1{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .project-col-2{
+        flex-basis: 100%;
+        padding-top: 20px;
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    .project-col-2 h2{
+        font-size: 20px;
+    }
+
     .description h2{
         font-size: 25px;
     }
@@ -899,8 +955,21 @@ nav .fa-solid{
         flex-basis: 100%;
     }
 
-    .footer{
-        font-size: 14px;
+    .main-content{
+        position: relative;
+        padding-bottom: 75px;
+    }
+
+    .footer-project{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        background: #262626;
+        font-weight: 300;
+        color: #fff;
     }
 }
 
