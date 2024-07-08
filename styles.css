@@ -877,6 +877,10 @@ nav .fa-solid{
         margin-top: 200px;
     }
 
+    .container{
+        padding: 60px 2.5%;
+    }
+
     .container-navbar{
         padding: 10px 0px;
         background-color: #ebcd85;
@@ -988,6 +992,7 @@ nav .fa-solid{
         display:inline-block;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-top: 50px;
     }
 
     .project-col-1{
