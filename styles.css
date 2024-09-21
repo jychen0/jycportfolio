@@ -378,6 +378,7 @@ nav ul a:hover::after{
 
 .project{
     flex: 1;
+    min-height: 70vh;
 }
 
 .work-list{
