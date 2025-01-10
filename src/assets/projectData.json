@@ -1,0 +1,382 @@
+{
+  "snoozeOrLooze": {
+    "title": "Snooze Or Looze",
+    "description": "Snooze Or Looze is a debate visual novel game similar to Ace Attorney but mixed in with a card game. Play as Derek and collect arguments cards that will then be used to debate a clock on whether you need to wake up or not. Good arguments will lead to an ending of Derek going back to sleep while bad arguments will force Derek to wake up.",
+    "reason": "This game was created for the Clark University IGDA September 2024 Harvest Game Jam with the theme 'It's time to wake up'",
+    "link": {
+      "site": [
+        "itch.io"
+      ],
+      "url": [
+        "https://legendarybanana.itch.io/snooze-or-looze"
+      ],
+      "type": [
+        "external"
+      ]
+    },
+    "images": [
+      "/src/assets/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"
+    ],
+    "role": [
+      "Designer",
+      "Programmer",
+      "Writer"
+    ],
+    "team": [
+      "Ren Grunberg",
+      "Thomas Heffernan",
+      "Marietta I Rivera Sigmann",
+      "Anthony Panasenko",
+      "Jared Cocomazzi"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "Github"
+    ],
+    "contributions": [
+      "Designed the card system and concept to make this game genre more interactive and replayable",
+      "Led a team of fellow students who were new to game jams",
+      "Programmed a UI that would adapt to the current speaking character",
+      "Programmed the characters to go to a certain reaction based on the player's score"
+    ],
+    "video": ""    
+  },
+
+  "duckGame": {
+    "title": "Don't Feed the Duck",
+    "description": "Don't Feed The Duck is a platformer set in a city with a bakery. Our duck wants to get into the bakery for their favorite snacks. Gain new abilities as you collect bread crumbs around the city. Break into the bakery and escape with your bread!",
+    "reason": "This game was created for the final project of my Game Design Fundamentals Class. It was then improved over time by me",
+    "link": {
+      "site": [
+        "itch.io"
+      ],
+      "url": [
+        "https://legendarybanana.itch.io/dont-feed-the-duck"
+      ],
+      "type": [
+        "external"
+      ]
+    },
+    "images": [
+      "/src/assets/images/DontFeedTheDuck/Duck_Game_Start.png",
+      "/src/assets/images/DontFeedTheDuck/Duck_Game_Settings.png",
+      "/src/assets/images/DontFeedTheDuck/Duck_Game_Glider.png"
+    ],
+    "role": [
+      "Designer",
+      "Programmer",
+      "UI/UX"
+    ],
+    "team": [
+      "Alexander Costley",
+      "Jacob Berman",
+      "Aiden Morrison",
+      "Gage Delgado"
+    ],
+    "technologies": [
+      "Unity",
+      "C#"
+    ],
+    "contributions": [
+      "Programmed all mechanics of the player and obstacles",
+      "Programmed all UI functions",
+      "Implemented all art assets and animations",
+      "Designed the chase sequence in the bakery",
+      "Created settings menu allowing changes for volume, resolution, quality",
+      "Designed the UI for difficulty select, pause screen, and chase sequence"
+    ],
+    "video": ""
+  },
+
+  "bellicose": {
+    "title": "Bellicose",
+    "description": "Bellicose is a 2D local fighting game utilizing a pixel art style and implements typical fighting game mechanics such as different height blocks/attacks, staggering attacks, different special abilities between characters, and more to pit two players against each other in a skill-based combat system. The name 'Bellicose' means 'demonstrating aggression and willingness to fight'.",
+    "reason": "This game was created for the Clark University IGDA Feburary 2024 Frenzy Game Jam with the theme 'RETRO'",
+    "link": {
+      "site": [],
+      "url": [],
+      "type": []
+    },
+    "images": [
+      "/src/assets/images/Bellicose/Bellicose_Start.png",
+      "/src/assets/images/Bellicose/Bellicose_Fight.png"
+    ],
+    "role": [
+      "Programmer",
+      "UI/UX"
+    ],
+    "team": [
+      "Blake Shea",
+      "Sean McDowell",
+      "Anthony Panasenko",
+      "Liam Quinn"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "Aseprite"
+    ],
+    "contributions": [
+      "Programmed and Designed a unique character select UI",
+      "Implemented all character animations using Unity's animation state machine",
+      "Programmed combat scene UI functions like the timer and health bar",
+      "Designed ways to add flavor to the map by creating randomly generated clouds in the background and lighting that fit the 2D art"
+    ],
+    "video": ""
+  },
+
+  "condemned": {
+    "title": "Condemned",
+    "description": "A 3D psychological horror game with a bit of action. You panic after having being bitten by a spider in the woods. As you try to piece together was has and will happen to you, you run into some stranger's journal entries that only further disorient you. As you follow the journal pages you unknowingly are heading closer and closer to the source of all your misfortune. You enter the  colosseum that you were lead to and find, Throndir, the creature you will need to defeat to avoid the fate of being cursed as a spider.",
+    "reason": "This game was created for the Clark University IGDA October 2024 Halloween Game Jam with the theme 'Break the Curse!",
+    "link": {
+      "site": [
+        "itch.io"
+      ],
+      "url": [
+        "https://rensciphers.itch.io/condemned"
+      ],
+      "type": [
+        "external"
+      ]
+    },
+    "images": [
+      "/src/assets/images/Condemned/Condemned_Title.png"
+    ],
+    "role": [
+      "Programmer"
+    ],
+    "team": [
+      "Anthony Panasenko",
+      "Blake Shea",
+      "Marietta I Rivera Sigmann",
+      "Ren Grunberg",
+      "Thomas Heffernan",
+      "Jasper Vergo"
+    ],
+    "technologies": [
+      "Unreal Engine 5",
+      "UE Blueprints",
+      "Github"
+    ],
+    "contributions": [
+      "Used Unreal Engine's Behavior Tree to create a boss fight with different states",
+      "Came up with ideas that helped with the horror aspect such as notes, signs, and creatures moving rapidly in the background"
+
+    ],
+    "video": ""
+  },
+
+  "alexBank": {
+    "title": "Escape Alex Bank",
+    "description": "A 2D platformer with a time limit to complete the game. Play as the raccoon criminal, Roudini, and help him escape from Alex Bank. Dodge guards, lasers, and other obstacles while collecting the keycards that allow you to exit each room as you make your escape.",
+    "reason": "This game was created for the Clark University IGDA 2024 January Game Jamboree with the theme 'Escape'",
+    "link": {
+      "site": [
+        "itch.io"
+      ],
+      "url": [
+        "https://carkol.itch.io/escapealexbank"
+      ],
+      "type": [
+        "external"
+      ]
+    },
+    "images": [
+      "src/assets/images/EscapeAlexBank/Escape_Alex_Bank_Start.png",
+      "/src/assets/images/EscapeAlexBank/Escape_Level2.png"
+    ],
+    "role": [
+      "Programmer"
+    ],
+    "team": [
+      "Pablo Acosta",
+      "Zander Day",
+      "Scott Vagnini",
+      "Charles Weiller",
+      "Jacob Berman"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "Github"
+    ],
+    "contributions": [
+      "Programmed a dash and implemented a death sound effect",
+      "Programmed obstacles like lasers that would activate and deactivate with a very slight random timer",
+      "Adapted code from a previous code base my teammates had from one of their previous projects to fit what we needed"
+    ],
+    "video": ""
+  },
+
+  "starboundWanderers": {
+    "title": "Starbound Wanderers",
+    "description": "Starbound Wanderers is an isometric 2D RPG that follows Zhenyang and Kaveh, two gay lovers who haverunaway from their planet to be together. They crash landed on a foreign planet and maintain their relationship while surviving the wilderness of their new home. Switch between the characters to utilize their different skill sets. Explore this new planet to see what can be used to survive and how they can turn it into home",
+    "reason": "This game started development for Jay Lam's game studio class at Clark University before officially going under his indie studio, Studio Blue Jay",
+    "link": {
+      "site": [],
+      "url": [],
+      "type": []
+    },
+    "images": [
+      "/src/assets/images/StarboundWanderers/starbound_wanderers.png"
+    ],
+    "role": [
+      "Programmer",
+      "Designer"
+    ],
+    "team": [
+      "Studio Blue Jay"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "PlasticSCM"
+    ],
+    "contributions": [
+
+    ],
+    "video": ""
+    
+  },
+
+  "sunnysideTravels": {
+    "title": "",
+    "description": "",
+    "reason": "",
+    "link": {
+      "site": [],
+      "url": [],
+      "type": []
+    },
+    "images": [],
+    "role": [],
+    "team": [],
+    "technologies": [],
+    "contributions": [
+
+    ],
+    "video": ""
+  },
+
+  "customBingo": {
+    "title": "Custom Bingo Generator",
+    "description": "This is a project that uses React.js and CSS to generate a custom bingo board by inserting your own spaces. There are popups that show the entire details in the case where the inputted text is too long for the text. You are able to click on each individual space to mark it, with the middle space always being a 'free space'.",
+    "reason": "A simple project created to learn the basics of react.js",
+    "link": {
+      "site": [
+        "Try Here!",
+        "github"
+      ],
+      "url": [
+        "/custom-bingo",
+        "https://github.com/jychen0/custom-bingo-board-generator"
+      ],
+      "type": [
+        "internal",
+        "external"
+      ]
+    },
+    "images": [
+      "/src/assets/images/CustomBingo/bingo main page.png",
+      "/src/assets/images/CustomBingo/bingo_selected_example.png",
+      "/src/assets/images/CustomBingo/custom_bingo_example.png"
+    ],
+    "role": [
+      "Designer",
+      "Programmer"
+    ],
+    "team": [
+      "N/A"
+    ],
+    "technologies": [
+      "React.js",
+      "CSS",
+      "Github"
+    ],
+    "contributions": [
+      "Programmed the functionality of the generator using React.js",
+      "Designed a layout that would allow inputs for bingo options and to view the board at the same time",
+      "Connecting a .txt file to javascript that allowed to have default values",
+      "Created pop-ups on hover when there is not enough room on the space for the text"
+    ],
+    "video": ""
+  },
+
+  "leagueStatTracking": {
+    "title": "LoL Stat Tracking Tool",
+    "description": "This project utlizes the Riot Games API with python to find the stats of an inputed Riot ID. This tool then saves the data in a file that can be transferred to a google sheet to organize it. This tool was utilized by the Clark University LoL team for scouting opponents",
+    "reason": "This project was done as my final project for my 'Intro to Computing' class. The Riot API was also something I wanted to work with for a while.",
+    "link": {
+      "site": [],
+      "url": [],
+      "type": []
+    },
+    "images": [
+      "/src/assets/images/RiotDataProject/riot_api_data_sheet.png",
+      "/src/assets/images/RiotDataProject/riot_api_project_code.png"
+    ],
+    "role": [
+      "Programmer",
+      "Data Analyst"
+    ],
+    "team": [
+      "N/A"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas DataFrame",
+      "Riot Games API",
+      "Google Sheets"
+    ],
+    "contributions": [
+      "Prompted the user for a Riot ID, region, queue type, and data size for the parameters of the search",
+      "Used python to make API calls to the Riot Games API using those parameters",
+      "Utilized the pandas library to create dataframes to store all the data",
+      "Converted the data to a .csv file that can be imported to Google Sheets",
+      "Linked up the google sheet to read the data automatically organize the data into a different sheet for easier analysis"
+    ],
+    "video": ""
+  },
+
+  "ticTacToe": {
+    "title": "TicTacToe Gamemodes",
+    "description": "This project creates a GUI using the Java Swing Library to play tic-tac-toe gamemodes. You are able to play regular, against random AI, against an unbeatable AI, a gamemode where each player can only have 3 symbols on the board at one time. It is very easily adaptable to allow for more gamemodes",
+    "reason": "A project that was inspired by that 3 symbol gamemode I came up with. I used this as an opportunity to learn GUIs and source control in high school.",
+    "link": {
+      "site": [
+        "github"
+      ],
+      "url": [
+        "https://github.com/jychen0/TicTacToeVariants"
+      ],
+      "type": [
+        "external"
+      ]
+    },
+    "images": [
+      "/src/assets/images/TicTacToeGamemodes/tictactoeMenu.png",
+      "/src/assets/images/TicTacToeGamemodes/tictactoeTie.png",
+      "/src/assets/images/TicTacToeGamemodes/tictactoeWin.png"
+    ],
+    "role": [
+      "Programmer",
+      "Designer"
+    ],
+    "team": [
+      "N/A"
+    ],
+    "technologies": [
+      "Java",
+      "Java Swing",
+      "Github"
+    ],
+    "contributions": [
+      "Programmed the mechanics for a simple Tic-Tac-Toe game which was then used as the base for the single player versions against the computer",
+      "Utilized the minimax algorithm to create an unbeatable AI as tic-tac-toe is a solved game",
+      "Created a GUI using Java Swing to make it playable outside of the terminal"
+    ],
+    "video": ""
+  }
+}

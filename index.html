@@ -1,102 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jason Chen Portfolio</title>
-  <link rel="icon" type="image/png" href="images/BANANA_MILK.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/6e0977d2a0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container-navbar">
-            <nav>
-                <img src="images/BANANAS.png" class="logo">
-                <ul id="sideMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="projects.html">Projects</a>
-                        <div class="dropdown-content">
-                            <div class="nested-dropdown-1">
-                                <a href="projects.html#GameProjects">Game Development Projects</a>
-                                <div class="nested-dropdown-games">
-                                    <a href="bellicose.html">Bellicose</a>
-                                    <a href="dontfeedduck.html">Don't Feed The Duck</a>
-                                    <a href="EscapeAlexBank.html">Escape Alex Bank</a>
-                                    <a href="SnoozeOrLooze.html">SnoozeOrLooze</a>
-                                    <a href="starboundwanderers.html">Starbound Wanderers</a>
-                                    <a href="sunnysidetravels.html">Sunnyside Travels</a>
-                                </div>
-                            </div>
-                            <div class="nested-dropdown-2">
-                                <a href="projects.html#SoftwareProjects">Software Development Projects</a>
-                                <div class="nested-dropdown-content nested-dropdown-software">
-                                    <a href="RiotStatsProject.html">LoL Stats Tool</a>
-                                    <a href="TicTacToeProject.html">TicTacToe Variants GUI</a>
-                                    <a href="bingoGenerator.html">Custom Bingo Generator</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="OtherFiles/Jason Chen - Resume (9_19_2024).pdf" target="_blank">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-bars" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-        </div>
-    </div>
-    <div class="hero">
-        <div class="header-content">
-            <div class="header-text">
-                <h1>Hi, I'm Jason Chen</h1>
-                <p>I'm a student game developer, specializing in game programming. I also work on other programming projects that are not game related such as software development projects or web development.
-                <br><br>
-                Check out the projects I have worked on and feel free to
-                contact me if you would like to collaborate on a project !!
-                </p>
-                <div class="projects-button"><a href=projects.html><button class="button-23" role="button">Check out my projects !</button></a></div>
-            </div>
-            <div class="header-image">
-                <img src="images/user-2.jpg">
-            </div>
-        </div>
-    </div>
-    <div id="contact">
-        <div class="container">
-            <div class="contact-row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"></i> chenjason417@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +1 617-785-4712</p>
-                    <p><i class="fa-brands fa-discord"></i> legendarybanana</p> 
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/jason-chen-8850a0289/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/jychen0"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/Jason Chen - Resume (5_26_2024).pdf" download class="btn btn2">Download Resume</a>
-                </div>
-            </div>
-        </div>
-            <div class="footer">
-                <p>Made with <i class="fa-solid fa-heart"></i> by Jason Chen </p>
-            </div>
-    </div>
-    
-    <!-- JavaScript -->
-    <script>
-        var sidemenu = document.getElementById("sideMenu");
-        function openMenu() {
-          sidemenu.style.right = "0";
-        }
-        function closeMenu() {
-          sidemenu.style.right = "-200px";
-        }
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/banana-icon" href="src/assets/images/Others/BANANA_MILK.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/6e0977d2a0.js" crossorigin="anonymous"></script>
+    <title>Jason Chen Portfolio</title>
+    <base href="/" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
