@@ -67,7 +67,7 @@ const About = () => {
         <div className="about" id="about-page">
           <div className="about-col-1">
             <h1>About Me</h1>
-            <img src="src/assets/images/Me/user-1.jpg"></img>
+            <img src={`${process.env.PUBLIC_URL}/assets/images/Me/user-1.jpg`}></img>
           </div>
           <div className="about-col-2">
             <p>Hi! My name is Jason Chen, and I'm a 20-year-old junior at Clark University. I am an aspiring Game Developer majoring in Interactive Media Design and Data Science. I was born in China but have lived in the greater Boston area since I was one year old. I started gaming at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. Playing games and talking to other gamers showed me how games have the power to tell stories, create long-lasting bonds, and build communities. 

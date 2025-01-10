@@ -34,7 +34,7 @@ const CustomBingo = () => {
   const generateRandomBoard = (wordArray) => {
     const shuffledWords = [...wordArray].sort(() => Math.random() - 0.5);
     const newBoard = Array(5).fill().map(() => shuffledWords.splice(0, 5));
-    if (!isFreeSpaceEnabled) {
+    if (isFreeSpaceEnabled) {
         newBoard[2][2] = "Free Space";
     }
     return newBoard;

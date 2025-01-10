@@ -80,7 +80,7 @@ const ProjectDetail = () => {
                         <div className="gallery-wrapper" ref={galleryRef}>
                             {project.images.map((image, index) => (
                                 <div key={index} className="gallery-item">
-                                    <img src={project.images[currentImageIndex]} alt={`Project Image ${index + 1}`} />
+                                    <img src={image} alt={`Project Image ${index + 1}`} />
                                 </div>
                             ))}
                         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import '../assets/styles.css';
 
 const Navbar = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <img src="/src/assets/images/Others/BANANAS.png" alt="Logo"  className="logo" />
+      <img src={`${process.env.PUBLIC_URL}/assets/images/Others/BANANAS.png`} alt="Logo"  className="logo" />
 
       <div className={`nav-toggle ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
         <div></div>
@@ -60,38 +60,38 @@ const Navbar = () => {
       {/* Mobile Nav Menu*/}
       <div className={`mobile-nav ${menuActive ? 'active' : ''}`}>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
           <li className="submenu">
             <div className="submenu-header" onClick={toggleSubmenu}>
-              <a href="/projects">Projects</a>
+              <Link to="/projects">Projects</Link>
               <span className={`submenu-arrow ${submenuActive ? 'active' : ''}`}>&#9660;</span>
             </div>
             <ul className={`submenu-list ${submenuActive ? 'active' : ''}`}>
-              <li><a onClick={handleGameProjectClick}>Game Projects</a></li>
-              <li><a onClick={handleSoftwareProjectClick}>Software Projects</a></li>
+              <li><span onClick={handleGameProjectClick}>Game Projects</span></li>
+              <li><span onClick={handleSoftwareProjectClick}>Software Projects</span></li>
             </ul>
           </li>
           <li><a href="/src/assets/OtherFiles/JasonChenResume.pdf" target="_blank">Resume</a></li>
-          <li><a onClick={handleContactClick} className="nav-btn">Contact</a></li>
+          <li><span onClick={handleContactClick} className="nav-btn">Contact</span></li>
         </ul>
       </div>
 
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
         <li className="dropdown">
-          <a href="/projects">Projects</a>
+          <Link to="/projects">Projects</Link>
           <ul className="dropdown-menu">
-            <li><a onClick={handleGameProjectClick} className="nav-btn">Game Development</a></li>
-            <li><a onClick={handleSoftwareProjectClick} className="nav-btn">Software Development</a></li>
+            <li><span onClick={handleGameProjectClick} className="nav-btn">Game Development</span></li>
+            <li><span onClick={handleSoftwareProjectClick} className="nav-btn">Software Development</span></li>
           </ul>
         </li>
-        <li><a href="/src/assets/OtherFiles/JasonChenResume.pdf" target="_blank">Resume</a></li>
+        <li><a href={`${process.env.PUBLIC_URL}assets/OtherFiles/JasonChenResume.pdf`} target="_blank">Resume</a></li>
         <li>
-          <a onClick={handleContactClick} className="nav-btn">
+          <span onClick={handleContactClick} className="nav-btn">
             Contact
-          </a>
+          </span>
         </li>
       </ul>
     </nav>

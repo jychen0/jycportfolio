@@ -15,7 +15,7 @@
       ]
     },
     "images": [
-      "/src/assets/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"
+      "/assets/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"
     ],
     "role": [
       "Designer",
@@ -59,9 +59,9 @@
       ]
     },
     "images": [
-      "/src/assets/images/DontFeedTheDuck/Duck_Game_Start.png",
-      "/src/assets/images/DontFeedTheDuck/Duck_Game_Settings.png",
-      "/src/assets/images/DontFeedTheDuck/Duck_Game_Glider.png"
+      "/assets/images/DontFeedTheDuck/Duck_Game_Start.png",
+      "/assets/images/DontFeedTheDuck/Duck_Game_Settings.png",
+      "/assets/images/DontFeedTheDuck/Duck_Game_Glider.png"
     ],
     "role": [
       "Designer",
@@ -99,8 +99,8 @@
       "type": []
     },
     "images": [
-      "/src/assets/images/Bellicose/Bellicose_Start.png",
-      "/src/assets/images/Bellicose/Bellicose_Fight.png"
+      "/assets/images/Bellicose/Bellicose_Start.png",
+      "/assets/images/Bellicose/Bellicose_Fight.png"
     ],
     "role": [
       "Programmer",
@@ -142,7 +142,7 @@
       ]
     },
     "images": [
-      "/src/assets/images/Condemned/Condemned_Title.png"
+      "/assets/images/Condemned/Condemned_Title.png"
     ],
     "role": [
       "Programmer"
@@ -185,7 +185,7 @@
     },
     "images": [
       "src/assets/images/EscapeAlexBank/Escape_Alex_Bank_Start.png",
-      "/src/assets/images/EscapeAlexBank/Escape_Level2.png"
+      "/assets/images/EscapeAlexBank/Escape_Level2.png"
     ],
     "role": [
       "Programmer"
@@ -220,7 +220,7 @@
       "type": []
     },
     "images": [
-      "/src/assets/images/StarboundWanderers/starbound_wanderers.png"
+      "/assets/images/StarboundWanderers/starbound_wanderers.png"
     ],
     "role": [
       "Programmer",
@@ -279,9 +279,9 @@
       ]
     },
     "images": [
-      "/src/assets/images/CustomBingo/bingo main page.png",
-      "/src/assets/images/CustomBingo/bingo_selected_example.png",
-      "/src/assets/images/CustomBingo/custom_bingo_example.png"
+      "/assets/images/CustomBingo/bingo main page.png",
+      "/assets/images/CustomBingo/bingo_selected_example.png",
+      "/assets/images/CustomBingo/custom_bingo_example.png"
     ],
     "role": [
       "Designer",
@@ -314,8 +314,8 @@
       "type": []
     },
     "images": [
-      "/src/assets/images/RiotDataProject/riot_api_data_sheet.png",
-      "/src/assets/images/RiotDataProject/riot_api_project_code.png"
+      "/assets/images/RiotDataProject/riot_api_data_sheet.png",
+      "/assets/images/RiotDataProject/riot_api_project_code.png"
     ],
     "role": [
       "Programmer",
@@ -356,9 +356,9 @@
       ]
     },
     "images": [
-      "/src/assets/images/TicTacToeGamemodes/tictactoeMenu.png",
-      "/src/assets/images/TicTacToeGamemodes/tictactoeTie.png",
-      "/src/assets/images/TicTacToeGamemodes/tictactoeWin.png"
+      "/assets/images/TicTacToeGamemodes/tictactoeMenu.png",
+      "/assets/images/TicTacToeGamemodes/tictactoeTie.png",
+      "/assets/images/TicTacToeGamemodes/tictactoeWin.png"
     ],
     "role": [
       "Programmer",
