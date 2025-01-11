@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jychen0.github.io/jycportfolio",
+  "homepage": "https://jycportfolio.com",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",

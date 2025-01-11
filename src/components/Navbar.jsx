@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <img src={`${process.env.PUBLIC_URL}/assets/images/Others/BANANAS.png`} alt="Logo"  className="logo" />
+      <img src={"/images/Others/BANANAS.png"} alt="Logo"  className="logo" />
 
       <div className={`nav-toggle ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
         <div></div>
@@ -87,7 +87,7 @@ const Navbar = () => {
             <li><span onClick={handleSoftwareProjectClick} className="nav-btn">Software Development</span></li>
           </ul>
         </li>
-        <li><a href={`${process.env.PUBLIC_URL}assets/OtherFiles/JasonChenResume.pdf`} target="_blank">Resume</a></li>
+        <li><a href={"/OtherFiles/JasonChenResume.pdf"} target="_blank">Resume</a></li>
         <li>
           <span onClick={handleContactClick} className="nav-btn">
             Contact

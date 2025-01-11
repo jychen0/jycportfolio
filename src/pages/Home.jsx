@@ -8,8 +8,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      <section id="home"></section>
       <div className="hero-container">
-        <div className="hero" id="home-page">
+        <div className="hero">
           <div className="home-col-1">
             <h1>Hi, I'm Jason Chen</h1>
             <p>
@@ -18,15 +19,16 @@ const Home = () => {
             <p>Here are some of my projects!</p>
             <div className="featured-projects">
               <Link to="/projects/snoozeOrLooze">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png`} alt="Snooze Or Looze Title Screen"></img>
+                {/* <img src={`${process.env.PUBLIC_URL}/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png`} alt="Snooze Or Looze Title Screen"></img> */}
+                <img src={"/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"} alt="Snooze Or Looze Title Screen"></img>
                 <p>Snooze Or Looze</p>
               </Link>
               <Link to="/projects/duckGame">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/DontFeedTheDuck/Duck_Game_Start.png`} alt="DontFeedTheDuck Title Screen"></img>
+                <img src={"/images/DontFeedTheDuck/Duck_Game_Start.png"} alt="DontFeedTheDuck Title Screen"></img>
                 <p>Don't Feed The Duck</p>
               </Link>
               <Link to="/projects/bellicose">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/Bellicose/Bellicose_Start.png`} alt="Bellicose Title Screen"></img>
+                <img src={"/images/Bellicose/Bellicose_Start.png"} alt="Bellicose Title Screen"></img>
                 <p>Bellicose</p>
               </Link>
 
@@ -50,12 +52,13 @@ const Home = () => {
             </Link>
           </div>
           <div className="home-col-2">
-            <img src={`${process.env.PUBLIC_URL}/assets/images/Me/user-2.jpg`} />
+            <img src={"/images/Me/user-2.jpg"} />
           </div>
         </div>
       </div>
 
-      <div className="contact-section" id="contact">
+      <section id="contact"></section>
+      <div className="contact-section">
         <h2>Contact Me</h2>
         <p><i className="fa-regular fa-envelope"></i> chenjason417@gmail.com</p>
         <p><i className="fa-solid fa-phone"></i> +1 617-785-4712</p>
@@ -64,7 +67,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/jason-chen-8850a0289/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/jychen0" target="_blank"><i className="fa-brands fa-github"></i></a>
         </div>
-        <a href={`${process.env.PUBLIC_URL}/assets/OtherFiles/JasonChenResume.pdf`} download className="btn">Download Resume</a>
+        <a href={"/OtherFiles/JasonChenResume.pdf"} download className="btn">Download Resume</a>
       </div>
       <Footer />
     </>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import './CustomBingo.css';
@@ -24,12 +24,62 @@ const CustomBingo = () => {
   const [isCentered, setIsCentered] = useState(true);
   const [userInput, setUserInput] = useState('');
   const [tooltip, setTooltip] = useState({ visible: false, text: '', x: 0, y: 0 });
+  const cellRefs = useRef([]);
 
   useEffect(() => {
     if (boardSource === "generated") {
       setBoard(generateRandomBoard(words));
     }
+
   }, [words, boardSource]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      cellRefs.current.forEach((cell) => {
+        if (cell) adjustFontSize(cell);
+      });
+    }, 0); 
+  }, [board]);
+
+  const adjustFontSize = (cellElement, padding = 10) => {
+  if (!cellElement) return;
+
+  const maxFontSize = 30; 
+  const minFontSize = 10; 
+
+  const { width: cellWidth, height: cellHeight } = cellElement.getBoundingClientRect();
+  const availableWidth = cellWidth - 2 * padding;
+  const availableHeight = cellHeight - 2 * padding;
+
+  const tempElement = document.createElement("div");
+  tempElement.style.position = "absolute";
+  tempElement.style.visibility = "hidden";
+  tempElement.style.whiteSpace = "normal";
+  tempElement.style.width = `${availableWidth}px`;
+  tempElement.style.height = `${availableHeight}px`;
+  tempElement.style.lineHeight = "1.2"; 
+  tempElement.textContent = cellElement.textContent; 
+
+  document.body.appendChild(tempElement);
+
+  let fontSize = maxFontSize;
+
+  while (fontSize >= minFontSize) {
+    tempElement.style.fontSize = `${fontSize}px`;
+
+    const fitsWidth = tempElement.scrollWidth <= availableWidth;
+    const fitsHeight = tempElement.scrollHeight <= availableHeight;
+
+    if (fitsWidth && fitsHeight) break;
+
+    fontSize--; 
+  }
+
+  cellElement.style.fontSize = `${fontSize}px`;
+  cellElement.style.padding = `${padding}px`;
+
+  document.body.removeChild(tempElement);
+  };
 
   const generateRandomBoard = (wordArray) => {
     const shuffledWords = [...wordArray].sort(() => Math.random() - 0.5);
@@ -116,8 +166,7 @@ const CustomBingo = () => {
       event.target.value = null;
     }
   };
-  
-  
+
   return (
     <>
     <Navbar />
@@ -129,6 +178,7 @@ const CustomBingo = () => {
             {board.flat().map((word, index) => (
               <div
               key={index}
+              ref={(el) => (cellRefs.current[index] = el)}
               className={`cell ${isCentered ? 'centered' : 'uncentered'} ${
                 markedCells[Math.floor(index / 5)][index % 5] ? 'marked' : ''
               }`}

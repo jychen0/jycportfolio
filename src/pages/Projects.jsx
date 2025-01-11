@@ -19,76 +19,79 @@ const Projects = () => {
   return (
     <>
       <Navbar />
+      <section id="projects"></section>
+      <section id="game-projects"></section>
       <div className="projects-container">
-        <div className="game-projects-container" id="game-projects">
+        <div className="game-projects-container">
           <h1>Game Projects</h1>
           <div className="game-projects-grid">
 
             <div className="project">
               <Link to="/projects/bellicose">
                 <h2><u>Bellicose</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/Bellicose/Bellicose_Start.png`}></img>
+                <img src={"/images/Bellicose/Bellicose_Start.png"}></img>
               </Link>
             </div>
 
             <div className="project">
               <Link to="/projects/duckGame">
                 <h2><u>Don't Feed The Duck</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/DontFeedTheDuck/Duck_Game_Start.png`}></img>
+                <img src={"/images/DontFeedTheDuck/Duck_Game_Start.png"}></img>
               </Link>
             </div>
 
             <div className="project">
               <Link to="/projects/snoozeOrLooze">
                 <h2><u>Snooze Or Looze</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png`}></img>
+                <img src={"/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"}></img>
               </Link>
             </div>
 
             <div className="project">
               <Link to="/projects/condemned">
                 <h2><u>Condemned</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/Condemned/Condemned_Title.png`}></img>
+                <img src={"/images/Condemned/Condemned_Title.png"}></img>
               </Link>
             </div>
 
             <div className="project">
               <Link to="/projects/alexBank">
                 <h2><u>Escape Alex Bank</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/EscapeAlexBank/Escape_Alex_Bank_Start.png`}></img>
+                <img src={"/images/EscapeAlexBank/Escape_Alex_Bank_Start.png"}></img>
               </Link>
             </div>
 
             <div className="project">
               <Link to="/projects/starboundWanderers">
                 <h2><u>Starbound Wanderers</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/StarboundWanderers/starbound_wanderers.png`}></img>
+                <img src={"/images/StarboundWanderers/starbound_wanderers.png"}></img>
               </Link>
             </div>
           </div>
         </div>
-        <div className="software-projects-container" id="software-projects">
+        <section id="software-projects"></section>
+        <div className="software-projects-container">
           <h1>Software Projects</h1>
           <div className="software-projects-grid">
 
             <div className="project">
               <Link to="/projects/customBingo">
                 <h2><u>Custom Bingo</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/CustomBingo/bingo main page.png`}></img>
+                <img src={"/images/CustomBingo/bingo main page.png"}></img>
               </Link>
             </div>
 
             <div className="project">
               <Link to="/projects/leagueStatTracking">
                 <h2><u>LoL Stats Tracking Tool</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/RiotDataProject/riot_api_data_sheet.png`}></img>
+                <img src={"/images/RiotDataProject/riot_api_data_sheet.png"}></img>
               </Link>
             </div>
 
             <div className="project">
               <Link to="/projects/ticTacToe">
                 <h2><u>Tic-Tac-Toe Variants</u></h2>
-                <img src={`${process.env.PUBLIC_URL}/assets/images/TicTacToeGamemodes/tictactoeMenu.png`}></img>
+                <img src={"/images/TicTacToeGamemodes/tictactoeMenu.png"}></img>
               </Link>
             </div>
 
