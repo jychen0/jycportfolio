@@ -13,11 +13,12 @@ const About = () => {
     "I have a signed poster from the voice actor of Silco from the show Arcane.",
     "My favorite band is Against The Current.",
     "I have been to 9 different US states and 5 different countries.",
-    "Some of my favorite book series are 'The Inheritence Games', 'Ranger's Apprentice', and 'Alex Rider'.",
-    "Most recent movie I have watched: Sonic The Hedgehog 3.", 
-    "I have a 3D printed version of Jhin's 'Whipser' from League of Legends.",
+    "Some of my favorite book series are 'The Inheritance Games', 'Ranger's Apprentice', 'Alex Rider', and 'The Empyrean'.",
+    "Most recent movie I have watched (as of September 2025): Interstellar.", 
+    "I have a 3D printed version of Jhin's 'Whipser' from League of Legends and also one of Jett's Kunai from VALORANT",
     "My Hogwarts house is Ravenclaw.",
-    "My MBTI is ISTJ-T."
+    "My MBTI is ISTJ-T.",
+    "The first concert I ever went to was a Lyn Lapid performance in Boston"
   ];
 
   const getRandomIndex = () => {

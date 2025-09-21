@@ -103,7 +103,6 @@ const ProjectDetail = () => {
                         <div className="dropdown-content">
                             <p>{project.description}</p>
                             <br />
-                            {project.reason && (<p>{project.reason}</p>)}
                         </div>
                     )}
                 </div>
@@ -244,7 +243,6 @@ const ProjectDetail = () => {
                             &#10095;
                         </button>
                     </div>
-                    {project.reason && (<p>{project.reason}</p>)}
                     {project.link && project.link.site?.length > 0
                         && project.link.url?.length > 0 && project.link.site.some((site, index) => project.link.url[index]) && (
                             <>
@@ -296,7 +294,7 @@ const ProjectDetail = () => {
                         {project.technologies.map((tech, index) => (
                             <span key={index}>
                                 {tech}
-                                {index < project.role.length - 1 && ', '}
+                                {index < project.technologies.length - 1 && ', '}
                             </span>
                         ))}
                     </ul>
@@ -316,7 +314,7 @@ const ProjectDetail = () => {
 
                     {project.video && (
                         <div className="media-video">
-                            <h4>Project Video:</h4>
+                            <h3>Video:</h3>
                             <video controls width="100%">
                                 <source src={project.video} type="video/mp4" />
                                 Your browser does not support the video tag.

@@ -72,7 +72,7 @@ const Navbar = () => {
               <li><span onClick={handleSoftwareProjectClick}>Software Projects</span></li>
             </ul>
           </li>
-          <li><a href="/src/assets/OtherFiles/JasonChenResume.pdf" target="_blank">Resume</a></li>
+          <li><a href="/OtherFiles/JasonChen_Resume.pdf" target="_blank">Resume</a></li>
           <li><span onClick={handleContactClick} className="nav-btn">Contact</span></li>
         </ul>
       </div>
@@ -87,7 +87,7 @@ const Navbar = () => {
             <li><span onClick={handleSoftwareProjectClick} className="nav-btn">Software Development</span></li>
           </ul>
         </li>
-        <li><a href={"/OtherFiles/JasonChenResume.pdf"} target="_blank">Resume</a></li>
+        <li><a href={"/OtherFiles/JasonChen_Resume.pdf"} target="_blank">Resume</a></li>
         <li>
           <span onClick={handleContactClick} className="nav-btn">
             Contact

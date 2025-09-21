@@ -19,7 +19,6 @@ const Home = () => {
             <p>Here are some of my projects!</p>
             <div className="featured-projects">
               <Link to="/projects/snoozeOrLooze">
-                {/* <img src={`${process.env.PUBLIC_URL}/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png`} alt="Snooze Or Looze Title Screen"></img> */}
                 <img src={"/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"} alt="Snooze Or Looze Title Screen"></img>
                 <p>Snooze Or Looze</p>
               </Link>
@@ -27,25 +26,14 @@ const Home = () => {
                 <img src={"/images/DontFeedTheDuck/Duck_Game_Start.png"} alt="DontFeedTheDuck Title Screen"></img>
                 <p>Don't Feed The Duck</p>
               </Link>
+              <Link to="/projects/kamikaze">
+                <img src="/images/KamiKaZe/Kamikaze_Title.jpg" alt="KamiKaze Header Image"></img>
+                <p>KamiKaZe</p>
+              </Link>
               <Link to="/projects/bellicose">
                 <img src={"/images/Bellicose/Bellicose_Start.png"} alt="Bellicose Title Screen"></img>
                 <p>Bellicose</p>
               </Link>
-
-              {/* <Link to="/projects/bellicose">
-                <img src="/src/assets/images/Bellicose/Bellicose_Start.png" alt="Bellicose Title Screen"></img>
-                <p>Bellicose</p>
-              </Link>
-
-              <Link to="/projects/bellicose">
-                <img src="/src/assets/images/Bellicose/Bellicose_Start.png" alt="Bellicose Title Screen"></img>
-                <p>Bellicose</p>
-              </Link>
-
-              <Link to="/projects/bellicose">
-                <img src="/src/assets/images/Bellicose/Bellicose_Start.png" alt="Bellicose Title Screen"></img>
-                <p>Bellicose</p>
-              </Link> */}
             </div>
             <Link to="/projects">
               <button>More Projects</button>
@@ -67,7 +55,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/jason-chen-8850a0289/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/jychen0" target="_blank"><i className="fa-brands fa-github"></i></a>
         </div>
-        <a href={"/OtherFiles/JasonChenResume.pdf"} download className="btn">Download Resume</a>
+        <a href={"/OtherFiles/JasonChen_Resume.pdf"} download className="btn">Download Resume</a>
       </div>
       <Footer />
     </>

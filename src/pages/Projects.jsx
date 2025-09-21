@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -6,6 +6,8 @@ import '../assets/styles.css';
 
 const Projects = () => {
   const location = useLocation();
+  const [showMoreGames, setShowMoreGames] = useState(false);
+  const [showMoreSoftware, setShowMoreSoftware] = useState(false);
 
   useEffect(() => {
     if (location.state?.scrollTo) {
@@ -16,86 +18,66 @@ const Projects = () => {
     }
   }, [location]);
 
+  // game projects list
+  const gameProjects = [
+    { path: "/projects/bellicose", title: "Bellicose", img: "/images/Bellicose/Bellicose_Start.png" },
+    { path: "/projects/duckGame", title: "Don't Feed The Duck", img: "/images/DontFeedTheDuck/Duck_Game_Start.png" },
+    { path: "/projects/snoozeOrLooze", title: "Snooze Or Looze", img: "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png" },
+    { path: "/projects/condemned", title: "Condemned", img: "/images/Condemned/Condemned_Title.png" },
+    { path: "/projects/rerender", title: "Rerender", img: "/images/Rerender/Rerender_Title.jpg"},
+    { path: "/projects/kamikaze", title: "KamiKaZe", img: "/images/KamiKaZe/Kamikaze_Title.jpg"},
+    { path: "/projects/alexBank", title: "Escape Alex Bank", img: "/images/EscapeAlexBank/Escape_Alex_Bank_Start.png" },
+    { path: "/projects/starboundWanderers", title: "Starbound Wanderers", img: "/images/StarboundWanderers/starbound_wanderers.png" }
+  ];
+
+  // software projects list
+  const softwareProjects = [
+    { path: "/projects/customBingo", title: "Custom Bingo", img: "/images/CustomBingo/bingo main page.png" },
+    { path: "/projects/leagueStatTracking", title: "LoL Stats Tracking Tool", img: "/images/RiotDataProject/riot_api_data_sheet.png" },
+    { path: "/projects/ticTacToe", title: "Tic-Tac-Toe Variants", img: "/images/TicTacToeGamemodes/tictactoeMenu.png" },
+  ];
+
+  const renderProjects = (projects, showMore, setShowMore, gridClass) => {
+    const visibleProjects = showMore ? projects : projects.slice(0, 6);
+
+    return (
+      <>
+        <div className={gridClass}>
+          {visibleProjects.map((proj, idx) => (
+            <div className="project" key={idx}>
+              <Link to={proj.path}>
+                <h2><u>{proj.title}</u></h2>
+                <img src={proj.img} alt={proj.title} />
+              </Link>
+            </div>
+          ))}
+        </div>
+        {projects.length > 6 && (
+          <div className="show-button">
+            <button onClick={() => setShowMore(!showMore)}>
+              {showMore ? "Show Less" : "Show More"}
+            </button>
+          </div>
+        )}
+      </>
+    );
+  };
+
   return (
     <>
       <Navbar />
-      <section id="projects"></section>
-      <section id="game-projects"></section>
       <div className="projects-container">
+
+        {/* Game Projects */}
         <div className="game-projects-container">
           <h1>Game Projects</h1>
-          <div className="game-projects-grid">
-
-            <div className="project">
-              <Link to="/projects/bellicose">
-                <h2><u>Bellicose</u></h2>
-                <img src={"/images/Bellicose/Bellicose_Start.png"}></img>
-              </Link>
-            </div>
-
-            <div className="project">
-              <Link to="/projects/duckGame">
-                <h2><u>Don't Feed The Duck</u></h2>
-                <img src={"/images/DontFeedTheDuck/Duck_Game_Start.png"}></img>
-              </Link>
-            </div>
-
-            <div className="project">
-              <Link to="/projects/snoozeOrLooze">
-                <h2><u>Snooze Or Looze</u></h2>
-                <img src={"/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"}></img>
-              </Link>
-            </div>
-
-            <div className="project">
-              <Link to="/projects/condemned">
-                <h2><u>Condemned</u></h2>
-                <img src={"/images/Condemned/Condemned_Title.png"}></img>
-              </Link>
-            </div>
-
-            <div className="project">
-              <Link to="/projects/alexBank">
-                <h2><u>Escape Alex Bank</u></h2>
-                <img src={"/images/EscapeAlexBank/Escape_Alex_Bank_Start.png"}></img>
-              </Link>
-            </div>
-
-            <div className="project">
-              <Link to="/projects/starboundWanderers">
-                <h2><u>Starbound Wanderers</u></h2>
-                <img src={"/images/StarboundWanderers/starbound_wanderers.png"}></img>
-              </Link>
-            </div>
-          </div>
+          {renderProjects(gameProjects, showMoreGames, setShowMoreGames, "game-projects-grid")}
         </div>
-        <section id="software-projects"></section>
+
+        {/* Software Projects */}
         <div className="software-projects-container">
           <h1>Software Projects</h1>
-          <div className="software-projects-grid">
-
-            <div className="project">
-              <Link to="/projects/customBingo">
-                <h2><u>Custom Bingo</u></h2>
-                <img src={"/images/CustomBingo/bingo main page.png"}></img>
-              </Link>
-            </div>
-
-            <div className="project">
-              <Link to="/projects/leagueStatTracking">
-                <h2><u>LoL Stats Tracking Tool</u></h2>
-                <img src={"/images/RiotDataProject/riot_api_data_sheet.png"}></img>
-              </Link>
-            </div>
-
-            <div className="project">
-              <Link to="/projects/ticTacToe">
-                <h2><u>Tic-Tac-Toe Variants</u></h2>
-                <img src={"/images/TicTacToeGamemodes/tictactoeMenu.png"}></img>
-              </Link>
-            </div>
-
-          </div>
+          {renderProjects(softwareProjects, showMoreSoftware, setShowMoreSoftware, "software-projects-grid")}
         </div>
       </div>
       <Footer />
