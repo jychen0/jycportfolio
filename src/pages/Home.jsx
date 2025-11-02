@@ -49,7 +49,6 @@ const Home = () => {
       <div className="contact-section">
         <h2>Contact Me</h2>
         <p><i className="fa-regular fa-envelope"></i> chenjason417@gmail.com</p>
-        <p><i className="fa-solid fa-phone"></i> +1 617-785-4712</p>
         <p><i className="fa-brands fa-discord"></i> legendarybanana</p> 
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/jason-chen-8850a0289/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
