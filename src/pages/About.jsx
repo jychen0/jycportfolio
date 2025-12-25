@@ -4,6 +4,22 @@ import Footer from '../components/Footer';
 import Tabs from '../components/Tabs';
 import '../assets/styles.css';
 
+const birthDate = new Date(2004, 10, 19);
+const calculateAge = (birthDate) => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && today.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+};
+
 const About = () => {
   const messages = [
     "My birthday is November 19th!",
@@ -14,12 +30,14 @@ const About = () => {
     "My favorite band is Against The Current.",
     "I have been to 9 different US states and 5 different countries.",
     "Some of my favorite book series are 'The Inheritance Games', 'Ranger's Apprentice', 'Alex Rider', and 'The Empyrean'.",
-    "Most recent movie I have watched (as of September 2025): Interstellar.", 
+    "Most recent movie I have watched (as of December 2025): 'Avatar: The Way of Water'.",
     "I have a 3D printed version of Jhin's 'Whipser' from League of Legends and also one of Jett's Kunai from VALORANT",
     "My Hogwarts house is Ravenclaw.",
     "My MBTI is ISTJ-T.",
     "The first concert I ever went to was a Lyn Lapid performance in Boston"
   ];
+
+  const age = calculateAge(birthDate);
 
   const getRandomIndex = () => {
     let newIndex;
@@ -29,20 +47,19 @@ const About = () => {
     return newIndex;
   };
 
-  const [previousMessageIndex, setPreviousMessageIndex] = useState(null); 
+  const [previousMessageIndex, setPreviousMessageIndex] = useState(null);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(Math.floor(Math.random() * messages.length));
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const typingSpeed = 100; 
-  const deletingSpeed = 50; 
-  const pause = 1500; 
-
+  const typingSpeed = 100;
+  const deletingSpeed = 50;
+  const pause = 1500;
 
   useEffect(() => {
     const currentMessage = messages[currentMessageIndex];
     let typingTimeout;
-  
+
     if (!isDeleting && displayedText !== currentMessage) {
       typingTimeout = setTimeout(() => {
         setDisplayedText((prev) => currentMessage.slice(0, prev.length + 1));
@@ -57,10 +74,10 @@ const About = () => {
       }, pause);
     } else if (isDeleting && displayedText === '') {
       setIsDeleting(false);
-      setPreviousMessageIndex(currentMessageIndex); 
+      setPreviousMessageIndex(currentMessageIndex);
       setCurrentMessageIndex(getRandomIndex());
     }
-  
+
     return () => clearTimeout(typingTimeout);
   }, [displayedText, isDeleting, currentMessageIndex, messages]);
 
@@ -75,13 +92,13 @@ const About = () => {
             <img src={"/images/Me/user-1.jpg"}></img>
           </div>
           <div className="about-col-2">
-            <p>Hi! My name is Jason Chen, and I'm a 20-year-old junior at Clark University. I am an aspiring Game Developer majoring in Interactive Media Design and Data Science. I was born in China but have lived in the greater Boston area since I was one year old. I started gaming at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. Playing games and talking to other gamers showed me how games have the power to tell stories, create long-lasting bonds, and build communities. 
-            <br /><br />
-            I started picking up coding in high school knowing it was one of the most important parts of developing a game. I have since learned multiple coding languages and have hands-on experience with engines like Unity and Unreal Engine for game development. With these skills, I have worked on a few small games and projects to challenge and evolve my skills.
-            <br /><br />
-            Outside of my education and career goals, I'm a transportation enthusiast from cars to trains to planes. I love watching esports tournaments of my favorite competitive games and even attending the events if I can. I'm always excited to collaborate on new projects, game development related or not, and to chat with new people!
-            <br />
-            📧 Feel free to connect and reach out to me on <a href="https://www.linkedin.com/in/jason-yuzheng-chen/" target="_blank">LinkedIn</a>
+            <p>Hi! My name is Jason Chen, and I'm a {age}-year-old junior at Clark University. I am an aspiring Game Developer majoring in Interactive Media Design and Data Science. I was born in China but have lived in the greater Boston area since I was one year old. I started gaming at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. Playing games and talking to other gamers showed me how games have the power to tell stories, create long-lasting bonds, and build communities.
+              <br /><br />
+              I started picking up coding in high school knowing it was one of the most important parts of developing a game. I have since learned multiple coding languages and have hands-on experience with engines like Unity and Unreal Engine for game development. With these skills, I have worked on a few small games and projects to challenge and evolve my skills.
+              <br /><br />
+              Outside of my education and career goals, I'm a transportation enthusiast from cars to trains to planes. I love watching esports tournaments of my favorite competitive games and even attending the events if I can. I'm always excited to collaborate on new projects, game development related or not, and to chat with new people!
+              <br />
+              📧 Feel free to connect and reach out to me on <a href="https://www.linkedin.com/in/jason-yuzheng-chen/" target="_blank">LinkedIn</a>
             </p>
             <br />
             <p className="fun-facts">Fun Facts: {displayedText}<span className="cursor">|</span></p>
