@@ -1,93 +1,69 @@
 {
   "snoozeOrLooze": {
-    "title": "Snooze Or Looze",
-    "description": "Snooze Or Looze is a debate visual novel game similar to Ace Attorney but mixed in with a card game. Play as Derek and collect arguments cards that will then be used to debate a clock on whether you need to wake up or not. Good arguments will lead to an ending of Derek going back to sleep while bad arguments will force Derek to wake up.",
-    "link": {
-      "site": [
-        "itch.io"
-      ],
-      "url": [
-        "https://legendarybanana.itch.io/snooze-or-looze"
-      ],
-      "type": [
-        "external"
-      ]
-    },
-    "images": [
-      "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"
-    ],
-    "role": [
-      "Designer",
-      "Programmer",
-      "Writer"
-    ],
-    "team": [
-      "Ren Grunberg",
-      "Thomas Heffernan",
-      "Marietta I Rivera Sigmann",
-      "Anthony Panasenko",
-      "Jared Cocomazzi"
-    ],
-    "technologies": [
-      "Unity",
-      "C#",
-      "Github"
-    ],
-    "contributions": [
-      "Designed the card system and concept to make this game genre more interactive and replayable",
-      "Led a team of fellow students who were new to game jams",
-      "Programmed a UI that would adapt to the current speaking character",
-      "Programmed the characters to go to a certain reaction based on the player's score"
-    ],
-    "video": ""    
+  "type": "Game",
+  "title": "Snooze Or Looze",
+  "description": "Snooze Or Looze is a debate visual novel game similar to Ace Attorney but mixed in with a card game. Play as Derek and collect arguments cards that will then be used to debate a clock on whether you need to wake up or not. Good arguments will lead to an ending of Derek going back to sleep while bad arguments will force Derek to wake up.",
+  "link": {
+    "site": ["itch.io"],
+    "url": ["https://legendarybanana.itch.io/snooze-or-looze"],
+    "type": ["external"]
   },
+  "media": [
+    {"type": "image","src": "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"}
+  ],
+  "role": ["Designer", "Programmer", "Writer"],
+  "team": [
+    "Ren Grunberg",
+    "Thomas Heffernan",
+    "Marietta I Rivera Sigmann",
+    "Anthony Panasenko",
+    "Jared Cocomazzi"
+  ],
+  "technologies": ["Unity", "C#", "Github"],
+  "contributions": [
+    "Designed the card system and concept to make this game genre more interactive and replayable",
+    "Led a team of fellow students who were new to game jams",
+    "Programmed a UI that would adapt to the current speaking character",
+    "Programmed the characters to go to a certain reaction based on the player's score"
+  ],
+  "revealed": true
+},
 
   "duckGame": {
-    "title": "Don't Feed the Duck",
-    "description": "Don't Feed The Duck is a platformer set in a city with a bakery. Our duck wants to get into the bakery for their favorite snacks. Gain new abilities as you collect bread crumbs around the city. Break into the bakery and escape with your bread!",
-    "link": {
-      "site": [
-        "itch.io"
-      ],
-      "url": [
-        "https://legendarybanana.itch.io/dont-feed-the-duck"
-      ],
-      "type": [
-        "external"
-      ]
-    },
-    "images": [
-      "/images/DontFeedTheDuck/Duck_Game_Start.png",
-      "/images/DontFeedTheDuck/Duck_Game_Settings.png",
-      "/images/DontFeedTheDuck/Duck_Game_Glider.png"
-    ],
-    "role": [
-      "Designer",
-      "Programmer",
-      "UI/UX"
-    ],
-    "team": [
-      "Alexander Costley",
-      "Jacob Berman",
-      "Aiden Morrison",
-      "Gage Delgado"
-    ],
-    "technologies": [
-      "Unity",
-      "C#"
-    ],
-    "contributions": [
-      "Programmed all mechanics of the player and obstacles",
-      "Programmed all UI functions",
-      "Implemented all art assets and animations",
-      "Designed the chase sequence in the bakery",
-      "Created settings menu allowing changes for volume, resolution, quality",
-      "Designed the UI for difficulty select, pause screen, and chase sequence"
-    ],
-    "video": ""
+  "type": "Game",
+  "title": "Don't Feed the Duck",
+  "description": "Don't Feed The Duck is a platformer set in a city with a bakery. Our duck wants to get into the bakery for their favorite snacks. Gain new abilities as you collect bread crumbs around the city. Break into the bakery and escape with your bread!",
+  "link": {
+    "site": ["itch.io"],
+    "url": ["https://legendarybanana.itch.io/dont-feed-the-duck"],
+    "type": ["external"]
   },
+  "media": [
+    { "type": "image", "src": "/images/DontFeedTheDuck/Duck_Game_Start.png" },
+    { "type": "image", "src": "/images/DontFeedTheDuck/Duck_Game_Settings.png" },
+    { "type": "image", "src": "/images/DontFeedTheDuck/Duck_Game_Glider.png" }
+  ],
+  "role": ["Designer", "Programmer", "UI/UX"],
+  "team": [
+    "Alexander Costley",
+    "Jacob Berman",
+    "Aiden Morrison",
+    "Gage Delgado"
+  ],
+  "technologies": ["Unity", "C#"],
+  "contributions": [
+    "Programmed all mechanics of the player and obstacles",
+    "Programmed all UI functions",
+    "Implemented all art assets and animations",
+    "Designed the chase sequence in the bakery",
+    "Created settings menu allowing changes for volume, resolution, quality",
+    "Designed the UI for difficulty select, pause screen, and chase sequence"
+  ],
+  "revealed": true
+},
 
   "bellicose": {
+  "type": "Game",
     "title": "Bellicose",
     "description": "Bellicose is a 2D local fighting game utilizing a pixel art style and implements typical fighting game mechanics such as different height blocks/attacks, staggering attacks, different special abilities between characters, and more to pit two players against each other in a skill-based combat system. The name 'Bellicose' means 'demonstrating aggression and willingness to fight'.",
     "link": {
@@ -95,9 +71,9 @@
       "url": [],
       "type": []
     },
-    "images": [
-      "/images/Bellicose/Bellicose_Start.png",
-      "/images/Bellicose/Bellicose_Fight.png"
+    "media": [
+      {"type": "image", "src": "/images/Bellicose/Bellicose_Start.png"},
+      {"type": "image", "src": "/images/Bellicose/Bellicose_Fight.png"}
     ],
     "role": [
       "Programmer",
@@ -120,10 +96,11 @@
       "Programmed combat scene UI functions like the timer and health bar",
       "Designed ways to add flavor to the map by creating randomly generated clouds in the background and lighting that fit the 2D art"
     ],
-    "video": ""
+    "revealed": true
   },
 
   "condemned": {
+    "type": "Game",
     "title": "Condemned",
     "description": "A 3D psychological horror game with a bit of action. You panic after having being bitten by a spider in the woods. As you try to piece together was has and will happen to you, you run into some stranger's journal entries that only further disorient you. As you follow the journal pages you unknowingly are heading closer and closer to the source of all your misfortune. You enter the  colosseum that you were lead to and find, Throndir, the creature you will need to defeat to avoid the fate of being cursed as a spider.",
     "link": {
@@ -137,14 +114,15 @@
         "external"
       ]
     },
-    "images": [
-      "/images/Condemned/Condemned_Title.png",
-      "/images/Condemned/Condemned_1.png",
-      "/images/Condemned/Condemned_2.png",
-      "/images/Condemned/Condemned_3.png",
-      "/images/Condemned/Condemned_4.png",
-      "/images/Condemned/Condemned_5.png",
-      "/images/Condemned/Condemned_6.png"
+    "media": [
+      {"type": "image", "src": "/images/Condemned/Condemned_Title.png"},
+      {"type": "image", "src": "/images/Condemned/Condemned_1.png"},
+      {"type": "image", "src": "/images/Condemned/Condemned_2.png"},
+      {"type": "image", "src": "/images/Condemned/Condemned_3.png"},
+      {"type": "image", "src": "/images/Condemned/Condemned_4.png"},
+      {"type": "image", "src": "/images/Condemned/Condemned_5.png"},
+      {"type": "image", "src": "/images/Condemned/Condemned_5.png"},
+      {"type": "image", "src": "/images/Condemned/Condemned_6.png"}
     ],
     "role": [
       "Programmer"
@@ -165,12 +143,12 @@
     "contributions": [
       "Used Unreal Engine's Behavior Tree to create a boss fight with different states",
       "Came up with ideas that helped with the horror aspect such as notes, signs, and creatures moving rapidly in the background"
-
     ],
-    "video": ""
+    "revealed": true
   },
 
   "alexBank": {
+    "type": "Game",
     "title": "Escape Alex Bank",
     "description": "A 2D platformer with a time limit to complete the game. Play as the raccoon criminal, Roudini, and help him escape from Alex Bank. Dodge guards, lasers, and other obstacles while collecting the keycards that allow you to exit each room as you make your escape.",
     "link": {
@@ -184,9 +162,9 @@
         "external"
       ]
     },
-    "images": [
-      "/images/EscapeAlexBank/Escape_Alex_Bank_Start.png",
-      "/images/EscapeAlexBank/Escape_Level2.png"
+    "media": [
+      {"type": "image", "src": "/images/EscapeAlexBank/Escape_Alex_Bank_Start.png"},
+      {"type": "image", "src": "/images/EscapeAlexBank/Escape_Level2.png"}
     ],
     "role": [
       "Programmer"
@@ -208,10 +186,11 @@
       "Programmed obstacles like lasers that would activate and deactivate with a very slight random timer",
       "Adapted code from a previous code base my teammates had from one of their previous projects to fit what we needed"
     ],
-    "video": ""
+    "revealed": false
   },
 
   "starboundWanderers": {
+    "type": "Game",
     "title": "Starbound Wanderers",
     "description": "Starbound Wanderers is an isometric 2D RPG that follows Zhenyang and Kaveh, two gay lovers who haverunaway from their planet to be together. They crash landed on a foreign planet and maintain their relationship while surviving the wilderness of their new home. Switch between the characters to utilize their different skill sets. Explore this new planet to see what can be used to survive and how they can turn it into home",
     "link": {
@@ -219,8 +198,8 @@
       "url": [],
       "type": []
     },
-    "images": [
-      "/images/StarboundWanderers/starbound_wanderers.png"
+    "media": [
+      {"type": "image", "src": "/images/StarboundWanderers/starbound_wanderers.png"}
     ],
     "role": [
       "Programmer",
@@ -237,29 +216,11 @@
     "contributions": [
 
     ],
-    "video": ""
-    
-  },
-
-  "sunnysideTravels": {
-    "title": "",
-    "description": "",
-    "link": {
-      "site": [],
-      "url": [],
-      "type": []
-    },
-    "images": [],
-    "role": [],
-    "team": [],
-    "technologies": [],
-    "contributions": [
-
-    ],
-    "video": ""
+    "revealed": false
   },
 
   "customBingo": {
+    "type": "Software",
     "title": "Custom Bingo Generator",
     "description": "This is a project that uses React.js and CSS to generate a custom bingo board by inserting your own spaces. There are popups that show the entire details in the case where the inputted text is too long for the text. You are able to click on each individual space to mark it, with the middle space always being a 'free space'.",
     "link": {
@@ -276,10 +237,10 @@
         "external"
       ]
     },
-    "images": [
-      "/images/CustomBingo/bingo main page.png",
-      "/images/CustomBingo/bingo_selected_example.png",
-      "/images/CustomBingo/custom_bingo_example.png"
+    "media": [
+      {"type": "image", "src": "/images/CustomBingo/bingo main page.png"},
+      {"type": "image", "src": "/images/CustomBingo/bingo_selected_example.png"},
+      {"type": "image", "src": "/images/CustomBingo/custom_bingo_example.png"}
     ],
     "role": [
       "Designer",
@@ -299,10 +260,11 @@
       "Connecting a .txt file to javascript that allowed to have default values",
       "Created pop-ups on hover when there is not enough room on the space for the text"
     ],
-    "video": ""
+    "revealed": true
   },
 
   "leagueStatTracking": {
+    "type": "Software",
     "title": "LoL Stat Tracking Tool",
     "description": "This project utlizes the Riot Games API with python to find the stats of an inputed Riot ID. This tool then saves the data in a file that can be transferred to a google sheet to organize it. This tool was utilized by the Clark University LoL team for scouting opponents",
     "link": {
@@ -310,9 +272,9 @@
       "url": [],
       "type": []
     },
-    "images": [
-      "/images/RiotDataProject/riot_api_data_sheet.png",
-      "/images/RiotDataProject/riot_api_project_code.png"
+    "media": [
+      {"type": "image", "src": "/images/RiotDataProject/riot_api_data_sheet.png"},
+      {"type": "image", "src": "/images/RiotDataProject/riot_api_project_code.png"}
     ],
     "role": [
       "Programmer",
@@ -334,10 +296,11 @@
       "Converted the data to a .csv file that can be imported to Google Sheets",
       "Linked up the google sheet to read the data automatically organize the data into a different sheet for easier analysis"
     ],
-    "video": ""
+    "revealed": true
   },
 
   "ticTacToe": {
+    "type": "Software",
     "title": "TicTacToe Gamemodes",
     "description": "This project creates a GUI using the Java Swing Library to play tic-tac-toe gamemodes. You are able to play regular, against random AI, against an unbeatable AI, a gamemode where each player can only have 3 symbols on the board at one time. It is very easily adaptable to allow for more gamemodes",
     "link": {
@@ -351,10 +314,10 @@
         "external"
       ]
     },
-    "images": [
-      "/images/TicTacToeGamemodes/tictactoeMenu.png",
-      "/images/TicTacToeGamemodes/tictactoeTie.png",
-      "/images/TicTacToeGamemodes/tictactoeWin.png"
+    "media": [
+      {"type": "image", "src": "/images/TicTacToeGamemodes/tictactoeMenu.png"},
+      {"type": "image", "src": "/images/TicTacToeGamemodes/tictactoeTie.png"},
+      {"type": "image", "src": "/images/TicTacToeGamemodes/tictactoeWin.png"}
     ],
     "role": [
       "Programmer",
@@ -373,10 +336,11 @@
       "Utilized the minimax algorithm to create an unbeatable AI as tic-tac-toe is a solved game",
       "Created a GUI using Java Swing to make it playable outside of the terminal"
     ],
-    "video": ""
+    "revealed": true
   },
 
   "rerender": {
+    "type": "Game",
     "title": "Rerender",
     "description": "In a post-earthquake city, you play as Aria, navigate the shattered streets, deliver critical supplies, use materials to upgrade buildings and scooters, as well as   collaborate with restaurant owners to restore their homes together.",
     "link": {
@@ -390,14 +354,15 @@
         "external"
       ]
     },
-    "images": [
-      "/images/Rerender/Rerender_Title.jpg",
-      "/images/Rerender/Rerender_Cinematic_Shot.png",
-      "/images/Rerender/Rerender_Gameplay_1.png",
-      "/images/Rerender/Rerender_Gameplay_2.png",
-      "/images/Rerender/Rerender_Quest_UI.png",
-      "/images/Rerender/Rerender_Restaurant_UI.png",
-      "/images/Rerender/Rerender_Gameplay_3.png"
+    "media": [
+      { "type": "image", "src": "/images/Rerender/Rerender_Title.jpg" },
+      { "type": "image", "src": "/images/Rerender/Rerender_Cinematic_Shot.png" },
+      { "type": "image", "src": "/images/Rerender/Rerender_Gameplay_1.png" },
+      { "type": "image", "src": "/images/Rerender/Rerender_Gameplay_2.png" },
+      { "type": "image", "src": "/images/Rerender/Rerender_Quest_UI.png" },
+      { "type": "image", "src": "/images/Rerender/Rerender_Restaurant_UI.png" },
+      { "type": "image", "src": "/images/Rerender/Rerender_Gameplay_3.png" },
+      { "type": "video", "src": "/videos/Rerender25PV.mp4" }
     ],
     "role": [
       "Programmer"
@@ -427,10 +392,11 @@
       "Reworked the entire quest/restaurant upgrading system and included a tutorial to introduce the player to the system",
       "Implemented the funtionality of the UI for restaurants and vehicle upgrading"
     ],
-    "video": "videos/Rerender25PV.mp4"
+    "revelaed": true
   },
 
   "kamikaze": {
+    "type": "Game",
     "title": "KamiKaZe",
     "description": "KamiKaZe is a neon-soaked free-for-all brawler where you spawn with a Rifle, a Pistol, and your trusty Katana—and then the mayhem begins. Use quick reflexes, grab unpredictable powerups, and make every second count as you blast, slice, and bounce your friends off the map.",
     "link": {
@@ -444,14 +410,15 @@
         "external"
       ]
     },
-    "images": [
-      "/images/KamiKaZe/Kamikaze_Title.jpg",
-      "/images/KamiKaZe/Kamikaze_City_1.png",
-      "/images/KamiKaZe/Kamikaze_City_2.png",
-      "/images/KamiKaZe/Kamikaze_4Player_Gameplay.jpg",
-      "/images/KamiKaZe/Kamikaze_2Player_Gameplay.jpg",
-      "/images/KamiKaZe/Kamikaze_Forest_1.png",
-      "/images/KamiKaZe/Kamikaze_Forest_2.png"
+    "media": [
+      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_Title.jpg" },
+      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_City_1.png" },
+      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_City_2.png" },
+      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_4Player_Gameplay.jpg" },
+      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_2Player_Gameplay.jpg" },
+      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_Forest_1.png" },
+      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_Forest_2.png" },
+      { "type": "video", "src": "/videos/KamiKazeTrailer.mp4" }
     ],
     "role": [
       "Programmer"
@@ -486,6 +453,6 @@
       "Developed environmental features such as bounce pads and icy floors, designed for easy integration by level designers to create unique maps.",
       "Designed and integrated power-ups (snowball and paintball), adding freezing and visual screen-obscuring effects to expand strategic gameplay."
     ],
-    "video": "videos/KamiKazeTrailer.mp4"
+    "revealed": true
   }
 }

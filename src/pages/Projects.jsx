@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../assets/styles.css';
+import projectData from '../assets/projectData.json';
 
 const Projects = () => {
   const location = useLocation();
@@ -18,24 +19,21 @@ const Projects = () => {
     }
   }, [location]);
 
-  // game projects list
-  const gameProjects = [
-    { path: "/projects/bellicose", title: "Bellicose", img: "/images/Bellicose/Bellicose_Start.png" },
-    { path: "/projects/duckGame", title: "Don't Feed The Duck", img: "/images/DontFeedTheDuck/Duck_Game_Start.png" },
-    { path: "/projects/snoozeOrLooze", title: "Snooze Or Looze", img: "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png" },
-    { path: "/projects/condemned", title: "Condemned", img: "/images/Condemned/Condemned_Title.png" },
-    { path: "/projects/rerender", title: "Rerender", img: "/images/Rerender/Rerender_Title.jpg"},
-    { path: "/projects/kamikaze", title: "KamiKaZe", img: "/images/KamiKaZe/Kamikaze_Title.jpg"},
-    { path: "/projects/alexBank", title: "Escape Alex Bank", img: "/images/EscapeAlexBank/Escape_Alex_Bank_Start.png" },
-    { path: "/projects/starboundWanderers", title: "Starbound Wanderers", img: "/images/StarboundWanderers/starbound_wanderers.png" }
-  ];
+  const gameProjects = Object.entries(projectData)
+    .filter(([key, proj]) => proj.type === "Game" && proj.revealed)
+    .map(([key, proj]) => ({
+      path: `/projects/${key}`,
+      title: proj.title,
+      img: proj.media[0]?.src || "",
+    }));
 
-  // software projects list
-  const softwareProjects = [
-    { path: "/projects/customBingo", title: "Custom Bingo", img: "/images/CustomBingo/bingo main page.png" },
-    { path: "/projects/leagueStatTracking", title: "LoL Stats Tracking Tool", img: "/images/RiotDataProject/riot_api_data_sheet.png" },
-    { path: "/projects/ticTacToe", title: "Tic-Tac-Toe Variants", img: "/images/TicTacToeGamemodes/tictactoeMenu.png" },
-  ];
+  const softwareProjects = Object.entries(projectData)
+    .filter(([key, proj]) => proj.type === "Software" && proj.revealed)
+    .map(([key, proj]) => ({
+      path: `/projects/${key}`,
+      title: proj.title,
+      img: proj.media[0]?.src || "",
+    }));
 
   const renderProjects = (projects, showMore, setShowMore, gridClass) => {
     const visibleProjects = showMore ? projects : projects.slice(0, 6);

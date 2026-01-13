@@ -92,7 +92,7 @@ const About = () => {
             <img src={"/images/Me/user-1.jpg"}></img>
           </div>
           <div className="about-col-2">
-            <p>Hi! My name is Jason Chen, and I'm a {age}-year-old junior at Clark University. I am an aspiring Game Developer majoring in Interactive Media Design and Data Science. I was born in China but have lived in the greater Boston area since I was one year old. I started gaming at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. Playing games and talking to other gamers showed me how games have the power to tell stories, create long-lasting bonds, and build communities.
+            <p>Hi! My name is Jason Chen, and I'm a {age}-year-old senior at Clark University. I am an aspiring Game Developer majoring in Interactive Media Design and Data Science. I was born in China but have lived in the greater Boston area since I was one year old. I started gaming at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. Playing games and talking to other gamers showed me how games have the power to tell stories, create long-lasting bonds, and build communities.
               <br /><br />
               I started picking up coding in high school knowing it was one of the most important parts of developing a game. I have since learned multiple coding languages and have hands-on experience with engines like Unity and Unreal Engine for game development. With these skills, I have worked on a few small games and projects to challenge and evolve my skills.
               <br /><br />
