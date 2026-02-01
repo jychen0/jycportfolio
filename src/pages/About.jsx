@@ -30,7 +30,7 @@ const About = () => {
     "My favorite band is Against The Current.",
     "I have been to 9 different US states and 5 different countries.",
     "Some of my favorite book series are 'The Inheritance Games', 'Ranger's Apprentice', 'Alex Rider', and 'The Empyrean'.",
-    "Most recent movie I have watched (as of December 2025): 'Avatar: The Way of Water'.",
+    "Most recent movie I have watched (as of January 2026): 'A Working Man'.",
     "I have a 3D printed version of Jhin's 'Whipser' from League of Legends and also one of Jett's Kunai from VALORANT",
     "My Hogwarts house is Ravenclaw.",
     "My MBTI is ISTJ-T.",
