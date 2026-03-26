@@ -3,19 +3,52 @@ import { Link, useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import projectData from '../assets/projectData.json';
-import '../assets/styles.css';
+import ContributionDetail from '../components/ContributionDetail';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const project = projectData[projectId];
   const [dropdownStates, setDropdownStates] = useState([false, false, false]);
-  const galleryRef = useRef(null); // desktop
-  const mobileGalleryRef = useRef(null); // mobile
+  const galleryRef = useRef(null); 
+  const mobileGalleryRef = useRef(null); 
+  const [activeContributionIndex, setActiveContributionIndex] = useState(null);
 
   const [isScrolling, setIsScrolling] = useState(false);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
   if (!project) return <h2>Project not found!</h2>;
+
+  // When page loads with a hash, scroll to that contribution and set the header
+  React.useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const hash = window.location.hash;
+      if (hash.startsWith('#contribution-')) {
+        const idx = parseInt(hash.replace('#contribution-', ''), 10);
+        if (!Number.isNaN(idx) && project.detailedContributions && project.detailedContributions[idx]) {
+          setActiveContributionIndex(idx);
+          setTimeout(() => {
+            const el = document.getElementById(`contribution-${idx}`);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 60);
+        }
+      }
+    }
+  }, [project]);
+
+  const handleContributionClick = (index) => {
+    setActiveContributionIndex(index);
+    const el = document.querySelector(`#contribution-${index} .contribution-divider`);
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      const scrollTop = window.scrollY + rect.top - 100;
+      window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+    }
+    try {
+      window.history.replaceState(null, '', `#contribution-${index}`);
+    } catch (e) {
+      // ignore
+    }
+  };
 
   const toggleDropdown = (index) => {
     setDropdownStates((prev) => {
@@ -241,9 +274,20 @@ const ProjectDetail = () => {
           <div className="section contributions">
             <h3 className="section-title">Contributions</h3>
             <ul className="list">
-              {project.contributions.map((item) => (
+              {project.contributions.map((item, index) => (
                 <li className="list-item" key={`contribution-${item}`}>
                   - {item}
+                  {project.detailedContributions && 
+                   project.detailedContributions[index]?.title && (
+                    <a 
+                      href={`#contribution-${index}`}
+                      className="contribution-link"
+                      title="View detailed explanation"
+                      onClick={(e) => { e.preventDefault(); handleContributionClick(index); }}
+                    >
+                      <sup>[{index + 1}]</sup>
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -310,6 +354,16 @@ const ProjectDetail = () => {
           </div>
         </div>
       </div>
+
+
+      {/* ===== DETAILED CONTRIBUTIONS SECTION ===== */}
+      {project.detailedContributions && project.detailedContributions.length > 0 && (
+        <div className="detailed-contributions-section">
+          {project.detailedContributions.map((contribution, index) => (
+            <ContributionDetail key={index} contribution={contribution} index={index} />
+          ))}
+        </div>
+      )}
 
       <Footer />
     </>

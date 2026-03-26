@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import '../assets/styles.css';
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);

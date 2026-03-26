@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Tabs from '../components/Tabs';
-import '../assets/styles.css';
 
 const birthDate = new Date(2004, 10, 19);
 const calculateAge = (birthDate) => {

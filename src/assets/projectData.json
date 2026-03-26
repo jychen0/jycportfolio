@@ -26,6 +26,18 @@
     "Programmed a UI that would adapt to the current speaking character",
     "Programmed the characters to go to a certain reaction based on the player's score"
   ],
+  "detailedContributions": [
+    {
+      "title": "Card System",
+      "detail": "The card system in SnoozeOrLooze chooses a few cards from a larger pool of cards. The player then collects the cards and which adds it to their playable hand. In the debate section of the game, the card is displayed out as if a person was holding it, and hovering over a card would bring it to the front and show the full details of the card. This system allows for more interactivity in a visual novel style game. Each card has a different value that would either add or subtract from the player's score based on how good the argument is in the context of the debate.",
+      "media": [{"type": "image", "src": "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"}]
+    },
+    {
+      "title": "Reactive Visuals",
+      "detail": "The UI in SnoozeOrLooze changes based on who is speaking. Each speaker has their own style of textbox. The characters will each switch to a different animation as a reaction to each argument. This is done by noticing the change in score after each argument. A positive change in score would lead to a happy reaction for the player and negative or frustrated reaction from the clock while a negative change in score would lead to the opposite. This allows for more feedback to the player on how well they are doing in the debate.",
+      "media": []
+    }
+  ],
   "revealed": true
 },
 
@@ -58,6 +70,23 @@
     "Designed the chase sequence in the bakery",
     "Created settings menu allowing changes for volume, resolution, quality",
     "Designed the UI for difficulty select, pause screen, and chase sequence"
+  ],
+  "detailedContributions": [
+    {
+      "title": "Mechanics, Obstacles, and Interactables",
+      "detail": "The player has very simple mechanics with a few checks to identify if you are able to jump, double jump, or glide at the current moment. Most obstacles are trigger collisions that have a slight twist on them. The electricity wires are ___ . The pots in the bakery have a trigger inside of it only allowing the player to potentially get on the sides of it or run into it without losing. The bakery carts only move when the baker gets to that point making the player have to react to it and also memorize which levels of the cart were open. The taxi at the end of the city level brings the character back to the start by parenting the player with it, turning off the player's collision and physics until they are back at the start.",
+      "media": []
+    },
+    {
+      "title":"Bakery Sequence Design",
+      "detail": "The bakery sequence was designed to be our high action section of the game. The difference in each difficulty selector was the length of the level. I designed it using the carts as a marker of where or how far you have gotten, while this makes it unlikely you will get far enough ahead to have to remember which cart is coming at you, it gives you a sense of your own progression every attempt. The breadcrumb speed stacking but the time not stacking was unintended but it made for a fun design challenge that gave you extreme speed but made it hard to control. I decided instead of fixing this to use the breadcrumbs to make lines that allowed you to get speed to potentially skip multiple obstacles. Since the level has an upper and lower level, it was designed where the upper level had all the benefits but staying up there was harder. The lower level has no benefits but it is easier and gave few opportunities to get back up to the upper level.",
+      "media": []
+    },
+    {
+      "title": "UI Implementation",
+      "detail": "The UI in the city appears to show your abilities based on the breadcrumbs you have collected. The progress bar at the bakery scene show where the baker is in comparison to the player and the end of the level. This was done with simple math to calculate the % of distance between the baker/player and the end of the level. The settings menu took me a while to figure out how to implement all the different options but I was able to get it working fully allowing the player to change resolution, quality, and volume. ",
+      "media": []
+    }
   ],
   "revealed": true
 },
@@ -95,6 +124,13 @@
       "Implemented all character animations using Unity's animation state machine",
       "Programmed combat scene UI functions like the timer and health bar",
       "Designed ways to add flavor to the map by creating randomly generated clouds in the background and lighting that fit the 2D art"
+    ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
     ],
     "revealed": true
   },
@@ -144,6 +180,13 @@
       "Used Unreal Engine's Behavior Tree to create a boss fight with different states",
       "Came up with ideas that helped with the horror aspect such as notes, signs, and creatures moving rapidly in the background"
     ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
+    ],
     "revealed": true
   },
 
@@ -186,6 +229,13 @@
       "Programmed obstacles like lasers that would activate and deactivate with a very slight random timer",
       "Adapted code from a previous code base my teammates had from one of their previous projects to fit what we needed"
     ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
+    ],
     "revealed": false
   },
 
@@ -215,6 +265,13 @@
     ],
     "contributions": [
 
+    ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
     ],
     "revealed": false
   },
@@ -260,6 +317,13 @@
       "Connecting a .txt file to javascript that allowed to have default values",
       "Created pop-ups on hover when there is not enough room on the space for the text"
     ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
+    ],
     "revealed": true
   },
 
@@ -295,6 +359,13 @@
       "Utilized the pandas library to create dataframes to store all the data",
       "Converted the data to a .csv file that can be imported to Google Sheets",
       "Linked up the google sheet to read the data automatically organize the data into a different sheet for easier analysis"
+    ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
     ],
     "revealed": true
   },
@@ -335,6 +406,13 @@
       "Programmed the mechanics for a simple Tic-Tac-Toe game which was then used as the base for the single player versions against the computer",
       "Utilized the minimax algorithm to create an unbeatable AI as tic-tac-toe is a solved game",
       "Created a GUI using Java Swing to make it playable outside of the terminal"
+    ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
     ],
     "revealed": true
   },
@@ -391,6 +469,13 @@
       "Created a save/load system in Unreal Engine that allowed to player to keep their progress throughout the game",
       "Reworked the entire quest/restaurant upgrading system and included a tutorial to introduce the player to the system",
       "Implemented the funtionality of the UI for restaurants and vehicle upgrading"
+    ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
     ],
     "revelaed": true
   },
@@ -452,6 +537,13 @@
       "Introduced new weapons (sniper rifle and rocket launcher) to diversify combat styles and enhance gameplay dynamics.",
       "Developed environmental features such as bounce pads and icy floors, designed for easy integration by level designers to create unique maps.",
       "Designed and integrated power-ups (snowball and paintball), adding freezing and visual screen-obscuring effects to expand strategic gameplay."
+    ],
+    "detailedContributions": [
+      {
+        "title": "",
+        "detail": "",
+        "media": []
+      }
     ],
     "revealed": true
   }

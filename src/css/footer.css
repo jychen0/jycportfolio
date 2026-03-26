@@ -1,0 +1,22 @@
+/*====================== FOOTER ==============================*/
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: auto;
+    color: #fff;
+}
+
+footer i {
+    color: #ebcd85;
+}
+
+/*====================== RESPONSIVE ==============================*/
+@media (max-width: 820px) {
+    /* FOOTER */
+    footer {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,159 @@
+/*====================== HOME PAGE ==============================*/
+
+.hero-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 2% 5%;
+    margin-top: 60px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+}
+
+.home-col-1 {
+    flex: 2;
+    text-align: left;
+}
+
+.home-col-1 h1 {
+    color: #222;
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.home-col-1 p {
+    font-size: 30px;
+}
+
+.home-col-1 a {
+    text-decoration: none;
+}
+
+.home-col-1 button {
+    display: block;
+    margin-top: 2%;
+    width: fit-content;
+    border: 1px solid #b59824;
+    padding: 20px 50px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    background-color: #424242;
+    color: #dbdbdb;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.home-col-1 button:hover {
+    background-color: #967e47;
+}
+
+.featured-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.featured-projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #222222;
+    aspect-ratio: 16/9;
+}
+
+@media (min-width: 1024px) {
+    .featured-projects a:nth-child(4) {
+        display: none;
+    }
+}
+
+.featured-projects img:hover {
+    border: 3px solid white;
+}
+
+.featured-projects a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured-projects p {
+    text-decoration: none;
+    color: #222;
+    text-align: center;
+}
+
+.home-col-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+    padding-top: 5%;
+}
+
+.home-col-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.home-col-2 p {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/*====================== RESPONSIVE ==============================*/
+@media (max-width: 820px) {
+    /* HOME PAGE */
+    .hero-container {
+        padding: 1% 2%;
+        margin-top: 30px;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .home-col-1 {
+        text-align: center;
+    }
+
+    .home-col-1 h1 {
+        font-size: 11vw;
+    }
+
+    .home-col-1 p {
+        font-size: 5vw;
+    }
+
+    .featured-projects {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        overflow: hidden;
+        gap: 5px;
+    }
+
+    .featured-projects>*:nth-child(n+5) {
+        display: none;
+    }
+
+    .home-col-1 button {
+        padding: 10px 35px;
+        font-size: 4vw;
+    }
+
+    .home-col-2 {
+        text-align: center;
+    }
+
+    .home-col-2 img {
+        max-width: 75%;
+    }
+}
