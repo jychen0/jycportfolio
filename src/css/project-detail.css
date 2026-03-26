@@ -54,6 +54,49 @@
     line-height: 1.1;
 }
 
+.inline-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inline-list .small-list-item {
+    display: inline;
+}
+
+.inline-list .small-list-item:not(:last-child)::after {
+    content: ",";
+}
+
+.team-container {
+    width: 100%;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    display: -webkit-box;
+    line-height: 1.4;
+    max-height: calc(1.4em * 3); 
+}
+
+.team-list.expanded {
+    display: flex;
+    line-clamp: unset;
+    max-height: none;
+    overflow: visible;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #b64c0f;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 0;
+}
+
 .extra-info .list-item,
 .extra-info .small-list-item {
   font-size: 19px;

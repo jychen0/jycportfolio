@@ -22,20 +22,23 @@
   "technologies": ["Unity", "C#", "Github"],
   "contributions": [
     "Designed the card system and concept to make this game genre more interactive and replayable",
-    "Led a team of fellow students who were new to game jams",
+    "Programmed the characters to go to a certain reaction based on the player's score",
     "Programmed a UI that would adapt to the current speaking character",
-    "Programmed the characters to go to a certain reaction based on the player's score"
+    "Led a team of fellow students who were new to game jams"
   ],
   "detailedContributions": [
     {
       "title": "Card System",
       "detail": "The card system in SnoozeOrLooze chooses a few cards from a larger pool of cards. The player then collects the cards and which adds it to their playable hand. In the debate section of the game, the card is displayed out as if a person was holding it, and hovering over a card would bring it to the front and show the full details of the card. This system allows for more interactivity in a visual novel style game. Each card has a different value that would either add or subtract from the player's score based on how good the argument is in the context of the debate.",
-      "media": [{"type": "image", "src": "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"}]
+      "media": [{"type": "image", "src": "/images/SnoozeOrLooze/CardPickupTutorialText.png"},
+                {"type": "image", "src": "/images/SnoozeOrLooze/CardPickupExample.png"},
+                {"type": "image", "src": "/images/SnoozeOrLooze/CardHandExample.png"}]
     },
     {
       "title": "Reactive Visuals",
       "detail": "The UI in SnoozeOrLooze changes based on who is speaking. Each speaker has their own style of textbox. The characters will each switch to a different animation as a reaction to each argument. This is done by noticing the change in score after each argument. A positive change in score would lead to a happy reaction for the player and negative or frustrated reaction from the clock while a negative change in score would lead to the opposite. This allows for more feedback to the player on how well they are doing in the debate.",
-      "media": []
+      "media": [{"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthDespairReaction.png"},
+                {"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthLoseReaction.png"}]
     }
   ],
   "revealed": true
@@ -477,7 +480,7 @@
         "media": []
       }
     ],
-    "revelaed": true
+    "revealed": true
   },
 
   "kamikaze": {

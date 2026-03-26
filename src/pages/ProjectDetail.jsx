@@ -13,12 +13,15 @@ const ProjectDetail = () => {
   const mobileGalleryRef = useRef(null); 
   const [activeContributionIndex, setActiveContributionIndex] = useState(null);
 
+  const teamRef = useRef(null);
+  const [showFullTeam, setShowFullTeam] = useState(false);
+  const [isClamped, setIsClamped] = useState(false);
+
   const [isScrolling, setIsScrolling] = useState(false);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
   if (!project) return <h2>Project not found!</h2>;
 
-  // When page loads with a hash, scroll to that contribution and set the header
   React.useEffect(() => {
     if (typeof window !== 'undefined' && window.location.hash) {
       const hash = window.location.hash;
@@ -34,6 +37,34 @@ const ProjectDetail = () => {
       }
     }
   }, [project]);
+
+  React.useEffect(() => {
+  const el = teamRef.current;
+  if (!el) return;
+
+    const checkClamp = () => {
+      const el = teamRef.current;
+      if (!el) return;
+
+      const children = Array.from(el.children);
+
+      let lines = 1;
+      let currentTop = children[0]?.offsetTop;
+
+      for (let child of children) {
+        if (child.offsetTop > currentTop) {
+          lines++;
+          currentTop = child.offsetTop;
+        }
+      }
+
+      setIsClamped(lines > 2);
+    };
+
+  checkClamp();
+  window.addEventListener('resize', checkClamp);
+  return () => window.removeEventListener('resize', checkClamp);
+}, [project.team]);
 
   const handleContributionClick = (index) => {
     setActiveContributionIndex(index);
@@ -300,47 +331,56 @@ const ProjectDetail = () => {
               project.link.site.some((site, index) => project.link.url[index]) && (
                 <>
                   <h3 className="small-section-title">Links</h3>
-                  <ul className="list">
-                    {project.link.site.map((site, index) => {
-                      const url = project.link.url[index];
-                      const type = project.link.type?.[index];
-                      return type === 'internal' ? (
-                        <li className="small-list-item" key={`link-${index}`}>
-                          <Link to={url}>
-                            <p>{site}</p>
-                          </Link>
-                        </li>
-                      ) : (
-                        <li className="small-list-item" key={`link-${index}`}>
-                          <a href={url} target="_blank" rel="noopener noreferrer">
-                            <p>{site}</p>
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </>
+                <ul className="inline-list">
+                  {project.link.site.map((site, index) => {
+                    const url = project.link.url[index];
+                    const type = project.link.type?.[index];
+
+                    return (
+                      <li className="small-list-item" key={`link-${index}`}>
+                        {type === 'internal' ? (
+                          <Link to={url}>{site}</Link>
+                        ) : (
+                          <a href={url} target="_blank" rel="noopener noreferrer">{site}</a>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
               )}
 
             <h3 className="small-section-title">Role(s)</h3>
-            <ul className="list">
-              {project.role.map((role, index) => (
+            <ul className="inline-list">
+              {project.role.map((role) => (
                 <li className="small-list-item" key={role}>
                   {role}
-                  {index < project.role.length - 1 && ','}
                 </li>
               ))}
             </ul>
 
             <h3 className="small-section-title">Team</h3>
-            <ul className="list">
-              {project.team.map((team, index) => (
-                <li className="small-list-item" key={team}>
-                  {team}
-                  {index < project.team.length - 1 && ','}
-                </li>
-              ))}
-            </ul>
+            <div className="team-container">
+              <ul
+                ref={teamRef}
+                className={`inline-list team-list ${showFullTeam ? 'expanded' : ''}`}
+              >
+                {project.team.map((team) => (
+                  <li className="small-list-item" key={team}>
+                    {team}
+                  </li>
+                ))}
+              </ul>
+
+              {isClamped && (
+                <button
+                  className="show-more-btn"
+                  onClick={() => setShowFullTeam(prev => !prev)}
+                >
+                  {showFullTeam ? "Show Less" : "Show More"}
+                </button>
+              )}
+            </div>
 
             <h3 className="small-section-title">Technologies Used</h3>
             <ul className="list">

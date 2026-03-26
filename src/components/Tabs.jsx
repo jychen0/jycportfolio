@@ -42,6 +42,7 @@ const Tabs = () => {
       <div className={`tab-contents ${activeTab === 'experience' ? 'active-tab experience-tab' : ''}`} id="experience">
         <ul className="grid-content-experience">
           {/* <li><span><b>Test1</b></span><br />test1<br />test1</li> */}
+          <li><span><b>Pharmacy Technician</b></span><br />CVS, Holden MA<br />Sep 2025 - Present </li>
           <li><span><b>Home Game Staff</b></span><br />Clark University, Worcester MA<br />Sep 2023 - Present (Work Study)</li>
           <li><span><b>Seasonal Driver</b></span><br />Enterprise Mobility, Boston MA<br />June 2025 - August 2025</li>
           <li><span><b>Game Programmer & Designer</b></span><br />Studio Blue Jay, Worcester MA<br />Jan 2024 - May 2024</li>
