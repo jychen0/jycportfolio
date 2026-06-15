@@ -9,7 +9,12 @@
     "type": ["external"]
   },
   "media": [
-    {"type": "image","src": "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"}
+    {"type": "image","src": "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"},
+    {"type": "image", "src": "/images/SnoozeOrLooze/CardPickupTutorialText.png"},
+    {"type": "image", "src": "/images/SnoozeOrLooze/CardPickupExample.png"},
+    {"type": "image", "src": "/images/SnoozeOrLooze/CardHandExample.png"},
+    {"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthDespairReaction.png"},
+    {"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthLoseReaction.png"}
   ],
   "role": ["Designer", "Programmer", "Writer"],
   "team": [
@@ -130,7 +135,17 @@
     ],
     "detailedContributions": [
       {
-        "title": "",
+        "title": "Character Selection UI",
+        "detail": "I designed a character selection UI that allowed players to select their characters separately. Displaying the selected character on the screen also allows for the option to add additional information about the character or display an idle animation of the character. The selection screen also separates a ready up button so each player can indicate when they are ready to start the game.",
+        "media": []
+      },
+      {
+        "title": "Unity Animation System",
+        "detail": "I had to learn the base animation system in Unity so our characters can utilize a variety of animations for different actions and states. I also had to time these animations to match attacks so they feel natural and responsive. Fighting games also tend to have a lot of different moves and combos, since this was initially for a game jam, we had to prioritize the most essential ones but also still make it feel good as a fighting game.",
+        "media": []
+      },
+      {
+        "title": "Gameplay Information and Feel",
         "detail": "",
         "media": []
       }
