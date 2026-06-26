@@ -146,7 +146,7 @@
       },
       {
         "title": "Gameplay Information and Feel",
-        "detail": "",
+        "detail": "Since we only had one map, I focued on making the map feel more alive and interesting. Using lighting and randomly generated elements, I was able to make the static image for the map more interesting. For the in-game UI, I took inspiration from well known fighting games that utilize a large health bar on each side and a timer on the middle. The damage done also does a small buffer effect so you can see the impact of each hit.",
         "media": []
       }
     ],
@@ -200,8 +200,13 @@
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
+        "title": "Unreal Engine Behavior Tree",
+        "detail": "This project was my first time using Unreal Engine and we knew we wanted to make a boss fight. I decided to learn how the built-in Behavior Tree system works to create a dynamic and responsive boss character. I took inspiration from existing boss fights in other games to understand the different states and behaviors a boss might have.",
+        "media": []
+      },
+      {
+        "title": "Horror Elements",
+        "detail": "To enhance the horror aspects of the game, I came up with ideas that would make the lead-up to the boss fight more tense and unsettling. This included adding creatures that would move across the screen swiftly, signs/notes that indicate others have been here but have not returned, and a dark environment that would add to the overall atmosphere.",
         "media": []
       }
     ],
@@ -249,8 +254,13 @@
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
+        "title": "Simple mechanics",
+        "detail": "I implemented basic movement and interaction mechanics for the player character, including running, jumping, and interacting with objects in the environment.",
+        "media": []
+      },
+      {
+        "title": "Obstacle Programming",
+        "detail": "I programmed various obstacles for the player to navigate, including lasers that activate and deactivate with a slight random timer. There is also a security guard that has a patrol route, forcing the player to time their movements carefully.",
         "media": []
       }
     ],
@@ -282,12 +292,19 @@
       "PlasticSCM"
     ],
     "contributions": [
-
+      "Implemented the core mechanic of switching between two main characters and their unique attacks/abilities.",
+      "Designed a UI layout with key components for RPGs, such as health bars, inventory system, and minimaps",
+      "Worked in engine to create the map based on simple sketches of the different areas we wanted."
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
+        "title": "Character Swapping",
+        "detail": "The core mechanic of this game was to be able to switch between two main characters and utilize their unique attacks and abilities. Similar to like in games such as 'Genshin Impact', this allows the player to have two different health bars as a resource and more strategic options. I built the system with the capability of adding additional characters if needed and also to include a transition animation if we ever got to that point.",
+        "media": []
+      },
+      {
+        "title": "UI Design",
+        "detail": "A game like this uses a lot of different components in its main UI to provide the player with the necessary information. I designed the layout to be easy to understand and placed the components in places that make sense. The inventory is collapsible to save space but there is no way to hide the minimap and health bars as those are essential. ",
         "media": []
       }
     ],
@@ -332,13 +349,17 @@
     "contributions": [
       "Programmed the functionality of the generator using React.js",
       "Designed a layout that would allow inputs for bingo options and to view the board at the same time",
-      "Connecting a .txt file to javascript that allowed to have default values",
       "Created pop-ups on hover when there is not enough room on the space for the text"
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
+        "title": "Board Generation",
+        "detail": "The board generation system takes user input in one file where each line in the file represents a different space. I thought about making it compatible with csv files or json files but this could make it confusing for a user to type. If more than 25 lines were added, the system randomly selects 25 of them to create the board. There is also an option to include a 'free space' in the center of the board since most bingo games have a free space.",
+        "media": []
+      },
+      {
+        "title": "User Interface",
+        "detail": "The user interface was designed to be simple. Clicking on a bingo space clearly shows it as selected. There are also options to show details of each space if the text is too long. The option to save your generated board as a .txt file and also import existing .txt files for boards.",
         "media": []
       }
     ],
