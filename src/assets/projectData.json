@@ -1,106 +1,182 @@
 {
   "snoozeOrLooze": {
-  "type": "Game",
-  "title": "Snooze Or Looze",
-  "description": "Snooze Or Looze is a debate visual novel game similar to Ace Attorney but mixed in with a card game. Play as Derek and collect arguments cards that will then be used to debate a clock on whether you need to wake up or not. Good arguments will lead to an ending of Derek going back to sleep while bad arguments will force Derek to wake up.",
-  "link": {
-    "site": ["itch.io"],
-    "url": ["https://legendarybanana.itch.io/snooze-or-looze"],
-    "type": ["external"]
-  },
-  "media": [
-    {"type": "image","src": "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"},
-    {"type": "image", "src": "/images/SnoozeOrLooze/CardPickupTutorialText.png"},
-    {"type": "image", "src": "/images/SnoozeOrLooze/CardPickupExample.png"},
-    {"type": "image", "src": "/images/SnoozeOrLooze/CardHandExample.png"},
-    {"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthDespairReaction.png"},
-    {"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthLoseReaction.png"}
-  ],
-  "role": ["Designer", "Programmer", "Writer"],
-  "team": [
-    "Ren Grunberg",
-    "Thomas Heffernan",
-    "Marietta I Rivera Sigmann",
-    "Anthony Panasenko",
-    "Jared Cocomazzi"
-  ],
-  "technologies": ["Unity", "C#", "Github"],
-  "contributions": [
-    "Designed the card system and concept to make this game genre more interactive and replayable",
-    "Programmed the characters to go to a certain reaction based on the player's score",
-    "Programmed a UI that would adapt to the current speaking character",
-    "Led a team of fellow students who were new to game jams"
-  ],
-  "detailedContributions": [
-    {
-      "title": "Card System",
-      "detail": "The card system in SnoozeOrLooze chooses a few cards from a larger pool of cards. The player then collects the cards and which adds it to their playable hand. In the debate section of the game, the card is displayed out as if a person was holding it, and hovering over a card would bring it to the front and show the full details of the card. This system allows for more interactivity in a visual novel style game. Each card has a different value that would either add or subtract from the player's score based on how good the argument is in the context of the debate.",
-      "media": [{"type": "image", "src": "/images/SnoozeOrLooze/CardPickupTutorialText.png"},
-                {"type": "image", "src": "/images/SnoozeOrLooze/CardPickupExample.png"},
-                {"type": "image", "src": "/images/SnoozeOrLooze/CardHandExample.png"}]
+    "type": "Game",
+    "title": "Snooze Or Looze",
+    "description": "Snooze Or Looze is a debate visual novel game similar to Ace Attorney but mixed in with a card game. Play as Derek and collect arguments cards that will then be used to debate a clock on whether you need to wake up or not. Good arguments will lead to an ending of Derek going back to sleep while bad arguments will force Derek to wake up.",
+    "link": {
+      "site": [
+        "itch.io"
+      ],
+      "url": [
+        "https://legendarybanana.itch.io/snooze-or-looze"
+      ],
+      "type": [
+        "external"
+      ]
     },
-    {
-      "title": "Reactive Visuals",
-      "detail": "The UI in SnoozeOrLooze changes based on who is speaking. Each speaker has their own style of textbox. The characters will each switch to a different animation as a reaction to each argument. This is done by noticing the change in score after each argument. A positive change in score would lead to a happy reaction for the player and negative or frustrated reaction from the clock while a negative change in score would lead to the opposite. This allows for more feedback to the player on how well they are doing in the debate.",
-      "media": [{"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthDespairReaction.png"},
-                {"type": "image", "src": "/images/SnoozeOrLooze/ClocksworthLoseReaction.png"}]
-    }
-  ],
-  "revealed": true
-},
-
+    "media": [
+      {
+        "type": "image",
+        "src": "/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/SnoozeOrLooze/CardPickupTutorialText.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/SnoozeOrLooze/CardPickupExample.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/SnoozeOrLooze/CardHandExample.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/SnoozeOrLooze/ClocksworthDespairReaction.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/SnoozeOrLooze/ClocksworthLoseReaction.png"
+      }
+    ],
+    "role": [
+      "Designer",
+      "Programmer",
+      "Writer"
+    ],
+    "team": [
+      "Ren Grunberg",
+      "Thomas Heffernan",
+      "Marietta I Rivera Sigmann",
+      "Anthony Panasenko",
+      "Jared Cocomazzi"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "Github"
+    ],
+    "contributions": [
+      "Designed the card system and concept to make this game genre more interactive and replayable",
+      "Programmed the characters to go to a certain reaction based on the player's score",
+      "Programmed a UI that would adapt to the current speaking character",
+      "Led a team of fellow students who were new to game jams"
+    ],
+    "detailedContributions": [
+      {
+        "title": "Card System",
+        "detail": "The card system in SnoozeOrLooze chooses a few cards from a larger pool of cards. The player then collects the cards and which adds it to their playable hand. In the debate section of the game, the card is displayed out as if a person was holding it, and hovering over a card would bring it to the front and show the full details of the card. This system allows for more interactivity in a visual novel style game. Each card has a different value that would either add or subtract from the player's score based on how good the argument is in the context of the debate.",
+        "media": [
+          {
+            "type": "image",
+            "src": "/images/SnoozeOrLooze/CardPickupTutorialText.png"
+          },
+          {
+            "type": "image",
+            "src": "/images/SnoozeOrLooze/CardPickupExample.png"
+          },
+          {
+            "type": "image",
+            "src": "/images/SnoozeOrLooze/CardHandExample.png"
+          }
+        ],
+        "contributionIndex": -1
+      },
+      {
+        "title": "Reactive Visuals",
+        "detail": "The UI in SnoozeOrLooze changes based on who is speaking. Each speaker has their own style of textbox. The characters will each switch to a different animation as a reaction to each argument. This is done by noticing the change in score after each argument. A positive change in score would lead to a happy reaction for the player and negative or frustrated reaction from the clock while a negative change in score would lead to the opposite. This allows for more feedback to the player on how well they are doing in the debate.",
+        "media": [
+          {
+            "type": "image",
+            "src": "/images/SnoozeOrLooze/ClocksworthDespairReaction.png"
+          },
+          {
+            "type": "image",
+            "src": "/images/SnoozeOrLooze/ClocksworthLoseReaction.png"
+          }
+        ],
+        "contributionIndex": -1
+      }
+    ],
+    "revealed": true
+  },
   "duckGame": {
-  "type": "Game",
-  "title": "Don't Feed the Duck",
-  "description": "Don't Feed The Duck is a platformer set in a city with a bakery. Our duck wants to get into the bakery for their favorite snacks. Gain new abilities as you collect bread crumbs around the city. Break into the bakery and escape with your bread!",
-  "link": {
-    "site": ["itch.io"],
-    "url": ["https://legendarybanana.itch.io/dont-feed-the-duck"],
-    "type": ["external"]
+    "type": "Game",
+    "title": "Don't Feed the Duck",
+    "description": "Don't Feed The Duck is a platformer set in a city with a bakery. Our duck wants to get into the bakery for their favorite snacks. Gain new abilities as you collect bread crumbs around the city. Break into the bakery and escape with your bread!",
+    "link": {
+      "site": [
+        "itch.io"
+      ],
+      "url": [
+        "https://legendarybanana.itch.io/dont-feed-the-duck"
+      ],
+      "type": [
+        "external"
+      ]
+    },
+    "media": [
+      {
+        "type": "image",
+        "src": "/images/DontFeedTheDuck/Duck_Game_Start.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/DontFeedTheDuck/Duck_Game_Settings.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/DontFeedTheDuck/Duck_Game_Glider.png"
+      }
+    ],
+    "role": [
+      "Designer",
+      "Programmer",
+      "UI/UX"
+    ],
+    "team": [
+      "Alexander Costley",
+      "Jacob Berman",
+      "Aiden Morrison",
+      "Gage Delgado"
+    ],
+    "technologies": [
+      "Unity",
+      "C#"
+    ],
+    "contributions": [
+      "Programmed all mechanics of the player and obstacles",
+      "Programmed all UI functions",
+      "Implemented all art assets and animations",
+      "Designed the chase sequence in the bakery",
+      "Created settings menu allowing changes for volume, resolution, quality",
+      "Designed the UI for difficulty select, pause screen, and chase sequence"
+    ],
+    "detailedContributions": [
+      {
+        "title": "Mechanics, Obstacles, and Interactables",
+        "detail": "The player has very simple mechanics with a few checks to identify if you are able to jump, double jump, or glide at the current moment. Most obstacles are trigger collisions that have a slight twist on them. The electricity wires are ___ . The pots in the bakery have a trigger inside of it only allowing the player to potentially get on the sides of it or run into it without losing. The bakery carts only move when the baker gets to that point making the player have to react to it and also memorize which levels of the cart were open. The taxi at the end of the city level brings the character back to the start by parenting the player with it, turning off the player's collision and physics until they are back at the start.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "Bakery Sequence Design",
+        "detail": "The bakery sequence was designed to be our high action section of the game. The difference in each difficulty selector was the length of the level. I designed it using the carts as a marker of where or how far you have gotten, while this makes it unlikely you will get far enough ahead to have to remember which cart is coming at you, it gives you a sense of your own progression every attempt. The breadcrumb speed stacking but the time not stacking was unintended but it made for a fun design challenge that gave you extreme speed but made it hard to control. I decided instead of fixing this to use the breadcrumbs to make lines that allowed you to get speed to potentially skip multiple obstacles. Since the level has an upper and lower level, it was designed where the upper level had all the benefits but staying up there was harder. The lower level has no benefits but it is easier and gave few opportunities to get back up to the upper level.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "UI Implementation",
+        "detail": "The UI in the city appears to show your abilities based on the breadcrumbs you have collected. The progress bar at the bakery scene show where the baker is in comparison to the player and the end of the level. This was done with simple math to calculate the % of distance between the baker/player and the end of the level. The settings menu took me a while to figure out how to implement all the different options but I was able to get it working fully allowing the player to change resolution, quality, and volume. ",
+        "media": [],
+        "contributionIndex": -1
+      }
+    ],
+    "revealed": true
   },
-  "media": [
-    { "type": "image", "src": "/images/DontFeedTheDuck/Duck_Game_Start.png" },
-    { "type": "image", "src": "/images/DontFeedTheDuck/Duck_Game_Settings.png" },
-    { "type": "image", "src": "/images/DontFeedTheDuck/Duck_Game_Glider.png" }
-  ],
-  "role": ["Designer", "Programmer", "UI/UX"],
-  "team": [
-    "Alexander Costley",
-    "Jacob Berman",
-    "Aiden Morrison",
-    "Gage Delgado"
-  ],
-  "technologies": ["Unity", "C#"],
-  "contributions": [
-    "Programmed all mechanics of the player and obstacles",
-    "Programmed all UI functions",
-    "Implemented all art assets and animations",
-    "Designed the chase sequence in the bakery",
-    "Created settings menu allowing changes for volume, resolution, quality",
-    "Designed the UI for difficulty select, pause screen, and chase sequence"
-  ],
-  "detailedContributions": [
-    {
-      "title": "Mechanics, Obstacles, and Interactables",
-      "detail": "The player has very simple mechanics with a few checks to identify if you are able to jump, double jump, or glide at the current moment. Most obstacles are trigger collisions that have a slight twist on them. The electricity wires are ___ . The pots in the bakery have a trigger inside of it only allowing the player to potentially get on the sides of it or run into it without losing. The bakery carts only move when the baker gets to that point making the player have to react to it and also memorize which levels of the cart were open. The taxi at the end of the city level brings the character back to the start by parenting the player with it, turning off the player's collision and physics until they are back at the start.",
-      "media": []
-    },
-    {
-      "title":"Bakery Sequence Design",
-      "detail": "The bakery sequence was designed to be our high action section of the game. The difference in each difficulty selector was the length of the level. I designed it using the carts as a marker of where or how far you have gotten, while this makes it unlikely you will get far enough ahead to have to remember which cart is coming at you, it gives you a sense of your own progression every attempt. The breadcrumb speed stacking but the time not stacking was unintended but it made for a fun design challenge that gave you extreme speed but made it hard to control. I decided instead of fixing this to use the breadcrumbs to make lines that allowed you to get speed to potentially skip multiple obstacles. Since the level has an upper and lower level, it was designed where the upper level had all the benefits but staying up there was harder. The lower level has no benefits but it is easier and gave few opportunities to get back up to the upper level.",
-      "media": []
-    },
-    {
-      "title": "UI Implementation",
-      "detail": "The UI in the city appears to show your abilities based on the breadcrumbs you have collected. The progress bar at the bakery scene show where the baker is in comparison to the player and the end of the level. This was done with simple math to calculate the % of distance between the baker/player and the end of the level. The settings menu took me a while to figure out how to implement all the different options but I was able to get it working fully allowing the player to change resolution, quality, and volume. ",
-      "media": []
-    }
-  ],
-  "revealed": true
-},
-
   "bellicose": {
-  "type": "Game",
+    "type": "Game",
     "title": "Bellicose",
     "description": "Bellicose is a 2D local fighting game utilizing a pixel art style and implements typical fighting game mechanics such as different height blocks/attacks, staggering attacks, different special abilities between characters, and more to pit two players against each other in a skill-based combat system. The name 'Bellicose' means 'demonstrating aggression and willingness to fight'.",
     "link": {
@@ -109,8 +185,14 @@
       "type": []
     },
     "media": [
-      {"type": "image", "src": "/images/Bellicose/Bellicose_Start.png"},
-      {"type": "image", "src": "/images/Bellicose/Bellicose_Fight.png"}
+      {
+        "type": "image",
+        "src": "/images/Bellicose/Bellicose_Start.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Bellicose/Bellicose_Fight.png"
+      }
     ],
     "role": [
       "Programmer",
@@ -137,22 +219,24 @@
       {
         "title": "Character Selection UI",
         "detail": "I designed a character selection UI that allowed players to select their characters separately. Displaying the selected character on the screen also allows for the option to add additional information about the character or display an idle animation of the character. The selection screen also separates a ready up button so each player can indicate when they are ready to start the game.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       },
       {
         "title": "Unity Animation System",
         "detail": "I had to learn the base animation system in Unity so our characters can utilize a variety of animations for different actions and states. I also had to time these animations to match attacks so they feel natural and responsive. Fighting games also tend to have a lot of different moves and combos, since this was initially for a game jam, we had to prioritize the most essential ones but also still make it feel good as a fighting game.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       },
       {
         "title": "Gameplay Information and Feel",
         "detail": "Since we only had one map, I focued on making the map feel more alive and interesting. Using lighting and randomly generated elements, I was able to make the static image for the map more interesting. For the in-game UI, I took inspiration from well known fighting games that utilize a large health bar on each side and a timer on the middle. The damage done also does a small buffer effect so you can see the impact of each hit.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": true
   },
-
   "condemned": {
     "type": "Game",
     "title": "Condemned",
@@ -169,14 +253,38 @@
       ]
     },
     "media": [
-      {"type": "image", "src": "/images/Condemned/Condemned_Title.png"},
-      {"type": "image", "src": "/images/Condemned/Condemned_1.png"},
-      {"type": "image", "src": "/images/Condemned/Condemned_2.png"},
-      {"type": "image", "src": "/images/Condemned/Condemned_3.png"},
-      {"type": "image", "src": "/images/Condemned/Condemned_4.png"},
-      {"type": "image", "src": "/images/Condemned/Condemned_5.png"},
-      {"type": "image", "src": "/images/Condemned/Condemned_5.png"},
-      {"type": "image", "src": "/images/Condemned/Condemned_6.png"}
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_Title.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_1.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_2.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_3.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_4.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_5.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_5.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Condemned/Condemned_6.png"
+      }
     ],
     "role": [
       "Programmer"
@@ -202,17 +310,18 @@
       {
         "title": "Unreal Engine Behavior Tree",
         "detail": "This project was my first time using Unreal Engine and we knew we wanted to make a boss fight. I decided to learn how the built-in Behavior Tree system works to create a dynamic and responsive boss character. I took inspiration from existing boss fights in other games to understand the different states and behaviors a boss might have.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       },
       {
         "title": "Horror Elements",
         "detail": "To enhance the horror aspects of the game, I came up with ideas that would make the lead-up to the boss fight more tense and unsettling. This included adding creatures that would move across the screen swiftly, signs/notes that indicate others have been here but have not returned, and a dark environment that would add to the overall atmosphere.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": true
   },
-
   "alexBank": {
     "type": "Game",
     "title": "Escape Alex Bank",
@@ -229,8 +338,14 @@
       ]
     },
     "media": [
-      {"type": "image", "src": "/images/EscapeAlexBank/Escape_Alex_Bank_Start.png"},
-      {"type": "image", "src": "/images/EscapeAlexBank/Escape_Level2.png"}
+      {
+        "type": "image",
+        "src": "/images/EscapeAlexBank/Escape_Alex_Bank_Start.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/EscapeAlexBank/Escape_Level2.png"
+      }
     ],
     "role": [
       "Programmer"
@@ -256,17 +371,18 @@
       {
         "title": "Simple mechanics",
         "detail": "I implemented basic movement and interaction mechanics for the player character, including running, jumping, and interacting with objects in the environment.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       },
       {
         "title": "Obstacle Programming",
         "detail": "I programmed various obstacles for the player to navigate, including lasers that activate and deactivate with a slight random timer. There is also a security guard that has a patrol route, forcing the player to time their movements carefully.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": false
   },
-
   "starboundWanderers": {
     "type": "Game",
     "title": "Starbound Wanderers",
@@ -277,7 +393,10 @@
       "type": []
     },
     "media": [
-      {"type": "image", "src": "/images/StarboundWanderers/starbound_wanderers.png"}
+      {
+        "type": "image",
+        "src": "/images/StarboundWanderers/starbound_wanderers.png"
+      }
     ],
     "role": [
       "Programmer",
@@ -300,17 +419,18 @@
       {
         "title": "Character Swapping",
         "detail": "The core mechanic of this game was to be able to switch between two main characters and utilize their unique attacks and abilities. Similar to like in games such as 'Genshin Impact', this allows the player to have two different health bars as a resource and more strategic options. I built the system with the capability of adding additional characters if needed and also to include a transition animation if we ever got to that point.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       },
       {
         "title": "UI Design",
-        "detail": "A game like this uses a lot of different components in its main UI to provide the player with the necessary information. I designed the layout to be easy to understand and placed the components in places that make sense. The inventory is collapsible to save space but there is no way to hide the minimap and health bars as those are essential. ",
-        "media": []
+        "detail": "A game like this uses a lot of different components in its main UI to provide the player with the necessary information. I designed the layout to be easy to understand and placed the components in places that make sense. The inventory is collapsible to save space but there is no way to hide the minimap and health bars as those are essential.",
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": false
   },
-
   "customBingo": {
     "type": "Software",
     "title": "Custom Bingo Generator",
@@ -330,9 +450,18 @@
       ]
     },
     "media": [
-      {"type": "image", "src": "/images/CustomBingo/bingo main page.png"},
-      {"type": "image", "src": "/images/CustomBingo/bingo_selected_example.png"},
-      {"type": "image", "src": "/images/CustomBingo/custom_bingo_example.png"}
+      {
+        "type": "image",
+        "src": "/images/CustomBingo/bingo main page.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/CustomBingo/bingo_selected_example.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/CustomBingo/custom_bingo_example.png"
+      }
     ],
     "role": [
       "Designer",
@@ -355,17 +484,18 @@
       {
         "title": "Board Generation",
         "detail": "The board generation system takes user input in one file where each line in the file represents a different space. I thought about making it compatible with csv files or json files but this could make it confusing for a user to type. If more than 25 lines were added, the system randomly selects 25 of them to create the board. There is also an option to include a 'free space' in the center of the board since most bingo games have a free space.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       },
       {
         "title": "User Interface",
         "detail": "The user interface was designed to be simple. Clicking on a bingo space clearly shows it as selected. There are also options to show details of each space if the text is too long. The option to save your generated board as a .txt file and also import existing .txt files for boards.",
-        "media": []
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": true
   },
-
   "leagueStatTracking": {
     "type": "Software",
     "title": "LoL Stat Tracking Tool",
@@ -376,8 +506,14 @@
       "type": []
     },
     "media": [
-      {"type": "image", "src": "/images/RiotDataProject/riot_api_data_sheet.png"},
-      {"type": "image", "src": "/images/RiotDataProject/riot_api_project_code.png"}
+      {
+        "type": "image",
+        "src": "/images/RiotDataProject/riot_api_data_sheet.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/RiotDataProject/riot_api_project_code.png"
+      }
     ],
     "role": [
       "Programmer",
@@ -401,14 +537,20 @@
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
-        "media": []
+        "title": "Using Riot Games API",
+        "detail": "I utilized the Riot Games API to fetch player statistics and game data. This involved making HTTP requests with the appropriate headers and handling the JSON responses to extract the necessary information. The api was recently updated to use riotIDs instead of summoner names, so I had to make sure the code was updated to reflect that.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "Data Analysis and Visualization",
+        "detail": "I analyzed the data collected from the Riot Games API to identify trends and patterns in player performance. I then used the pandas library to create dataframes so I have the ability to manipulate the data. I also created a Google Sheet that would automatically read the data from the .csv file and organize it into a more readable format for analysis. Working in google sheets also allowed me to create visualizations using pivot tables.",
+        "media": [],
+        "contributionIndex": -1
       }
     ],
-    "revealed": true
+    "revealed": false
   },
-
   "ticTacToe": {
     "type": "Software",
     "title": "TicTacToe Gamemodes",
@@ -425,9 +567,18 @@
       ]
     },
     "media": [
-      {"type": "image", "src": "/images/TicTacToeGamemodes/tictactoeMenu.png"},
-      {"type": "image", "src": "/images/TicTacToeGamemodes/tictactoeTie.png"},
-      {"type": "image", "src": "/images/TicTacToeGamemodes/tictactoeWin.png"}
+      {
+        "type": "image",
+        "src": "/images/TicTacToeGamemodes/tictactoeMenu.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/TicTacToeGamemodes/tictactoeTie.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/TicTacToeGamemodes/tictactoeWin.png"
+      }
     ],
     "role": [
       "Programmer",
@@ -448,14 +599,20 @@
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
-        "media": []
+        "title": "Base game and gamemodes",
+        "detail": "This was a project I made when first learning programming. The base game for tic-tac-toe was quite simple. I was able to use that base to create different gamemodes that I could think of. Obviously one of them was just in general against the computer doing a random move. I then created a gamemode where you could not win as tic-tac-toe is a solve game. This allowed me to learn the minimax alogorithm and implement it to give myself a better understanding of algorithms. The last and main gamemode I wanted to create was a gamemode where each player could only have 3 symbols on the board at one time. This was a fun twist on the game and allowed for more strategy and required thinking ahead to win.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "Java Swing GUI",
+        "detail": "I created a GUI using Java Swing to make it playable outside of the terminal. This allowed me to learn how to use the library and how to create a simple GUI. I also learned how to use action listeners to make the buttons work and how to update the GUI based on the game state.",
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": true
   },
-
   "rerender": {
     "type": "Game",
     "title": "Rerender",
@@ -472,14 +629,38 @@
       ]
     },
     "media": [
-      { "type": "image", "src": "/images/Rerender/Rerender_Title.jpg" },
-      { "type": "image", "src": "/images/Rerender/Rerender_Cinematic_Shot.png" },
-      { "type": "image", "src": "/images/Rerender/Rerender_Gameplay_1.png" },
-      { "type": "image", "src": "/images/Rerender/Rerender_Gameplay_2.png" },
-      { "type": "image", "src": "/images/Rerender/Rerender_Quest_UI.png" },
-      { "type": "image", "src": "/images/Rerender/Rerender_Restaurant_UI.png" },
-      { "type": "image", "src": "/images/Rerender/Rerender_Gameplay_3.png" },
-      { "type": "video", "src": "/videos/Rerender25PV.mp4" }
+      {
+        "type": "image",
+        "src": "/images/Rerender/Rerender_Title.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/images/Rerender/Rerender_Cinematic_Shot.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Rerender/Rerender_Gameplay_1.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Rerender/Rerender_Gameplay_2.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Rerender/Rerender_Quest_UI.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Rerender/Rerender_Restaurant_UI.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/Rerender/Rerender_Gameplay_3.png"
+      },
+      {
+        "type": "video",
+        "src": "/videos/Rerender25PV.mp4"
+      }
     ],
     "role": [
       "Programmer"
@@ -511,14 +692,26 @@
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
-        "media": []
+        "title": "Save/Load System",
+        "detail": "I created a save/load system in Unreal Engine that allowed the player to keep their progress throughout the game. This allowed the player to save their location, upgrades, and quest progress so they can come back and load the game a different time. This was done using Unreal Engine's built-in save system and was a good learning experience for me to learn how to use Unreal Engine's save system.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "Quest/Restaurant Upgrading System",
+        "detail": "I reworked the entire quest/restaurant upgrading system and included a tutorial to introduce the player to the system. This allowed the player to understand how to complete quests and upgrade restaurants. I also added a tutorial that would guide the player through the first quest and restaurant upgrade so they can understand how to play the game. When joining the project, the quest system would only support one restaurant at a time, I reworked the system to support multiple restaurants. There was also no tutorial for any of this which was the core mechanic of the first few levels so I designed and added a tutorial.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "UI Implementation",
+        "detail": "I implemented the functionality of the UI for restaurants and vehicle upgrading. Our UI designer made mockups of the design and I was able to utilize the widget system in Unreal Engine to create the UI elements. I also implemented the functionality of the UI so it would work exactly as intended by the designer. Unreal Engine's UI system is very different from the system I was used to in Unity so this was a great learning experience. I was able to relate it closely to my experience in web development since some of the core concepts seemed similar.",
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": true
   },
-
   "kamikaze": {
     "type": "Game",
     "title": "KamiKaZe",
@@ -535,14 +728,38 @@
       ]
     },
     "media": [
-      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_Title.jpg" },
-      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_City_1.png" },
-      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_City_2.png" },
-      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_4Player_Gameplay.jpg" },
-      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_2Player_Gameplay.jpg" },
-      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_Forest_1.png" },
-      { "type": "image", "src": "/images/KamiKaZe/Kamikaze_Forest_2.png" },
-      { "type": "video", "src": "/videos/KamiKazeTrailer.mp4" }
+      {
+        "type": "image",
+        "src": "/images/KamiKaZe/Kamikaze_Title.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/images/KamiKaZe/Kamikaze_City_1.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/KamiKaZe/Kamikaze_City_2.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/KamiKaZe/Kamikaze_4Player_Gameplay.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/images/KamiKaZe/Kamikaze_2Player_Gameplay.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/images/KamiKaZe/Kamikaze_Forest_1.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/KamiKaZe/Kamikaze_Forest_2.png"
+      },
+      {
+        "type": "video",
+        "src": "/videos/KamiKazeTrailer.mp4"
+      }
     ],
     "role": [
       "Programmer"
@@ -579,9 +796,98 @@
     ],
     "detailedContributions": [
       {
-        "title": "",
-        "detail": "",
-        "media": []
+        "title": "Mechanics and Interactables",
+        "detail": "I implemented core features of a shooter game that help with player feedback and immersion. This included bullet tracers, reloading, and ammo tracking. Bullet tracers allow the player to actually see where they are shooting. Reloading and ammo are core parts of a shooter that this game was initially missing in testing, it was quickly discovered these were essential to the game. I also added interactable environmental features that gave the level designers more possibilities to create unique maps. Bounce pads that would launch the player in the air and icy floors that would make the player movement more unstable. Both of these features were designed in a way that the level designers could visibly see the hitboxes to place them in editor and it would be hidden in game by the actual object that was intended to be interacted with. I was also in the process of working on destructable environments but it was not finished before the end of the project so none of that made it into the level designs.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "Weapons and Power-ups",
+        "detail": "One of my first tasks on this project was to add new weapons to change up the gameplay. Our system was not built to handle that initally so I had to rewrite it to allow for multiple weapons. We wanted weapons that would drastically change the gameplay so we went with a sniper rifle and a rocket launcher first. We had to obviously make adjustments to their damage and impact. The sniper allowed for longer range duels while the rocket launcher had more area damage and also allowed for rocket jumping. These were in addition to the powerups so they did not have to be too balanced as they were a temporary buff. The powerups that I were assigned was a snowball and paintball effect. The snowball applied the same effect as the icy floor but to the player hit by the bullet. The paintball would obscure the screen of the player hit by it. I built this mechanic to be easily expandable so each player could have a different color paintball. I even played with having to show a different splat every hit but was unable to figure it out in time.",
+        "media": [],
+        "contributionIndex": -1
+      }
+    ],
+    "revealed": true
+  },
+  "puppetry": {
+    "type": "Game",
+    "title": "Puppetry",
+    "description": "Puppetry is a 3D puzzle-mystery adventure where you play as a haunted voodoo doll trapped inside a mysterious mansion. \n\n Stripped of its power and bound by dark magic, the doll must explore the mansion’s shifting halls, uncover hidden secrets, and recover its lost voodoo pins to regain its abilities. Each reclaimed pin unlocks new magical powers, allowing you to manipulate objects, solve environmental puzzles, and reveal the mansion’s buried truths.",
+    "link": {
+      "site": [
+        "itch.io",
+        "Steam"
+      ],
+      "url": [
+        "https://puppetrygame.itch.io/puppetry-demo",
+        "#"
+      ],
+      "type": [
+        "external",
+        "external"
+      ]
+    },
+    "media": [
+      {
+        "type": "image",
+        "src": "/images/Puppetry/Main_Capsule.png"
+      }
+    ],
+    "role": [
+      "Programmer",
+      "Level Designer"
+    ],
+    "team": [
+      "Chase Burdin",
+      "Maya Patten",
+      "Charlie Schmerzler",
+      "Thomas Heffernan",
+      "Maggie Ulto",
+      "Daria Prewitt",
+      "Jasper Vergo",
+      "John De Andrade",
+      "Shark Da Silva",
+      "Sarah Nim",
+      "Marietta I Rivera Sigmann",
+      "Ren Grunberg",
+      "Elisa Luna Cameron",
+      "Anthony Panasenko",
+      "Christian Drapeau",
+      "Camilla Vitola-Franchi",
+      "Sammi Bosque",
+      "Rachel Harvie"
+    ],
+    "technologies": [
+      "Unreal Engine 5",
+      "UE Blueprints",
+      "C++",
+      "PlasticSCM"
+    ],
+    "contributions": [
+      "Implemented half of the mechanics that can be activated by the player using the pins.",
+      "Helped build a modular system that allowed our main mechanic, the pins, to easily be used to do various things in the game.",
+      "Implemented and provided input on UI systems for menus that were easy to use and systems for player immersion like inspectable lore items",
+      "Assisted in level designing and implemented the interactable components of most of the levels."
+    ],
+    "detailedContributions": [
+      {
+        "title": "Pin Mechanics",
+        "detail": "The main mechanic of the game is the pins that the player can use to interact with certain objects in the world. These work through a system my other programmer designed that allows for components to be 'powerable'. This was used as the base for the mechanics. We had mechanics that allowed objects to be pushed, pulled, rotated, create a bridge, light a fire, and more. I implemented half of these mechanics and helped add to the system to allow for more mechanics to be added. The powerable components are designed to take multiple parameters like power required, tags, and even a color. This allows flexibility to know what is currently powering a compoent and allows us to compare it to the requirements of the component to know if it should be powered or not.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "Level Design",
+        "detail": "The level designer and I were roomates so we were able to work closely together to design the level. The design was done on paper before it was gray boxed in the engine. I then implemented the interactable components of the level and made sure they worked as intended. I was also functionally in charge of designing the ending sequence of the game. This was difficult as we had to force the player back through the mansion in reverse order. This was able to be done by moving each room around so they connected to each other linearly. A difficult challenge here was setting up the timing and sequence of the main obstacle so that it would feel challenging and fun while also not diverting from the theme of the game.",
+        "media": [],
+        "contributionIndex": -1
+      },
+      {
+        "title": "UI Implementation",
+        "detail": "Our UI was designed by our UI designer and I took those assets and implemented them into the engine. The main menu utilizes the paintings as buttons and the play button gives off a more dramatic effect on hover while playing an animation that launches you into the game when clicked. Another challenging UI to implement was the inspectable lore item. These are items that the player can optionally find and look at. The design was heavily inspired how inspecting an item works in Resident Evil. Being able to rotate the object and zoom in and out was a challenge to implement but once it was working it was a very satisfying feature to have in the game while also giving us the option to hide clues there. The final challenging UI was the journal. This journal is a collection of all the rooms the player has been in, sigils they have activated with the pin, and the lore items they have found. This was a challenge to implement as it had to be dynamic and update based on the player's progress. I also had to make sure it was easy to navigate and understand.",
+        "media": [],
+        "contributionIndex": -1
       }
     ],
     "revealed": true

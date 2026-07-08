@@ -253,6 +253,10 @@
     box-sizing: border-box;
 }
 
+.contribution-detail .carousel-track {
+    background-color: #a09458;
+}
+
 .contribution-media {
     flex: 1;
     min-width: 300px;

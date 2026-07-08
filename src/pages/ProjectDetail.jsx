@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -21,6 +21,26 @@ const ProjectDetail = () => {
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
   if (!project) return <h2>Project not found!</h2>;
+
+  const contributionToDetailMap = useMemo(() => {
+    const contributionsCount = project.contributions?.length || 0;
+    const map = Array(contributionsCount).fill(null);
+    const detailed = project.detailedContributions || [];
+
+    detailed.forEach((d, detailIdx) => {
+      const specified = typeof d.contributionIndex === 'number' ? d.contributionIndex : -1;
+
+      if (specified >= 0 && specified < contributionsCount && map[specified] === null) {
+        map[specified] = detailIdx;
+      } else {
+        // find next free slot
+        const free = map.findIndex((v) => v === null);
+        if (free !== -1) map[free] = detailIdx;
+      }
+    });
+
+    return map;
+  }, [project]);
 
   React.useEffect(() => {
     if (typeof window !== 'undefined' && window.location.hash) {
@@ -177,11 +197,24 @@ const ProjectDetail = () => {
           </div>
           {dropdownStates[1] && (
             <ul className="list">
-              {project.contributions.map((item) => (
-                <li className="list-item" key={`contribution-${item}`}>
-                  - {item}
-                </li>
-              ))}
+              {project.contributions.map((item, index) => {
+                const mappedDetailIndex = contributionToDetailMap[index];
+                return (
+                  <li className="list-item" key={`contribution-${item}-${index}`}>
+                    - {item}
+                    {mappedDetailIndex !== null && mappedDetailIndex !== undefined && (
+                      <a
+                        href={`#contribution-${mappedDetailIndex}`}
+                        className="contribution-link"
+                        title="View detailed explanation"
+                        onClick={(e) => { e.preventDefault(); handleContributionClick(mappedDetailIndex); }}
+                      >
+                        <sup>[{mappedDetailIndex + 1}]</sup>
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
@@ -296,7 +329,7 @@ const ProjectDetail = () => {
           <div className="section description">
             <h3 className="section-title">Description</h3>
             <ul className="list">
-              <li className="list-item">{project.description}</li>
+              <li className="list-item "style={{ whiteSpace: "pre-line" }}>{project.description}</li>
             </ul>
           </div>
         </div>
@@ -305,22 +338,24 @@ const ProjectDetail = () => {
           <div className="section contributions">
             <h3 className="section-title">Contributions</h3>
             <ul className="list">
-              {project.contributions.map((item, index) => (
-                <li className="list-item" key={`contribution-${item}`}>
-                  - {item}
-                  {project.detailedContributions && 
-                   project.detailedContributions[index]?.title && (
-                    <a 
-                      href={`#contribution-${index}`}
-                      className="contribution-link"
-                      title="View detailed explanation"
-                      onClick={(e) => { e.preventDefault(); handleContributionClick(index); }}
-                    >
-                      <sup>[{index + 1}]</sup>
-                    </a>
-                  )}
-                </li>
-              ))}
+              {project.contributions.map((item, index) => {
+                const mappedDetailIndex = contributionToDetailMap[index];
+                return (
+                  <li className="list-item" key={`contribution-${item}-${index}`}>
+                    - {item}
+                    {mappedDetailIndex !== null && mappedDetailIndex !== undefined && (
+                      <a
+                        href={`#contribution-${mappedDetailIndex}`}
+                        className="contribution-link"
+                        title="View detailed explanation"
+                        onClick={(e) => { e.preventDefault(); handleContributionClick(mappedDetailIndex); }}
+                      >
+                        <sup>[{mappedDetailIndex + 1}]</sup>
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
