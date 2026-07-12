@@ -25,6 +25,14 @@
       {
         "type": "video",
         "src": "/videos/PuppetryTrailer.mp4"
+      },
+      {
+        "type": "image",
+        "src": "/images/Puppetry/Puppetry_Img1"
+      },
+      {
+        "type": "image",
+        "src": "/images/Puppetry/Puppetry_Img2"
       }
     ],
     "role": [
@@ -79,7 +87,14 @@
       {
         "title": "UI Implementation",
         "detail": "Our UI was designed by our UI designer and I took those assets and implemented them into the engine. The main menu utilizes the paintings as buttons and the play button gives off a more dramatic effect on hover while playing an animation that launches you into the game when clicked. Another challenging UI to implement was the inspectable lore item. These are items that the player can optionally find and look at. The design was heavily inspired how inspecting an item works in Resident Evil. Being able to rotate the object and zoom in and out was a challenge to implement but once it was working it was a very satisfying feature to have in the game while also giving us the option to hide clues there. The final challenging UI was the journal. This journal is a collection of all the rooms the player has been in, sigils they have activated with the pin, and the lore items they have found. This was a challenge to implement as it had to be dynamic and update based on the player's progress. I also had to make sure it was easy to navigate and understand.",
-        "media": [],
+        "media": [{
+          "type": "image",
+          "src": "/images/Puppetry/Puppetry_ImgSettings.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/Puppetry/Puppetry_ImgInspect.png"
+        }],
         "contributionIndex": 2
       }
     ],
