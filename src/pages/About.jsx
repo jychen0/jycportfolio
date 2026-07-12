@@ -29,11 +29,12 @@ const About = () => {
     "My favorite band is Against The Current.",
     "I have been to 9 different US states and 5 different countries.",
     "Some of my favorite book series are 'The Inheritance Games', 'Ranger's Apprentice', 'Alex Rider', and 'The Empyrean'.",
-    "Most recent movie I have watched (as of January 2026): 'A Working Man'.",
+    "Most recent movie I have watched (as of July 2026): 'Obsession'.",
     "I have a 3D printed version of Jhin's 'Whipser' from League of Legends and also one of Jett's Kunai from VALORANT",
     "My Hogwarts house is Ravenclaw.",
     "My MBTI is ISTJ-T.",
-    "The first concert I ever went to was a Lyn Lapid performance in Boston"
+    "The first concert I ever went to was a Lyn Lapid performance in Boston",
+    "I graduated from university a year early!",
   ];
 
   const age = calculateAge(birthDate);
@@ -91,13 +92,13 @@ const About = () => {
             <img src={"/images/Me/user-1.jpg"}></img>
           </div>
           <div className="about-col-2">
-            <p>Hi! My name is Jason Chen, and I'm a {age}-year-old senior at Clark University. I am an aspiring Game Developer majoring in Interactive Media Design and Data Science. I was born in China but have lived in the greater Boston area since I was one year old. I started gaming at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. Playing games and talking to other gamers showed me how games have the power to tell stories, create long-lasting bonds, and build communities.
+            <p>Hi! My name is Jason Chen, and I'm a {age}-year-old aspiring game developer. I graduated from Clark University with a degree in Interactive Media Design and Data Science. I was born in China but have lived in the greater Boston area since I was one year old. I started gaming at a young age with Pokemon Platinum but quickly realized it was much more than a hobby. Playing games and talking to other gamers showed me how games have the power to tell stories, create long-lasting bonds, and build communities.
               <br /><br />
               I started picking up coding in high school knowing it was one of the most important parts of developing a game. I have since learned multiple coding languages and have hands-on experience with engines like Unity and Unreal Engine for game development. With these skills, I have worked on a few small games and projects to challenge and evolve my skills.
               <br /><br />
               Outside of my education and career goals, I'm a transportation enthusiast from cars to trains to planes. I love watching esports tournaments of my favorite competitive games and even attending the events if I can. I'm always excited to collaborate on new projects, game development related or not, and to chat with new people!
-              <br />
-              📧 Feel free to connect and reach out to me on <a href="https://www.linkedin.com/in/jason-yuzheng-chen/" target="_blank">LinkedIn</a>
+              <br /><br />
+              <i className="fa-brands fa-linkedin"></i> Feel free to connect and reach out to me on <a href="https://www.linkedin.com/in/jason-yuzheng-chen/" target="_blank">LinkedIn</a>
             </p>
             <br />
             <p className="fun-facts">Fun Facts: {displayedText}<span className="cursor">|</span></p>

@@ -42,18 +42,18 @@ const Tabs = () => {
       <div className={`tab-contents ${activeTab === 'experience' ? 'active-tab experience-tab' : ''}`} id="experience">
         <ul className="grid-content-experience">
           {/* <li><span><b>Test1</b></span><br />test1<br />test1</li> */}
-          <li><span><b>Pharmacy Technician</b></span><br />CVS, Holden MA<br />Sep 2025 - Present </li>
-          <li><span><b>Home Game Staff</b></span><br />Clark University, Worcester MA<br />Sep 2023 - Present (Work Study)</li>
-          <li><span><b>Seasonal Driver</b></span><br />Enterprise Mobility, Boston MA<br />June 2025 - August 2025</li>
+          <li><span><b>Seasonal Driver</b></span><br />Enterprise Mobility, Boston MA<br />June 2026 - Present<br />June 2025 - August 2025</li>
+          <li><span><b>Pharmacy Technician</b></span><br />CVS, Holden MA<br />Sep 2025 - May 2026 </li>
+          <li><span><b>Home Game Staff</b></span><br />Clark University, Worcester MA<br />Sep 2023 - May 2026</li>
           <li><span><b>Game Programmer & Designer</b></span><br />Studio Blue Jay, Worcester MA<br />Jan 2024 - May 2024</li>
           <li><span><b>AP Computer Science A Tutor</b></span><br />Online / Remote<br />Oct 2021 - May 2024 (Self-Employed)</li>
-          <li><span><b>Cashier / Barista</b></span><br />Paris Baguette, Cambridge MA<br />Mar 2022 - Aug 2023 (Seasonal)</li>
+          <li><span><b>Cashier / Barista</b></span><br />Paris Baguette, Cambridge MA<br />May 2024 - Aug 2024<br />Mar 2022 - Aug 2023</li>
         </ul>
       </div>
 
       <div className={`tab-contents ${activeTab === 'education' ? 'active-tab education-tab' : ''}`} id="education">
         <ul className="grid-content-education">
-          <li><span><b>2023 - 2026 Clark University</b></span><br />B.A. in Interactive Media<br />B.S. in Data Science</li>
+          <li><span><b>2023 - 2026 Clark University</b></span><br />B.A. in Interactive Media and Data Science</li>
           <li><span><b>2021 - 2023 Bunker Hill Community College</b></span><br />Dual Enrollment Program</li>
           <li><span><b>2019 - 2023 Malden High School</b></span><br />High School Diploma</li>
         </ul>

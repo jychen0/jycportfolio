@@ -24,18 +24,29 @@ const ProjectDetail = () => {
 
   const contributionToDetailMap = useMemo(() => {
     const contributionsCount = project.contributions?.length || 0;
-    const map = Array(contributionsCount).fill(null);
+    const map = Array.from({ length: contributionsCount }, () => []);
     const detailed = project.detailedContributions || [];
 
     detailed.forEach((d, detailIdx) => {
-      const specified = typeof d.contributionIndex === 'number' ? d.contributionIndex : -1;
+      const specified = Array.isArray(d.contributionIndex)
+        ? d.contributionIndex
+        : typeof d.contributionIndex === 'number'
+          ? [d.contributionIndex]
+          : [];
 
-      if (specified >= 0 && specified < contributionsCount && map[specified] === null) {
-        map[specified] = detailIdx;
+      const validIndices = specified.filter(
+        (value) => Number.isInteger(value) && value >= 0 && value < contributionsCount
+      );
+
+      if (validIndices.length > 0) {
+        validIndices.forEach((value) => {
+          if (!map[value].includes(detailIdx)) {
+            map[value].push(detailIdx);
+          }
+        });
       } else {
-        // find next free slot
-        const free = map.findIndex((v) => v === null);
-        if (free !== -1) map[free] = detailIdx;
+        const free = map.findIndex((detailIndices) => detailIndices.length === 0);
+        if (free !== -1) map[free].push(detailIdx);
       }
     });
 
@@ -198,20 +209,23 @@ const ProjectDetail = () => {
           {dropdownStates[1] && (
             <ul className="list">
               {project.contributions.map((item, index) => {
-                const mappedDetailIndex = contributionToDetailMap[index];
+                const mappedDetailIndices = contributionToDetailMap[index] || [];
                 return (
                   <li className="list-item" key={`contribution-${item}-${index}`}>
                     - {item}
-                    {mappedDetailIndex !== null && mappedDetailIndex !== undefined && (
-                      <a
-                        href={`#contribution-${mappedDetailIndex}`}
-                        className="contribution-link"
-                        title="View detailed explanation"
-                        onClick={(e) => { e.preventDefault(); handleContributionClick(mappedDetailIndex); }}
-                      >
-                        <sup>[{mappedDetailIndex + 1}]</sup>
-                      </a>
-                    )}
+                    {mappedDetailIndices.length > 0 && mappedDetailIndices.map((mappedDetailIndex, detailLinkIndex) => (
+                      <React.Fragment key={`contribution-link-${index}-${mappedDetailIndex}`}>
+                        {detailLinkIndex > 0 && ' '}
+                        <a
+                          href={`#contribution-${mappedDetailIndex}`}
+                          className="contribution-link"
+                          title="View detailed explanation"
+                          onClick={(e) => { e.preventDefault(); handleContributionClick(mappedDetailIndex); }}
+                        >
+                          <sup>[{mappedDetailIndex + 1}]</sup>
+                        </a>
+                      </React.Fragment>
+                    ))}
                   </li>
                 );
               })}
@@ -339,20 +353,23 @@ const ProjectDetail = () => {
             <h3 className="section-title">Contributions</h3>
             <ul className="list">
               {project.contributions.map((item, index) => {
-                const mappedDetailIndex = contributionToDetailMap[index];
+                const mappedDetailIndices = contributionToDetailMap[index] || [];
                 return (
                   <li className="list-item" key={`contribution-${item}-${index}`}>
                     - {item}
-                    {mappedDetailIndex !== null && mappedDetailIndex !== undefined && (
-                      <a
-                        href={`#contribution-${mappedDetailIndex}`}
-                        className="contribution-link"
-                        title="View detailed explanation"
-                        onClick={(e) => { e.preventDefault(); handleContributionClick(mappedDetailIndex); }}
-                      >
-                        <sup>[{mappedDetailIndex + 1}]</sup>
-                      </a>
-                    )}
+                    {mappedDetailIndices.length > 0 && mappedDetailIndices.map((mappedDetailIndex, detailLinkIndex) => (
+                      <React.Fragment key={`contribution-link-${index}-${mappedDetailIndex}`}>
+                        {detailLinkIndex > 0 && ' '}
+                        <a
+                          href={`#contribution-${mappedDetailIndex}`}
+                          className="contribution-link"
+                          title="View detailed explanation"
+                          onClick={(e) => { e.preventDefault(); handleContributionClick(mappedDetailIndex); }}
+                        >
+                          <sup>[{mappedDetailIndex + 1}]</sup>
+                        </a>
+                      </React.Fragment>
+                    ))}
                   </li>
                 );
               })}

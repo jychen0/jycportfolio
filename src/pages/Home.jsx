@@ -17,17 +17,17 @@ const Home = () => {
             </p>
             <p>Here are some of my projects!</p>
             <div className="featured-projects">
-              <Link to="/projects/snoozeOrLooze">
-                <img src={"/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"} alt="Snooze Or Looze Title Screen"></img>
-                <p>Snooze Or Looze</p>
-              </Link>
-              <Link to="/projects/duckGame">
-                <img src={"/images/DontFeedTheDuck/Duck_Game_Start.png"} alt="DontFeedTheDuck Title Screen"></img>
-                <p>Don't Feed The Duck</p>
+              <Link to="/projects/puppetry">
+                <img src={"/images/Puppetry/Main_Capsule.png"} alt="Puppetry Title Capsule"></img>
+                <p>Puppetry</p>
               </Link>
               <Link to="/projects/kamikaze">
                 <img src="/images/KamiKaZe/Kamikaze_Title.jpg" alt="KamiKaze Header Image"></img>
                 <p>KamiKaZe</p>
+              </Link>
+              <Link to="/projects/snooseorloose">
+                <img src={"/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"} alt="Snooze Or Looze Title Screen"></img>
+                <p>Snooze Or Looze</p>
               </Link>
               <Link to="/projects/bellicose">
                 <img src={"/images/Bellicose/Bellicose_Start.png"} alt="Bellicose Title Screen"></img>
