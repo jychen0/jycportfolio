@@ -364,19 +364,19 @@
         "title": "Mechanics, Obstacles, and Interactables",
         "detail": "The player has very simple mechanics with a few checks to identify if you are able to jump, double jump, or glide at the current moment. Most obstacles are trigger collisions that have a slight twist on them. The electricity wires are ___ . The pots in the bakery have a trigger inside of it only allowing the player to potentially get on the sides of it or run into it without losing. The bakery carts only move when the baker gets to that point making the player have to react to it and also memorize which levels of the cart were open. The taxi at the end of the city level brings the character back to the start by parenting the player with it, turning off the player's collision and physics until they are back at the start.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": 0
       },
       {
         "title": "Bakery Sequence Design",
         "detail": "The bakery sequence was designed to be our high action section of the game. The difference in each difficulty selector was the length of the level. I designed it using the carts as a marker of where or how far you have gotten, while this makes it unlikely you will get far enough ahead to have to remember which cart is coming at you, it gives you a sense of your own progression every attempt. The breadcrumb speed stacking but the time not stacking was unintended but it made for a fun design challenge that gave you extreme speed but made it hard to control. I decided instead of fixing this to use the breadcrumbs to make lines that allowed you to get speed to potentially skip multiple obstacles. Since the level has an upper and lower level, it was designed where the upper level had all the benefits but staying up there was harder. The lower level has no benefits but it is easier and gave few opportunities to get back up to the upper level.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": 3
       },
       {
         "title": "UI Implementation",
         "detail": "The UI in the city appears to show your abilities based on the breadcrumbs you have collected. The progress bar at the bakery scene show where the baker is in comparison to the player and the end of the level. This was done with simple math to calculate the % of distance between the baker/player and the end of the level. The settings menu took me a while to figure out how to implement all the different options but I was able to get it working fully allowing the player to change resolution, quality, and volume. ",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": [1, 4, 5]
       }
     ],
     "revealed": true
@@ -463,19 +463,19 @@
         "title": "Save/Load System",
         "detail": "I created a save/load system in Unreal Engine that allowed the player to keep their progress throughout the game. This allowed the player to save their location, upgrades, and quest progress so they can come back and load the game a different time. This was done using Unreal Engine's built-in save system and was a good learning experience for me to learn how to use Unreal Engine's save system.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": 0
       },
       {
         "title": "Quest/Restaurant Upgrading System",
         "detail": "I reworked the entire quest/restaurant upgrading system and included a tutorial to introduce the player to the system. This allowed the player to understand how to complete quests and upgrade restaurants. I also added a tutorial that would guide the player through the first quest and restaurant upgrade so they can understand how to play the game. When joining the project, the quest system would only support one restaurant at a time, I reworked the system to support multiple restaurants. There was also no tutorial for any of this which was the core mechanic of the first few levels so I designed and added a tutorial.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": 1
       },
       {
         "title": "UI Implementation",
         "detail": "I implemented the functionality of the UI for restaurants and vehicle upgrading. Our UI designer made mockups of the design and I was able to utilize the widget system in Unreal Engine to create the UI elements. I also implemented the functionality of the UI so it would work exactly as intended by the designer. Unreal Engine's UI system is very different from the system I was used to in Unity so this was a great learning experience. I was able to relate it closely to my experience in web development since some of the core concepts seemed similar.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": 2
       }
     ],
     "revealed": true
@@ -525,19 +525,19 @@
         "title": "Character Selection UI",
         "detail": "I designed a character selection UI that allowed players to select their characters separately. Displaying the selected character on the screen also allows for the option to add additional information about the character or display an idle animation of the character. The selection screen also separates a ready up button so each player can indicate when they are ready to start the game.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": 0
       },
       {
         "title": "Unity Animation System",
         "detail": "I had to learn the base animation system in Unity so our characters can utilize a variety of animations for different actions and states. I also had to time these animations to match attacks so they feel natural and responsive. Fighting games also tend to have a lot of different moves and combos, since this was initially for a game jam, we had to prioritize the most essential ones but also still make it feel good as a fighting game.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": 1
       },
       {
         "title": "Gameplay Information and Feel",
         "detail": "Since we only had one map, I focued on making the map feel more alive and interesting. Using lighting and randomly generated elements, I was able to make the static image for the map more interesting. For the in-game UI, I took inspiration from well known fighting games that utilize a large health bar on each side and a timer on the middle. The damage done also does a small buffer effect so you can see the impact of each hit.",
         "media": [],
-        "contributionIndex": -1
+        "contributionIndex": [2, 3]
       }
     ],
     "revealed": true
@@ -735,6 +735,120 @@
       }
     ],
     "revealed": false
+  },
+    "igdaWebsite": {
+    "type": "Software",
+    "title": "IGDA Website",
+    "description": "This project was a website for the IGDA club at Clark University. I was one of two programmers on this project. This website was meant to be a hub for everything IGDA related, centralizing information about the club, event signups, and upcoming events. I worked on the front-end of the website which was just a simple design using the colors of the school. I was also responsible for the admin section of the website which allowed the club's leadership to easily modify the website without needing to know how to code or access the backend of the website. I also had to make sure the forms for event signups worked properly and the data was stored somewhere so it can be accessed later to organize the event. Unfortunately, we were not able to find a way to host the website for free so it is not currently live.",
+    "link": {
+      "site": ["github"],
+      "url": ["https://github.com/jychen0/clark-igda-website"],
+      "type": ["external"]
+    },
+    "media":[
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_Home.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_About.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_Calendar.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_GameJam.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_Expo.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_Expo2.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_ExpoBoothForm.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/IGDAWebsite/Website_EboardForm.png"
+      }
+    ],
+    "role": [
+      "Programmer",
+      "Designer"
+    ],
+    "team": [
+      "Maxwell DeRienze"
+    ],
+    "technologies": [
+      "React.js",
+      "MongoDB",
+      "CSS",
+      "Github"
+    ],
+    "contributions": [
+      "Designed the front-end of the website using React.js and CSS",
+      "Implemented an admin section that allowed the club's leadership to easily modify the website without needing to know how to code or access the backend of the website",
+      "Implemented forms for event signups that stored data in a database for later access"
+    ],
+    "detailedContributions": [
+      {
+        "title": "Front-end Design",
+        "detail": "I designed the front-end of the website using React.js and CSS. My design philosophy was a simple design that seemed more modern using the colors of the school. I standardized the header/banner into the same thing making each page have a very similar structure. The next part was making sure every section was easy to navigate to and understand. The calendar is a good show of this as there are filters and a legend but also has quality of life buttons like returning to today and resetting filters. The site was also designed to be simple and usable on mobile too as we suspected people would be using their phones to access it when signing up for things or looking up an upcoming event.",
+        "media": [{
+          "type": "image",
+          "src": "/images/IGDAWebsite/Website_Home.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/IGDAWebsite/Website_About.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/IGDAWebsite/Website_Calendar.png"
+        }],
+        "contributionIndex": 0
+      },
+      {
+        "title": "Admin Section",
+        "detail": "I implemented an admin section that allowed the club's leadership to easily modify the website without needing to know how to code or access the backend of the website. This included adding and removing events, updating information about the club and active eboard members, and managing event signups.",
+        "media": [{
+          "type": "image",
+          "src": "/images/IGDAWebsite/Website_AdminLogin.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/IGDAWebsite/Website_AdminDashboard.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/IGDAWebsite/Website_AdminAddEvent.png"
+        }],
+        "contributionIndex": 1
+      },
+      {
+        "title": "Event Signup Forms",
+        "detail": "I implemented forms for event signups that stored data in a database for later access. This allowed the club's leadership to easily manage event signups and keep track of who signed up for each event. The game jam signup specifically tied the team data together so when that team submits their game for the game jam, it can easily be listed as one of the entries when clicking into that specific game jam's page. This would allow it to easily auto generate the team members, team name, and even the itch.io link for the game.",
+        "media": [
+          {
+            "type": "image",
+            "src": "/images/IGDAWebsite/Website_EboardForm.png"
+          },
+          {
+            "type": "image",
+            "src": "/images/IGDAWebsite/Website_ExpoBoothForm.png"
+          }
+        ],
+        "contributionIndex": 2
+      }
+    ],
+    "revealed": true
   },
   "customBingo": {
     "type": "Software",
