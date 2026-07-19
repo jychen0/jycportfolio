@@ -75,13 +75,33 @@
       {
         "title": "Pin Mechanics",
         "detail": "The main mechanic of the game is the pins that the player can use to interact with certain objects in the world. These work through a system my other programmer designed that allows for components to be 'powerable'. This was used as the base for the mechanics. We had mechanics that allowed objects to be pushed, pulled, rotated, create a bridge, light a fire, and more. I implemented half of these mechanics and helped add to the system to allow for more mechanics to be added. The powerable components are designed to take multiple parameters like power required, tags, and even a color. This allows flexibility to know what is currently powering a compoent and allows us to compare it to the requirements of the component to know if it should be powered or not.",
-        "media": [],
+        "media": [{
+          "type": "video",
+          "src": "/videos/PuppetryPinExample.mp4"
+        }],
         "contributionIndex": [0, 1]
       },
       {
         "title": "Level Design",
         "detail": "The level designer and I were roomates so we were able to work closely together to design the level. The design was done on paper before it was gray boxed in the engine. I then implemented the interactable components of the level and made sure they worked as intended. I was also functionally in charge of designing the ending sequence of the game. This was difficult as we had to force the player back through the mansion in reverse order. This was able to be done by moving each room around so they connected to each other linearly. A difficult challenge here was setting up the timing and sequence of the main obstacle so that it would feel challenging and fun while also not diverting from the theme of the game.",
-        "media": [],
+        "media": [
+          {
+            "type": "image",
+            "src": "/images/Puppetry/Puppetry_ImgLevelDesign1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "/images/Puppetry/Puppetry_ImgLevelDesign2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "/images/Puppetry/Puppetry_ImgKitchenLv.png"
+          },
+          {
+            "type": "image",
+            "src": "/images/Puppetry/Puppetry_ImgLibraryLv.png"
+          }
+        ],
         "contributionIndex": 3
       },
       {
@@ -94,6 +114,10 @@
         {
           "type": "image",
           "src": "/images/Puppetry/Puppetry_ImgInspect.png"
+        },
+        {
+          "type": "video",
+          "src": "/videos/PuppetryInspectJournalExample.mp4"
         }],
         "contributionIndex": 2
       }
