@@ -25,7 +25,7 @@ const Home = () => {
                 <img src="/images/KamiKaZe/Kamikaze_Title.jpg" alt="KamiKaze Header Image"></img>
                 <p>KamiKaZe</p>
               </Link>
-              <Link to="/projects/snooseorloose">
+              <Link to="/projects/snoozeOrLooze">
                 <img src={"/images/SnoozeOrLooze/SnoozeOrLoozeTitle.png"} alt="Snooze Or Looze Title Screen"></img>
                 <p>Snooze Or Looze</p>
               </Link>

@@ -6,11 +6,11 @@
     "link": {
       "site": [
         "itch.io",
-        "Steam (coming soon)" 
+        "Steam" 
       ],
       "url": [
         "https://puppetrygame.itch.io/puppetry-demo",
-        "#"
+        "https://store.steampowered.com/app/4775990/Puppetry/"
       ],
       "type": [
         "external",
@@ -353,11 +353,15 @@
       },
       {
         "type": "image",
-        "src": "/images/DontFeedTheDuck/Duck_Game_Settings.png"
+        "src": "/images/DontFeedTheDuck/Duck_Game_Glider.png"
       },
       {
         "type": "image",
         "src": "/images/DontFeedTheDuck/Duck_Game_Glider.png"
+      },
+      {
+        "type": "image",
+        "src": "/images/DontFeedTheDuck/Duck_Game_Uber.png"
       }
     ],
     "role": [
@@ -387,19 +391,60 @@
       {
         "title": "Mechanics, Obstacles, and Interactables",
         "detail": "The player has very simple mechanics with a few checks to identify if you are able to jump, double jump, or glide at the current moment. Most obstacles are trigger collisions that have a slight twist on them. The electricity wires are ___ . The pots in the bakery have a trigger inside of it only allowing the player to potentially get on the sides of it or run into it without losing. The bakery carts only move when the baker gets to that point making the player have to react to it and also memorize which levels of the cart were open. The taxi at the end of the city level brings the character back to the start by parenting the player with it, turning off the player's collision and physics until they are back at the start.",
-        "media": [],
+        "media": [{
+          "type": "video",
+          "src": "/videos/DuckGame_Mechanics.mp4"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/DuckGame_Wire.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/DuckGame_Taxi"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/DuckGame_Airvent.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/Duck_Game_Glider.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/Duck_Game_Uber.png"
+        }],
         "contributionIndex": 0
       },
       {
         "title": "Bakery Sequence Design",
         "detail": "The bakery sequence was designed to be our high action section of the game. The difference in each difficulty selector was the length of the level. I designed it using the carts as a marker of where or how far you have gotten, while this makes it unlikely you will get far enough ahead to have to remember which cart is coming at you, it gives you a sense of your own progression every attempt. The breadcrumb speed stacking but the time not stacking was unintended but it made for a fun design challenge that gave you extreme speed but made it hard to control. I decided instead of fixing this to use the breadcrumbs to make lines that allowed you to get speed to potentially skip multiple obstacles. Since the level has an upper and lower level, it was designed where the upper level had all the benefits but staying up there was harder. The lower level has no benefits but it is easier and gave few opportunities to get back up to the upper level.",
-        "media": [],
+        "media": [{
+          "type": "video",
+          "src": "/videos/DuckGame_Bakery (1).mp4"
+        }],
         "contributionIndex": 3
       },
       {
         "title": "UI Implementation",
         "detail": "The UI in the city appears to show your abilities based on the breadcrumbs you have collected. The progress bar at the bakery scene show where the baker is in comparison to the player and the end of the level. This was done with simple math to calculate the % of distance between the baker/player and the end of the level. The settings menu took me a while to figure out how to implement all the different options but I was able to get it working fully allowing the player to change resolution, quality, and volume. ",
-        "media": [],
+        "media": [{
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/Duck_Game_Pause.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/Duck_Game_Settings.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/Duck_Game_Difficulty.png"
+        },
+        {
+          "type": "image",
+          "src": "/images/DontFeedTheDuck/Duck_Game_Chase.png"
+        }],
         "contributionIndex": [1, 4, 5]
       }
     ],
